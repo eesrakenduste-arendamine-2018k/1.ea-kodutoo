@@ -16,13 +16,15 @@ function init() {
     startClock()
 }
 
-function startClock() {
-    window.setInterval(function () {
-        const date = new Date()
-        
-        
-        clockContainer.innerHTML = date.toLocaleTimeString()
+function clockDisplay(){
+    const date = new Date()
+    clockContainer.innerHTML = date.toLocaleTimeString()
+}
 
+function startClock() {
+        clockDisplay()
+    window.setInterval(function () {
+        clockDisplay()
     }, 1000)
 }
 
