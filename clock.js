@@ -22,7 +22,7 @@ function clockDisplay(){
 }
 
 function startClock() {
-        clockDisplay()
+    clockDisplay()
     window.setInterval(function () {
         clockDisplay()
     }, 1000)
