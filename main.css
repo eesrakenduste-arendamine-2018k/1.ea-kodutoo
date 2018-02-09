@@ -1,0 +1,10 @@
+#clock {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  width: 180px;
+  height: 80px;
+  margin-top: -40px;
+  margin-left: -90px;
+}
