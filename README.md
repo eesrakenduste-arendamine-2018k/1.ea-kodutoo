@@ -1,6 +1,6 @@
 # 1. kodutöö – Lauakell
 
-Autor: Mihkel Mägi
+Autor: Mihkel Mägi .
 Screenshot: https://www.upload.ee/image/8011604/Untitled.png .
 Funktsioonideks on otseteede peitmine, tausta muutmine "Night mode" peale ja kella font-i valimine.
 
