@@ -1,6 +1,6 @@
 # 1. kodutöö – Lauakell
 
-Autor: Romil Rõbtšenkov 
+Autor: Tim Jaanson 
 
 ## Tähtpäev 18.02.2018 23:59
 
