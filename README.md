@@ -1,4 +1,4 @@
-# 1. kodutöö – Lauakell
+git # 1. kodutöö – Lauakell
 
 ## Tähtpäev 18.02.2018 23:59
 
@@ -30,6 +30,8 @@ Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella t�
 
 ## Abimaterjal
 
-* Sündmuste loetelu [HTML DOM Events](http://www.w3schools.com/jsref/dom_obj_event.asp)
-* Ajal põhinevad sündmused [JavaScript Timing Events](http://www.w3schools.com/js/js_timing.asp)
-* CSSi muutmine [HTML DOM Style Object](http://www.w3schools.com/jsref/dom_obj_style.asp)
+* Sündmuste loetelu [HTML DOM 
+Events](http://www.w3schools.com/jsref/dom_obj_event.asp) * Ajal 
+põhinevad sündmused [JavaScript Timing 
+Events](http://www.w3schools.com/js/js_timing.asp) * CSSi muutmine [HTML 
+DOM Style Object](http://www.w3schools.com/jsref/dom_obj_style.asp) ASD
