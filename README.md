@@ -10,7 +10,7 @@ Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella t�
 ## Nõuded
 
 1. Veebirakendus töötab. Näitab kella, kuupäeva ja nädalapäeva.
-1. Vastavalt kasutaja tegevusele on võimalik muuta **kolme** lauakella atribuuti muuta (nt suurus, värv, asukoht vms)
+1. Vastavalt kasutaja tegevusele on võimalik muuta ***kolme*** lauakella atribuuti muuta (nt suurus, värv, asukoht vms)
 1. Kell on originaalne ning kasutajaliides on maitsekalt kujundatud
 1. Autori ees- ja perenimi on lehel välja toodud
 1. Lehel on viide rakenduse repositooriumile
