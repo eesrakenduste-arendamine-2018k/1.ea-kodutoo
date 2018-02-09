@@ -6,6 +6,12 @@ Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella t�
 
 ## Nõuded
 
+
+
+EGERT PIKSAR
+
+
+
 1. Veebirakendus töötab. Näitab kella, kuupäeva ja nädalapäeva.
 1. Vastavalt kasutaja tegevusele on võimalik muuta **kolme** lauakella atribuuti muuta (nt suurus, värv, asukoht vms)
 1. Kell on originaalne ning kasutajaliides on maitsekalt kujundatud
