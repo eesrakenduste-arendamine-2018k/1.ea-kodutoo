@@ -1,4 +1,6 @@
-# 1. kodutöö – Lauakell
+﻿# 1. kodutöö – Lauakell
+
+Autor: Tatjana Kuznetsova
 
 ## Tähtpäev 18.02.2018 23:59
 
