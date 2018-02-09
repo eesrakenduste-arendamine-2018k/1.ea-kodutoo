@@ -1,3 +1,7 @@
+Kärt Nigols
+
+
+
 # 1. kodutöö – Lauakell
 
 ## Tähtpäev 18.02.2018 23:59
