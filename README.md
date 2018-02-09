@@ -1,4 +1,5 @@
 Autor:Kärt Nigols
+Ekraanil clickides muutub teksti värv ja tausta pilt, saab ka kella suuremaks ja väiksemaks muuta.
 
 
 
