@@ -1,6 +1,6 @@
 # 1. kodutöö – Lauakell
 
-autor Egert Klaamas
+Autor Egert Klaamas
 
 
 ## Tähtpäev 18.02.2018 23:59
