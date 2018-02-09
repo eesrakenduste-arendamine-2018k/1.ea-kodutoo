@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#background {
+    /*  Backbround published on Pixabay under Creative Commons  CC0 License */
+    /* https://pixabay.com/en/sunset-dawn-sky-evening-panorama-3126715/ */
+    background: url(backgrounds/background.jpg) no-repeat center;
+    background-size: cover;
+    position: fixed;
+    filter: blur(2px);
+    /* Oversized background to avoid white borders when blur effect applied */
+    z-index: -1;
+    width: 101vw;
+    height: 101vh;
+    top: -0.3vh;
+    left: -0.5vw;
+ }
+
+.clockwrapper {
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    padding-top: 25vh;
+}
+
+#date {
+    font-size: 2vw;
+}
+
+#clock {
+    font-size: 12.8vw;
+}
+
+#message {
+    font-size: 1.1vw;
+}
+
+#controlsWrapper {
+    display: inline-block;
+    position: fixed;
+    background-color: #383838;
+    border-radius: 0vw 0vw 1vw 0vw;
+    padding-bottom: 0.7vh;
+}
+
+img {
+    width: 2vw;
+    height: auto;
+    vertical-align: middle;
+    margin: 0.3vw;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+#author {
+    font-size: 0.6vw;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    text-align: left;
+    background-color: #383838;
+    border-radius: 0vw 2vw 0vw 0vw;
+    padding-right: 1vw;
+    padding-top: 0.7vh;
+    padding-bottom: 0.3vh;
+    padding-left: 0.3vw;
+}
+
+div[class*="buttonwrapper"] {
+    visibility: hidden;
+    display: inline;
+    position: fixed;
+    background-color: #383838;
+    border-radius: 0vw 0.4vw 0.4vw 0vw;
+    padding-top: 0.3vw;
+    padding-bottom: 0.3vw;
+    padding-right: 0.4vw;
+    margin-top: 0.2vw;
+    padding-left: 5vw;
+    z-index: -1;
+    left: -2vw;
+}
+
+label {
+    color: white;
+    font-size: 0.7vw;
+    font-family: 'Montserrat', sans-serif;
+    vertical-align: middle;
+}
+
+button {
+    margin-top: 0.007vw;
+    text-align: center;
+    font-size: 0.75vw;
+    vertical-align: middle;
+    border: none;
+    border: 1px solid gray;
+    cursor: pointer;
+    margin-left: -0.3vw;
+    padding-right: 0.5vw;
+    padding-left: 0.5vw;
+    padding-top: 0.1vw;
+    padding-bottom: 0.1vw;
+}
+
+input {
+    font-size: 0.75vw;
+    vertical-align: middle;
+    border: 1px solid gray;
+}
+
+input:not(#blurSlider) {
+    padding: 0.1vw;
+}
+
+#blurSlider {
+    -webkit-appearance: none;
+    height: 0.1vw;
+}
+
+#blurSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0.5vw;
+    height: 0.9vw;
+    background: #FCFCFC;
+    cursor: pointer;
+    border: 1px solid gray;
+}
+
+#blurSlider::-moz-range-thumb {
+    width: 0.5vw;
+    height: 0.9vw;
+    background: #FCFCFC;
+    cursor: pointer;
+}

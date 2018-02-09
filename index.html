@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- settings -->
+        <title>Clock</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- dependencies -->
+        <script src="clock.js"></script>
+        <link rel="stylesheet" href="clock.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    </head>
+    <body>
+        <!-- background for blurring -->
+        <div id="background"></div>
+        
+        <!-- controls -->
+        <div id="controlsWrapper">
+            
+            <!-- background selector -->
+            <img id="backgroundIcon" src="Icons/backgroundIcon.png" onclick="imageTexboxAppear()" title="Change background">
+            <div class="imagebuttonwrapper">
+                <input type="text" style="width: 10vw;" id="imageTextbox" placeholder="Insert image URL" />
+                <button onclick="imageTextboxHide()">OK</button>
+            </div>
+            <br>
+            
+            <!-- blur selector -->
+            <img id="blurIcon" src="Icons/blurIcon.png" onclick="blurSliderAppear()" title="Apply blur">
+            <div class="blurbuttonwrapper">
+                <label for="blurSlider">Blur amount:</label>
+                <input type="range" style="width: 4.7vw;" min="1" max="50" value="20" id="blurSlider" />
+                <button onclick="blurSliderHide()" style="margin-left: 0.1vw;">OK</button>
+            </div>
+            <br>
+            
+            <!-- color selector -->
+            <img id="colorPickerIcon" src="Icons/colorPickerIcon.png" onclick="colorTextboxAppear()" title="Change text color">
+            <div class="colorbuttonwrapper">
+                <input type="text" style="width: 10vw;" id="colorTextbox" placeholder="Insert color or HEX" />
+                <button onclick="colorTextboxHide()">OK</button>
+            </div>
+            <br>
+            
+            <!-- message selector -->
+            <img id="messageIcon" src="Icons/messageIcon.png" onclick="messageTextboxAppear()" title="Add a message">
+            <div class="messagebuttonwrapper">
+                <input type="text" style="width: 10vw;" id="messageTextbox" placeholder="Insert text" />
+                <button onclick="messageTextboxHide()">OK</button>
+            </div>
+            <br>
+            
+            <!-- seconds selector -->
+            <img id="secondsIcon" src="Icons/secondsIcon.png" onclick="secondsCheckboxAppear()" title="Toggle seconds">
+            <div class="secondsbuttonwrapper">
+                <label for="secondsCheckbox">Show seconds?</label>
+                <input type="checkbox" id="secondsCheckbox" style="width: 1vw; margin-right: 0.35vw;" />
+                <button onclick="secondsCheckboxHide()">OK</button>
+            </div>
+        </div>
+        
+        <!-- date, clock and message -->
+        <div class="clockwrapper">
+            <div id="date"></div>
+            <div id="clock"></div>
+            <div id="message"></div>
+        </div>
+        
+        <!-- author info -->
+        <div id="author">
+            Martin Sõmer, 2018
+            <br>
+            https://github.com/martinsomer/1.ea-kodutoo
+        </div>
+    </body>
+</html>

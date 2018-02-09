@@ -1,35 +1,29 @@
-# 1. kodutöö – Lauakell
+#### Martin Sõmer, 2018 ####  
+- - - -
 
-## Tähtpäev 18.02.2018 23:59
+## FEATURES: ##  
+* Clock with Date, Day, Month, and Year
+* Change background  
+* Apply blur effect  
+* Change text color  
+* Add custom message  
+* Show/hide seconds  
+* Flawless scaling thanks to viewport units
+* Almost endless amount of combinations of backgrounds and color schemes
 
-Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella täisekraanile, et saaks kasutada lauakella või ekraanisäästja asemel. Selleks, et see sobiks paljudele ekraanidele, kasuta kujunduse loomisel protsendilisi väärtusi (nt width: 100%; ) või nt võimalda kella suurust kasutajal muuta.
+### HOW TO USE: ###  
+* Use the controls in top-left to set the different options:  
+    * "Change background" - Paste a link to an image into the text box and click "OK"  
+    * "Apply blur" - Move the slider to increase/decrease blur effect strength and click "OK"  
+    * "Change text color" - Enter a HEX color code (i.e. "#C11218") or color name (i.e. "GREEN") into the text box and click "OK"  
+    * "Add a message" - Enter text into the text box and click "OK"  
+    * "Toggle seconds" - Check or un-check the box and click "OK"  
+    
+### HOW *_NOT_* TO USE ###  
+* Do not use images from websites with no hotlinking. The resulting background does not cover the whole browser window.
 
-## Nõuded
-
-1. Veebirakendus töötab. Näitab kella, kuupäeva ja nädalapäeva.
-1. Vastavalt kasutaja tegevusele on võimalik muuta **kolme** lauakella atribuuti muuta (nt suurus, värv, asukoht vms)
-1. Kell on originaalne ning kasutajaliides on maitsekalt kujundatud
-1. Autori ees- ja perenimi on lehel välja toodud
-1. Lehel on viide rakenduse repositooriumile
-1. Kood on vormistatud vastavalt stiilijuhendile
-1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
-
-## Mõned ideed võimalikeks täiendusteks (lihtsalt, et mõte hakkaks jooksma)
-
-* Vahetuda võivad taustapildid, taustal võib mängida muusika
-* Taustale klikkides muudetakse kella taustaväri
-* Kellale klõpsides muudetakse numbrite värvi või numbrite suurust;
-* Iga numbri suurust saab eraldi muuta
-* Nooleklahvidega saab kella ekraanil liigutada
-* Küsi enne kella näitamise alustamist kasutajalt tema lemmikvärv ja tee sellest lähtudes midagi
-* Muuda kella ja tausta värvi vastavalt ajale (päev/öö)
-* Kella suurus ja asukoht sõltuvad hiire asukohast ekraanil
-* Äkki võiks tegu olla hoopis analoogkellaga
-* Kirjatüüpi saab ka muuta, [google.com/fonts](https://www.google.com/fonts)
-* Kasutaja saab lisada või kasutajaöe näidatakse mitu kellaaega erinevatest maailma kohtadest
-
-## Abimaterjal
-
-* Sündmuste loetelu [HTML DOM Events](http://www.w3schools.com/jsref/dom_obj_event.asp)
-* Ajal põhinevad sündmused [JavaScript Timing Events](http://www.w3schools.com/js/js_timing.asp)
-* CSSi muutmine [HTML DOM Style Object](http://www.w3schools.com/jsref/dom_obj_style.asp)
+## SCREENSHOTS: ##   
+![Screenshot 1](Screenshots/screenshot_1.png "Background + Message")  
+![Screenshot 2](Screenshots/screenshot_2.png "Background + Color + Seconds")  
+![Screenshot 3](Screenshots/screenshot_3.png "Background + Color")  
+![Screenshot 4](Screenshots/screenshot_4.png "Background + Seconds + Message")  
