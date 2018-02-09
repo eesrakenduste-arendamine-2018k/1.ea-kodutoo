@@ -6,7 +6,7 @@ window.onload = function () {
   init()
 }
 
-function init () {
+function init() {
   clockContainer = document.querySelector('#clock')
   console.log(clockContainer)
 
@@ -14,18 +14,26 @@ function init () {
 }
 
 
-function startClock () {
+function startClock() {
   updateClock()
 
   window.setInterval(function () {
-   updateClock()
+    updateClock()
   }, 1000)
 }
 
-function updateClock () {
+function updateClock() {
   const date = new Date()
-  clockContainer.innerHTML = date
-}
-function getTime (){
-  updateClock.getHours ()
+
+  var kuud = ['Jaanuar', 'veebruar', 'Märts', 'Aprill', 'Mai', 'Juuni', 'Juuli', 'August', 'September', 'Oktoober', 'November', 'Detsember'];
+  var paevad = ['','Esmaspäev', 'Teisipäev', 'Kolmapäev', 'Neljapäev', 'Reede', 'Laupäev', 'Pühapäev'];
+  var currentHours = date.getHours();
+  var currentMinutes = date.getMinutes();
+
+  currentHours = (currentHours < 10 ? "0" : "") + currentHours;
+  currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+
+
+  clockContainer.innerHTML =+currentHours+":"+currentMinutes+"<br>"+paevad[date.getDay()]+" "+date.getDate()+". "+kuud[date.getMonth()]+" "
+  +date.getFullYear()+" ";
 }
