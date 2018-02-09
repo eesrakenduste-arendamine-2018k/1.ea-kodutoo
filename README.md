@@ -1,6 +1,6 @@
 # 1. kodutöö – Lauakell
 
-Nimi: Dmitri Vavilov
+Autor: Dmitri Vavilov
 
 ## Tähtpäev 18.02.2018 23:59
 
