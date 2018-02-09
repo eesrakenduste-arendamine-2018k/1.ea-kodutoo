@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mihkel Mägi</title>
+  <script src="clock.js"></script>
+  <style>
+        @import url('https://fonts.googleapis.com/css?family=Abel|Anton|Dhurjati');
+  </style>
+  <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+        
+        <div id="wrapper" class="header daymode">
+                        <div id="shorcuts">
+                                <a class="btn" href="http://www.facebook.com">Facebook</a>
+                                <a class="btn" href="http://gmail.google.com">Gmail</a>
+                                <a class="btn" href="http://www.tlu.ee">Tallinn University</a>
+                                <a class="btn" href="https://github.com/eesrakenduste-arendamine-2018k/">IFI6211 Github</a>
+                        </div>
+                <div class="container">
+                        <div class="abel" id="clock"></div>
+                </div>
+                <div class="footer">
+                        <input type="checkbox" name="sctBox" id="sctBox" onclick="scrts();"> Hide shorcuts
+                        <input type="checkbox" name="mode" id="mode" onclick="checkBox();"> Toggle nightmode  Font:
+                        <select id="fonts" name="fonts" onchange="changeFont();">
+                                <option value="abel">Abel</option>
+                                <option value="dhurjati">Dhurjati</option>
+                                <option value="anton">Anton</option>
+                        </select>
+                        <p>&copy; Mihkel Mägi</p>
+                </div>
+
+</body>
+</html>

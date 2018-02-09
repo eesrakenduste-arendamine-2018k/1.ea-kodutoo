@@ -1,0 +1,90 @@
+html, body, #wrapper {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  font-size: 7vw;
+
+}
+
+.header {
+  background-size: cover;
+  text-align: center;
+  
+}
+.header.daymode{
+    background: url(http://mauialohaweddings.com/wp-content/uploads/beach-sand-first-view.jpg) no-repeat center center;
+    color: #fff;
+}
+
+.header.nightmode{
+    background: url(https://lh3.googleusercontent.com/0QkpYcL7NmAaZ_mHE_pkc0p5irGBJ2YsNuMyCPIKCt5Of6qA6tBmcrW6a9iGBNOcMxrt=h1264) no-repeat center center; 
+    color: #fff;
+}
+
+#clock.dhurjati {
+    font-family: 'Dhurjati', sans-serif;
+}
+
+#clock.anton {
+    font-family: 'Anton', sans-serif;
+}
+
+#clock.abel {
+    font-family: 'Abel', sans-serif;
+}
+    
+
+.btn {
+  color: #fff;
+  background: #000;
+  display: inline-block;
+  padding: 10px 80px;
+  text-decoration: none; 
+  transition: background .5s; 
+}
+
+.nav { 
+  background: #000;
+  height: 80px; 
+  width: 100%;
+}
+
+.nav ul {
+  height: 80px;
+  list-style: none;
+  margin: 0 auto; 
+  padding: 0;
+}
+
+.nav ul li {
+  display: inline-block; 
+  height: 80px;
+  line-height: 80px; 
+  list-style: none;
+  padding: 0 10px;
+  transition: background .5s; 
+}
+
+.btn:hover, .nav ul li:hover {
+  background: #117bff;
+  cursor: pointer; 
+  transition: background .5s;  
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px; 
+}
