@@ -1,6 +1,8 @@
 Autor:Kärt Nigols
-Ekraanil clickides muutub teksti värv ja tausta pilt, saab ka kella suuremaks ja väiksemaks muuta.
 
+Ekraanil clickides muutub teksti värv ja tausta pilt, saab ka kella suuremaks ja väiksemaks muuta.
+![Screenshot](screenshot(84).png)
+![Screenshot](screenshot(85).png)
 
 
 # 1. kodutöö – Lauakell
