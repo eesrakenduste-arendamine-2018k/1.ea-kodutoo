@@ -9,30 +9,51 @@
 </head>
 <style type="text/css">
 
-  #clock {
-      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 125px;
-      font-weight: bold;
-      text-align: center;
-      color:cornsilk;
-    
-  }
-  #date {
-      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 50px;
-      color:cornsilk;
-      text-align: center;
-      
-  }
-  
-  body {
-    background-image: url("http://www.naturalstone-outlet.com/wp-content/uploads/2016/11/silver-black.jpg");             
-    background-size: 100%;
-  }
+body {
+  background-image: url("http://www.naturalstone-outlet.com/wp-content/uploads/2016/11/silver-black.jpg");             
+  background-size: 100%;
+}
+#clock {
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 125px;
+  font-weight: bold;
+  text-align: center;
+  color:cornsilk;
+}
+
+#date {
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color:cornsilk;
+}
+small{
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:cornsilk;  
+}
+#size-up,#size-down,#link {
+    background-color:darkslategray;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#size-up:hover,#size-down:hover,#link:hover{
+  background-color:darkgrey; 
+}
   </style>
 
 <body>
-  <div id="clock"></div><br>
-  <div id="date"></div>
+    <div id="clock"></div><br>
+    <div id="date"></div>
+    <button id="size-up" >+</button>
+    <button id="size-down" >-</button>
+    <br>
+    <button id="link" onclick="window.location.href='https://github.com/kartuke/1.ea-kodutoo'">GitHub</button><br>
+    <small>Kärt Nigols</small>
 </body>
 </html>

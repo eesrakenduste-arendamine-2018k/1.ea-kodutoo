@@ -16,9 +16,27 @@ function init() {
   dateContainer = document.querySelector('#date')
   console.log(dateContainer)
   currentDate()
-
+//https://stackoverflow.com/questions/10867503/change-background-image-in-body
+  window.addEventListener('mousedown', changeBackgroundColor)
+  window.addEventListener('mousedown', changeTextColor)
+  document.querySelector('#size-down').addEventListener('click',sizeDown)
+  document.querySelector('#size-up').addEventListener('click',sizeUp)
 }
 
+
+
+function changeBackgroundColor () {
+  var body = document.getElementsByTagName('body')[0];
+  body.style.backgroundImage = 'url(http://dadatiles.com.au/wp-content/uploads/2016/12/calcatta-white-marble.jpg)';
+}
+function changeTextColor () {
+  var color = document.getElementsByTagName('div')[0];
+  var color2 = document.getElementsByTagName('div')[1];
+  var color3 = document.getElementsByTagName('small')[0];
+  color.style.color = 'black';
+  color2.style.color = 'black';
+  color3.style.color = 'black';
+}
 function startClock() {
   updateClock()
 
@@ -50,3 +68,12 @@ function currentDate(){
   dateContainer.innerHTML = paevad[date.getDay()]+" "+date.getDate()+". "+kuud[date.getMonth()]+" "+date.getFullYear()
 }
 
+function sizeUp(){
+	console.log('+')
+	clockContainer.style.fontSize='125px'
+	
+}
+function sizeDown(){
+	clockContainer.style.fontSize='50px'
+	console.log('-')
+}
