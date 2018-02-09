@@ -34,6 +34,6 @@ function updateClock() {
   currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
 
 
-  clockContainer.innerHTML =+currentHours+":"+currentMinutes+"<br>"+paevad[date.getDay()]+" "+date.getDate()+". "+kuud[date.getMonth()]+" "
+  clockContainer.innerHTML = currentHours+":"+currentMinutes+"<br>"+paevad[date.getDay()]+" "+date.getDate()+". "+kuud[date.getMonth()]+" "
   +date.getFullYear()+" ";
 }
