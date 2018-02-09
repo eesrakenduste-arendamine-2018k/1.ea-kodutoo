@@ -1,5 +1,6 @@
 // Avalikud muutujad
 let clockContainer // = null
+let dateContainer
 
 window.onload = function () {
   init()
@@ -10,8 +11,12 @@ window.onload = function () {
 function init() {
   clockContainer = document.querySelector('#clock')
   console.log(clockContainer)
-
   startClock()
+
+  dateContainer = document.querySelector('#date')
+  console.log(dateContainer)
+  currentDate()
+
 }
 
 function startClock() {
@@ -25,15 +30,23 @@ function startClock() {
 function updateClock() {
   const date = new Date()
 
-  var currentHours = date.getHours();
-  var currentMinutes = date.getMinutes();
+  var currentHours = date.getHours()
+  var currentMinutes = date.getMinutes()
 
-  currentHours = (currentHours < 10 ? "0" : "") + currentHours;
-  currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+  currentHours = (currentHours < 10 ? "0" : "") + currentHours
+  currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes
 
 
-  clockContainer.innerHTML = currentHours+":"+currentMinutes;
+  clockContainer.innerHTML = currentHours+":"+currentMinutes
 }
 
+//date displayed seperately 
+function currentDate(){
+  const date = new Date()
 
+  var kuud = ['Jaanuar', 'veebruar', 'Märts', 'Aprill', 'Mai', 'Juuni', 'Juuli', 'August', 'September', 'Oktoober', 'November', 'Detsember'];
+  var paevad = ['','Esmaspäev', 'Teisipäev', 'Kolmapäev', 'Neljapäev', 'Reede', 'Laupäev', 'Pühapäev']
+
+  dateContainer.innerHTML = paevad[date.getDay()]+" "+date.getDate()+". "+kuud[date.getMonth()]+" "+date.getFullYear()
+}
 
