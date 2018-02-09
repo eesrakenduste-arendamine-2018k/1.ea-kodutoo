@@ -8,5 +8,5 @@ Leheküljell on koostaja nimi, link repole ja 3 nuppu, vastavalt millega saab mu
 tähtede vahet)
 
 
-1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
+![alt text](https://github.com/nsalong/1.ea-kodutoo/blob/master/ekraan.jpg?raw=true)
 
