@@ -4,7 +4,7 @@
 
 
 Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella täisekraanile, et saaks kasutada lauakella või ekraanisäästja asemel. Selleks, et see sobiks paljudele ekraanidele, kasuta kujunduse loomisel protsendilisi väärtusi (nt width: 100%; ) või nt võimalda kella suurust kasutajal muuta.
-autor karl  Erik
+autor 
 ## Nõuded
 
 1. Veebirakendus töötab. Näitab kella, kuupäeva ja nädalapäeva.
