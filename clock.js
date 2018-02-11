@@ -1,5 +1,6 @@
 
 let clockContainer 
+let dateContainer
 let changeColorButton 
 
 
@@ -10,28 +11,26 @@ window.onload = function () {
 function init () {
   clockContainer = document.querySelector('#clock')
   console.log(clockContainer)
+  dateContainer = document.querySelector('#date')
+  console.log(dateContainer)
+  currentDate()
   changeColorButton = document.querySelector('#change-color')
   
   startClock()
 
   changeColorButton.addEventListener('click', changeColor)
-  //window.addEventListener('mousemove', changeBackgroundColor)
+  
   document.querySelector('#size-down').addEventListener('click',sizeDown) 
   document.querySelector('#size-up').addEventListener('click',sizeUp)
-  window.addEventListener('keypress', hideClock)
-  window.addEventListener('keypress', showClock)
-  clockContainer.style.alignContent = 'center'
   document.querySelector('#font-style').addEventListener('click',changeStyle)
 }
 
 function changeColor () {
   console.log('muudan värvi')
+  var x = document.getElementById("myColor").value;
 
-  const r = Math.round(Math.random() * 255)
-  const g = Math.round(Math.random() * 255)
-  const b = Math.round(Math.random() * 255)
-
-  clockContainer.style.color = 'rgb('+ r +','+ g +','+ b +')'
+  clockContainer.style.color = x;
+  dateContainer.style.color = x;
 }
 function changeStyle(){
 
@@ -41,7 +40,7 @@ function changeStyle(){
   var num;
   num=Math.floor(Math.random()*6);
   
-
+dateContainer.style.fontFamily =  fontType[num];
 clockContainer.style.fontFamily =  fontType[num]; 
 }
 
@@ -51,32 +50,23 @@ function sizeUp(){
   style = window.getComputedStyle(clockContainer, null).getPropertyValue('font-size');
   currentSize = parseFloat(style);
   console.log('+')
-	clockContainer.style.fontSize = currentSize + 5 + 'px';
+  clockContainer.style.fontSize = currentSize + 5 + 'px';
+  dateContainer.style.fontSize = currentSize + 5 + 'px';
 	
 	
 }
 function sizeDown(){
   style = window.getComputedStyle(clockContainer, null).getPropertyValue('font-size');
   currentSize = parseFloat(style);
-	clockContainer.style.fontSize= currentSize - 5 + 'px';
+  clockContainer.style.fontSize= currentSize - 5 + 'px';
+  dateContainer.style.fontSize= currentSize - 5 + 'px';
 	console.log('-')
 
 }
-function hideClock(event){
-	console.log(event)
-	if(event.key =='h')
-  clockContainer.style.display = 'none'
-  
-}
-function showClock(event){
-	console.log(event)
-	if(event.key =='s')
-  clockContainer.style.display = 'block'
-  
-}
+
 function startClock () {
   updateClock()
-
+  
   window.setInterval(function () {
    updateClock()
   }, 1000)
@@ -84,6 +74,20 @@ function startClock () {
 
 function updateClock () {
   const date = new Date()
+  var currentHours = date.getHours()
+  var currentMinutes = date.getMinutes()
 
-  clockContainer.innerHTML = date
+  currentHours = (currentHours < 10 ? "0" : "") + currentHours
+  currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes
+
+
+  clockContainer.innerHTML = currentHours+":"+currentMinutes
+}
+function currentDate(){
+  const date = new Date()
+
+  var kuud = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+ 
+
+  dateContainer.innerHTML =date.getDate()+". "+kuud[date.getMonth()]+" "+date.getFullYear()
 }
