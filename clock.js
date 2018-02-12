@@ -2,7 +2,8 @@
 let clockContainer 
 let dateContainer
 let changeColorButton 
-
+let buttons1
+let buttons3
 
 window.onload = function () {
   init()
@@ -10,6 +11,8 @@ window.onload = function () {
 
 function init () {
   clockContainer = document.querySelector('#clock')
+  buttons1 = document.querySelector('#buttons1') 
+  buttons3 = document.querySelector('#buttons3')
   console.log(clockContainer)
   dateContainer = document.querySelector('#date')
   console.log(dateContainer)
@@ -23,8 +26,27 @@ function init () {
   document.querySelector('#size-down').addEventListener('click',sizeDown) 
   document.querySelector('#size-up').addEventListener('click',sizeUp)
   document.querySelector('#font-style').addEventListener('click',changeStyle)
+  window.addEventListener('keypress', hideClock)
+  window.addEventListener('keypress', showClock)
 }
-
+function hideClock(event){
+    console.log(event)
+    if(event.key =='h'){
+  clockContainer.style.display = 'none'
+  dateContainer.style.display = 'none'
+  buttons1.style.display = 'none'
+  buttons3.style.display = 'none'
+}
+  }
+  function showClock(event){
+    console.log(event)
+    if(event.key =='s'){
+  clockContainer.style.display = 'block'
+  dateContainer.style.display = 'block'
+  buttons1.style.display = 'block'
+  buttons3.style.display = 'block'}
+  }
+  
 function changeColor () {
   console.log('muudan värvi')
   var x = document.getElementById("myColor").value;
@@ -36,9 +58,9 @@ function changeStyle(){
 
 
 
-  var fontType = [ "Arial", "Verdana", "Helvetica","Times New Roman", "Tahoma","Courier"];
+  var fontType = [ "Impact", "Comic Sans MS", "Times New Roman", "Courier"];
   var num;
-  num=Math.floor(Math.random()*6);
+  num=Math.floor(Math.random()*4);
   
 dateContainer.style.fontFamily =  fontType[num];
 clockContainer.style.fontFamily =  fontType[num]; 
