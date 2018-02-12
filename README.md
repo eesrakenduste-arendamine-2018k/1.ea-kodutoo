@@ -1,5 +1,8 @@
 # 1. kodutöö – Lauakell
 Autor: Kertu Mikk
+
+Kasutajal on võimalik muuta kella/kuupäeva suurust ning värvi. Klikates nupule New font? valitakse 4 fondi seast suvaline. Vajutades klaviatuuril h või s on võimalik vastavalt, kas ära peita või ekraanile tagasi tuua kell, kuupäev ning nupud.
+
 ## Tähtpäev 18.02.2018 23:59
 
 Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella täisekraanile, et saaks kasutada lauakella või ekraanisäästja asemel. Selleks, et see sobiks paljudele ekraanidele, kasuta kujunduse loomisel protsendilisi väärtusi (nt width: 100%; ) või nt võimalda kella suurust kasutajal muuta.
