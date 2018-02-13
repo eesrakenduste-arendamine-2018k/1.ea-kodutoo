@@ -11,9 +11,9 @@
 <body>
     <button id="picButton" onclick="hidePic()">Picture</button>
     <div id="pictures">
-        <div id="picOne" value="url(https://cdn.pixabay.com/photo/2017/07/31/21/45/sea-2561397_1280.jpg)" onclick="changePic(this.id)"></div>
-        <div id="picTwo" value="url(https://cdn.pixabay.com/photo/2018/01/19/09/31/kirkjufell-3092048_1280.jpg)" onclick="changePic(this.id)"></div>
-        <div id="picThree" value="url(https://cdn.pixabay.com/photo/2016/05/16/17/59/strawberries-1396330_1280.jpg)" onclick="changePic(this.id)"></div>
+        <button id="picOne" data-url="url(https://cdn.pixabay.com/photo/2017/07/31/21/45/sea-2561397_1280.jpg)" onclick="changePic(this.id)"></button>
+        <button id="picTwo" data-url="url(https://cdn.pixabay.com/photo/2018/01/19/09/31/kirkjufell-3092048_1280.jpg)" onclick="changePic(this.id)"></button>
+        <button id="picThree" data-url="url(https://cdn.pixabay.com/photo/2016/05/16/17/59/strawberries-1396330_1280.jpg)" onclick="changePic(this.id)"></button>
     </div>
     <button id="colorButton" onclick="hideColor()">Color</button>
     <div id="colors">
@@ -29,5 +29,7 @@
         <p id="clock"></p>
         <p id="month"></p>
     </div>
+    <div id="author">Veli Vaigur https://github.com/veliva/1.ea-kodutoo</div>
+    <button id="size" onclick="changeSize()">Size</button>
 </body>
 </html>

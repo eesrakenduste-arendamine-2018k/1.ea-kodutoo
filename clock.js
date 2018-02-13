@@ -15,19 +15,9 @@ function currentTime() {
     const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
-    let currentHour = currentDate.getHours();
-    let currentMinute = currentDate.getMinutes();
-    let currentSecond = currentDate.getSeconds();
-
-    if (currentDate.getHours()<10){
-        currentHour = "0" + currentDate.getHours();
-    }
-    if (currentDate.getMinutes()<10){
-        currentMinute = "0" + currentDate.getMinutes();
-    }
-    if (currentDate.getSeconds()<10){
-        currentSecond = "0" + currentDate.getSeconds();
-    }
+    let currentHour = currentDate.getHours() < 10 ? "0" + currentDate.getHours() : currentDate.getHours();
+    let currentMinute = currentDate.getMinutes() < 10 ? "0" + currentDate.getMinutes() : currentDate.getMinutes();
+    let currentSecond = currentDate.getSeconds() < 10 ? "0" + currentDate.getSeconds() : currentDate.getSeconds();
     
     document.getElementById("weekday").innerHTML = weekdays[currentDate.getDay()];
     document.getElementById("month").innerHTML =  months[currentDate.getMonth()] + " " + currentDate.getDate();
@@ -49,7 +39,7 @@ function hideColor() {
 }
 
 function changePic (i) {
-    let picture = document.getElementById(i).getAttribute('value')
+    let picture = document.getElementById(i).dataset.url
     document.body.style.backgroundImage = picture
 }
 
@@ -59,5 +49,15 @@ function hidePic() {
         x.style.display = "none";
     } else {
         x.style.display = "block";
+    }
+}
+
+function changeSize() {
+    let y = document.getElementById('info');
+    let style = window.getComputedStyle(y).getPropertyValue('font-size');
+    if (style == "61.4333px") {
+        y.style.fontSize = "2vw";
+    } else {
+        y.style.fontSize = "4vw";
     }
 }

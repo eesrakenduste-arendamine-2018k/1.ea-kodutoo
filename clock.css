@@ -5,95 +5,175 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    width: 100vw;
+    text-align: center;
 }
 
 #info {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 25vh;
     color: white;
-}
-#weekday {
-    position: fixed;
-    left: 43.0vw;
-    top: 25.0vh;
-    font-size: 8.0vh;
-}
-#month {
-    position: fixed;
-    left: 43.0vw;
-    top: 45.0vh;
-    font-size: 8.0vh;
-}
-#clock {
-    position: fixed;
-    left: 43.0vw;
-    top: 35.0vh;
-    font-size: 8.0vh;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 4vw;
+    line-height: 2vw;
 }
 
 #redButton {
+    position: fixed;
     background-color: red;
     width: 20px;
     height: 20px;
+    top: 4.4vh;
+    border: black;
+    border-style: solid;
+    border-radius: 4px;
+    padding: 0px;
 }
 #blueButton {
+    position: fixed;
     background-color: blue;
     width: 20px;
     height: 20px;
+    top: 7.4vh;
+    border: black;
+    border-style: solid;
+    border-radius: 4px;
+    padding: 0px;
 }
 #greenButton {
+    position: fixed;
     background-color: green;
     width: 20px;
     height: 20px;
+    top: 10.4vh;
+    border: black;
+    border-style: solid;
+    border-radius: 4px;
+    padding: 0px;
 }
 #yellowButton {
+    position: fixed;
     background-color: yellow;
     width: 20px;
     height: 20px;
+    top: 13.4vh;
+    border: black;
+    border-style: solid;
+    border-radius: 4px;
+    padding: 0px;
 }
 #whiteButton {
+    position: fixed;
     background-color: white;
     width: 20px;
     height: 20px;
+    top: 16.4vh;
+    border: black;
+    border-style: solid;
+    border-radius: 4px;
+    padding: 0px;
 }
 #blackButton {
+    position: fixed;
     background-color: black;
     width: 20px;
     height: 20px;
+    top: 19.4vh;
+    border: black;
+    border-style: solid;
+    border-radius: 4px;
+    padding: 0px;
 }
 #colors {
     display: none;
     position: fixed;
-    left: 7.0vw;
-    top: 4.0vh;
+    left: 5.3vw;
+    top: 4.3vh;
 }
 #colorButton {
     position: fixed;
-    left: 6.0vw;
+    left: 5.0vw;
     top: 1.1vh;
+    font-size: 0.8vw;
+    border-radius: 7px;
+    padding: 2px;
+    border-style: double;
+    background-color: rgb(204, 197, 197);
+    border-color: rgb(204, 197, 197);
 }
 
 #picButton {
     position: fixed;
     left: 1.0vw;
     top: 1.1vh;
+    font-size: 0.8vw;
+    border-radius: 7px;
+    padding: 2px;
+    border-style: double;
+    background-color: rgb(204, 197, 197);
+    border-color: rgb(204, 197, 197);
 }
 #pictures {
     display: none;
     position: fixed;
-    left: 2.0vw;
-    top: 4.0vh;
+    left: 1.7vw;
+    top: 4.3vh;
 }
 #picOne {
+    position: fixed;
     background-color: red;
     width: 20px;
     height: 20px;
+    top: 4.4vh;
+    border: black;
+    border-style: solid;
+    border-radius: 4px;
+    padding: 9.6px;
 }
 #picTwo {
+    position: fixed;
     background-color: blue;
     width: 20px;
     height: 20px;
+    top: 7.4vh;
+    border: black;
+    border-style: solid;
+    border-radius: 4px;
+    padding: 9.6px;
 }
 #picThree {
+    position: fixed;
     background-color: green;
     width: 20px;
     height: 20px;
+    top: 10.4vh;
+    border: black;
+    border-style: solid;
+    border-radius: 4px;
+    padding: 9.6px;
+}
+
+#author {
+    position: fixed;
+    bottom: 0.0vh;
+    right: 0.0vw;
+    border-radius: 7px 0px 0px;
+    background: gray;
+    padding: 2px;
+    font-size: 1vw;
+}
+
+#size {
+    position: fixed;
+    left: 8.3vw;
+    top: 1.1vh;
+    font-size: 0.8vw;
+    border-radius: 7px;
+    padding: 2px;
+    border-style: double;
+    background-color: rgb(204, 197, 197);
+    border-color: rgb(204, 197, 197);
 }
