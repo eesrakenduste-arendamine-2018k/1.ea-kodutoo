@@ -26,13 +26,13 @@ function init() {
 
 
 function changeBackgroundColor () {
-  var body = document.getElementsByTagName('body')[0];
+  let body = document.getElementsByTagName('body')[0];
   body.style.backgroundImage = 'url(http://dadatiles.com.au/wp-content/uploads/2016/12/calcatta-white-marble.jpg)';
 }
 function changeTextColor () {
-  var color = document.getElementsByTagName('div')[0];
-  var color2 = document.getElementsByTagName('div')[1];
-  var color3 = document.getElementsByTagName('small')[0];
+  let color = document.getElementsByTagName('div')[0];
+  let color2 = document.getElementsByTagName('div')[1];
+  let color3 = document.getElementsByTagName('small')[0];
   color.style.color = 'black';
   color2.style.color = 'black';
   color3.style.color = 'black';
@@ -48,8 +48,8 @@ function startClock() {
 function updateClock() {
   const date = new Date()
 
-  var currentHours = date.getHours()
-  var currentMinutes = date.getMinutes()
+  let currentHours = date.getHours()
+  let currentMinutes = date.getMinutes()
 
   currentHours = (currentHours < 10 ? "0" : "") + currentHours
   currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes
@@ -62,8 +62,8 @@ function updateClock() {
 function currentDate(){
   const date = new Date()
 
-  var months = ['Jaanuar', 'veebruar', 'Märts', 'Aprill', 'Mai', 'Juuni', 'Juuli', 'August', 'September', 'Oktoober', 'November', 'Detsember'];
-  var days = ['','Esmaspäev', 'Teisipäev', 'Kolmapäev', 'Neljapäev', 'Reede', 'Laupäev', 'Pühapäev']
+  let months = ['Jaanuar', 'veebruar', 'Märts', 'Aprill', 'Mai', 'Juuni', 'Juuli', 'August', 'September', 'Oktoober', 'November', 'Detsember'];
+  let days = ['','Esmaspäev', 'Teisipäev', 'Kolmapäev', 'Neljapäev', 'Reede', 'Laupäev', 'Pühapäev']
 
   dateContainer.innerHTML = days[date.getDay()]+" "+date.getDate()+". "+months[date.getMonth()]+" "+date.getFullYear()
 }
