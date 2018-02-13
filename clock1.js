@@ -62,10 +62,10 @@ function updateClock() {
 function currentDate(){
   const date = new Date()
 
-  var kuud = ['Jaanuar', 'veebruar', 'Märts', 'Aprill', 'Mai', 'Juuni', 'Juuli', 'August', 'September', 'Oktoober', 'November', 'Detsember'];
-  var paevad = ['','Esmaspäev', 'Teisipäev', 'Kolmapäev', 'Neljapäev', 'Reede', 'Laupäev', 'Pühapäev']
+  var months = ['Jaanuar', 'veebruar', 'Märts', 'Aprill', 'Mai', 'Juuni', 'Juuli', 'August', 'September', 'Oktoober', 'November', 'Detsember'];
+  var days = ['','Esmaspäev', 'Teisipäev', 'Kolmapäev', 'Neljapäev', 'Reede', 'Laupäev', 'Pühapäev']
 
-  dateContainer.innerHTML = paevad[date.getDay()]+" "+date.getDate()+". "+kuud[date.getMonth()]+" "+date.getFullYear()
+  dateContainer.innerHTML = days[date.getDay()]+" "+date.getDate()+". "+months[date.getMonth()]+" "+date.getFullYear()
 }
 
 function sizeUp(){
