@@ -49,7 +49,7 @@ function hideClock(event){
   
 function changeColor () {
   console.log('muudan värvi')
-  var x = document.getElementById("myColor").value;
+  let x = document.getElementById("myColor").value;
 
   clockContainer.style.color = x;
   dateContainer.style.color = x;
@@ -58,8 +58,8 @@ function changeStyle(){
 
 
 
-  var fontType = [ "Impact", "Comic Sans MS", "Times New Roman", "Courier"];
-  var num;
+  let fontType = [ "Impact", "Comic Sans MS", "Times New Roman", "Courier"];
+  let num;
   num=Math.floor(Math.random()*4);
   
 dateContainer.style.fontFamily =  fontType[num];
@@ -95,9 +95,9 @@ function startClock () {
 }
 
 function updateClock () {
-  const date = new Date()
-  var currentHours = date.getHours()
-  var currentMinutes = date.getMinutes()
+  let date = new Date()
+  let currentHours = date.getHours()
+  let currentMinutes = date.getMinutes()
 
   currentHours = (currentHours < 10 ? "0" : "") + currentHours
   currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes
@@ -106,9 +106,9 @@ function updateClock () {
   clockContainer.innerHTML = currentHours+":"+currentMinutes
 }
 function currentDate(){
-  const date = new Date()
+  let date = new Date()
 
-  var kuud = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  let kuud = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
  
 
   dateContainer.innerHTML =date.getDate()+". "+kuud[date.getMonth()]+" "+date.getFullYear()
