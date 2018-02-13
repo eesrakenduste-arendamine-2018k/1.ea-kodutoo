@@ -11,7 +11,7 @@ Funktsionaalsus:
 	
 Ekraanipilt rakendusest:
 
-	![Ekraanipilt rakendusest](http://www.z-bit.eu/s/kodutoopilt.PNG)
+![Ekraanipilt rakendusest](http://www.z-bit.eu/s/kodutoopilt.PNG "Ekraanipilt rakendusest")
 
 
 1. ✓
