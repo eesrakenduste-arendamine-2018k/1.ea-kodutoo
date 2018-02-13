@@ -19,7 +19,7 @@ Ekraanipilt rakendusest:
 3. ✓, eeh, peaaegu maitsekalt :)
 4. ✓
 5. ✓
-6. ✓ ma loodan, ma ei leidnud stiilijuhendit.
+6. ✓ ma loodan.
 7. ✓
 
 ## Tähtpäev 18.02.2018 23:59
