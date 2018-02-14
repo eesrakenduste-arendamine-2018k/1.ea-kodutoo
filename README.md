@@ -1,5 +1,14 @@
 # 1. kodutöö – Lauakell
 
+Kella autor Johan Laas
+
+Kella funktsionaalsus:
+* Kellaajale klikkides muutub kella suurus
+* Kuupäevale klikkides muutub teksti ja päikesekella asukoht
+* Taustapilt muutub vastavalt päikesetsüklile
+
+![alt text](https://github.com/ciruss/1.ea-kodutoo/blob/master/Screen%20Shot%202018-02-14%20at%2016.29.43.png)
+
 ## Tähtpäev 18.02.2018 23:59
 
 Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella täisekraanile, et saaks kasutada lauakella või ekraanisäästja asemel. Selleks, et see sobiks paljudele ekraanidele, kasuta kujunduse loomisel protsendilisi väärtusi (nt width: 100%; ) või nt võimalda kella suurust kasutajal muuta.
