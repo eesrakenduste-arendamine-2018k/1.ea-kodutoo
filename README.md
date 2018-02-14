@@ -1,3 +1,18 @@
+Autor: Veli Vaigur  
+  
+Muuta saab:  
+ - kella suurust. Selle jaoks on size nupp, mis vahetab suurust 4vw ja 2vw vahel.  
+ - kella värvi. Selle jaoks on Color nupp. Valikus on 6 etteantud värvi.  
+ - taustapilti. Selle jaoks on Picture nupp.  
+Color ja Picture nuppudega saab peidetud valikud nähtavale tuua või siis uuesti peita.  
+
+## SCREENSHOTID: ##   
+![Screenshot 1](screenshot_1.png)  
+![Screenshot 2](screenshot_2.png)  
+![Screenshot 3](screenshot_3.png)  
+
+
+
 # 1. kodutöö – Lauakell
 
 ## Tähtpäev 18.02.2018 23:59
