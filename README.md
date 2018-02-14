@@ -1,6 +1,7 @@
 # 1. kodutöö – Lauakell
 
-Mihkel Jäe
+Author: Mihkel Jäe
+
 
 ## Tähtpäev 18.02.2018 23:59
 
