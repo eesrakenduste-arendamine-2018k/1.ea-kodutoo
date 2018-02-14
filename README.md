@@ -7,7 +7,7 @@ Kella funktsionaalsus:
 * Kuupäevale klikkides muutub teksti ja päikesekella asukoht
 * Taustapilt muutub vastavalt päikesetsüklile
 
-
+![alt text](https://github.com/ciruss/1.ea-kodutoo/blob/master/Screen%20Shot%202018-02-14%20at%2016.29.43.png)
 
 ## Tähtpäev 18.02.2018 23:59
 
