@@ -3,6 +3,8 @@ let clockContainer // = null
 let rgb = []
 let w = window.innerWidth
 let h = window.innerHeight
+let clockFont = 54
+let dateFont = 20
 
 window.onload = function () {
   init()
@@ -15,12 +17,14 @@ function init () {
 
   startClock()
 
-  document.querySelector('#change-position').addEventListener("click", changePosition)
-
-  document.querySelector('#container').addEventListener('mousemove',
+  document.querySelector('#reset').addEventListener("mousemove", resetSize)
+  document.querySelector('#enlarge').addEventListener('mousemove', increaseSize)
+  document.querySelector('#decrease').addEventListener('mousemove', decreaseSize)
+  document.querySelector('#container').addEventListener('mousemove', 
   function(event) {
-      color(event);
-  });
+      color(event)
+
+  })
 }
 
 function color(e){
@@ -35,6 +39,19 @@ function color(e){
     console.log(e)
 }
 
+function increaseSize(){
+    document.getElementById('clock').style.fontSize = "80px"//(clockFont+4).toString()+"px"
+}
+
+function decreaseSize(){
+
+    document.getElementById('clock').style.fontSize = "24px"//(clockFont-4).toString()+"px"
+}
+
+
+function resetSize(){
+    document.getElementById('clock').style.fontSize = "54px"
+}
 function changePosition() {
     console.log(event)
 
