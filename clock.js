@@ -35,7 +35,7 @@ function init () {
 
 //Kuna ei saanud EventListeneri tööle kasutasin internetist leitud varianti
 //https://stackoverflow.com/questions/5597060/detecting-arrow-key-presses-in-javascript
-//Esimest korda liigutades hüppab. Põhjust ei tea
+
 document.onkeydown = function(e) {
     switch (e.keyCode) {
         case 37://Left
@@ -67,7 +67,7 @@ document.onmousedown = function(f) {
 
 
 
-function changeBackBackgroundColor () {//Värv muutub sujuvalt
+function changeBackBackgroundColor () {
   console.log('muudan värvi')
   var darken = 1
   r = r+darken
@@ -77,7 +77,7 @@ function changeBackBackgroundColor () {//Värv muutub sujuvalt
   document.body.style.backgroundColor = 'rgb('+ r +','+ g +','+ b +')'
 }
 
-function changeBackgroundColor () {//Värv muutub sujuvalt
+function changeBackgroundColor () {
   console.log('muudan värvi')
   
   r = Math.round(Math.random() * 255)
