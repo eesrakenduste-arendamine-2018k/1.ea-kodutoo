@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Kell</title>
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <script src="js/clock.js"></script>
 </head>
 <body>
     <div class="header">
-        stuff
+        <ul class="settings">
+            <button>stuff</button>
+            <button onclick="changeLang()" id="langBut"></button>
+        </ul>
+        <ul class="links">
+            <li class="float-right"><a href="https://github.com/ErikEnden/1.ea-kodutoo"><img class="githubLogo" src="images/GitHub-Mark-Light-64px.png" alt="github"></a></li>
+        </ul>
+            
+             
     </div>
     <div class="body">
         <div class="day" id="day">
 
+        </div>
+        <div class="date">
+            <span><span class="dateDay" id="dateDay"></span>. <span class="dateMonth" id="dateMonth"></span> <span class="dateYear" id="dateYear"></span></span>
         </div>
         <div class="clock" id="clock">
             <span class="hours" id="hours"></span>:<span class="minutes" id="minutes"></span>:<span class="seconds" id="seconds"></span>

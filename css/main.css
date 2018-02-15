@@ -1,27 +1,57 @@
 body {
     width: 100%;
     height: 100%;
-    background-color: #000000;
+    background-color: #65b869;
     color: white;
     font-family: 'Barlow Condensed', sans-serif;
     margin: 0px;
+    overflow-x: hidden;
 }
 .clock {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-size: 128px;
+    font-size: 20vw;
 }
 .day {
     display: flex;
     justify-content: center;
-    font-size: 72px;
+    font-size: 5vw;
+}
+.date {
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
 }
 .header {
+    display: flex;
     height: 5%;
     width: 100%;
     background-color: rgba(159,168,168, 0.1);
     padding-top: 1%;
     padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+.githubLogo {
+    height: 32px;
+    justify-content: flex-end;
+}
+.settings {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+}
+.float-right {
+    justify-content: flex-end;
 }
