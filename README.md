@@ -2,6 +2,10 @@
 
 EGERT PIKSAR
 
+Kellal saab muuta hägusust.
+Kella saab ära kaotada.
+Kella saab teha suuremaks(60px) ja väiksemaks(25px).
+
 
 Failid:
 
