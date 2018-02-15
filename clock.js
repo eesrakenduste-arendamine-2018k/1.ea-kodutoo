@@ -28,7 +28,7 @@ function init () {
   
   window.setInterval(function () {
    changeBackBackgroundColor()
-  }, 30)
+  }, 10)
   
   
 }
