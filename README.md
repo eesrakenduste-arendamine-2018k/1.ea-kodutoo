@@ -1,3 +1,9 @@
+Autor:Kärt Nigols
+
+Ekraanil clickides muutub teksti värv ja tausta pilt, saab ka kella suuremaks ja väiksemaks muuta.
+![screenshot 86](https://user-images.githubusercontent.com/31847335/36314390-5df79b02-133d-11e8-882c-47b6cfde31e6.png)
+![screenshot 87](https://user-images.githubusercontent.com/31847335/36314399-675d5c0e-133d-11e8-9051-da12fd60f76a.png)
+
 # 1. kodutöö – Lauakell
 
 ## Tähtpäev 18.02.2018 23:59
