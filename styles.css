@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Exo');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+   
+}
+
+.clickconf {
+    font-family: Exo;
+    font-style: italic;
+    font-size: 40px;
+    color: #696969;
+    text-align: center;
+}
+
+img.display {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+p a {
+    font-family: Exo;
+    font-style: italic;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.main {
+    background: #ccc;
+    height: 175px;
+    width: 400px;
+    margin: 100px auto;
+    position: relative;
+    padding: 30px;
+}
+
+.weekday {
+    width: 105px;
+    background: #e66357;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-family: Exo;
+    font-weight: bold;
+    position: absolute;
+    top: -15px;
+    left: 40%; 
+    
+}
+.date {
+    text-align: center;
+    font-family: Orbitron;
+    font-size: 20px;
+    position: absolute;
+    left: 35%;
+    top: 25%;
+}
+.clock {
+    background: #EBEBEB;
+    text-align: center;
+    font-size: 55px;
+    height: 100%;
+    padding-top: 35px;
+    font-family: Orbitron;
+    border-radius: 4px;
+}
+.name {
+    font-family: Exo;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    
+    
+}
