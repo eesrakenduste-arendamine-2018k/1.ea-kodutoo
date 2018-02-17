@@ -2,9 +2,21 @@
 
 Autor: Kert Tamm
 
-## Tähtpäev 18.02.2018 23:59
+IT õuduka stiilis kell.
 
-Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella täisekraanile, et saaks kasutada lauakella või ekraanisäästja asemel. Selleks, et see sobiks paljudele ekraanidele, kasuta kujunduse loomisel protsendilisi väärtusi (nt width: 100%; ) või nt võimalda kella suurust kasutajal muuta.
+NB!!! Palun kasutada lehe vaatamiseks Google Chrome'i (Firefox peal pole enamus funktsionaalsustest olemas ja Microsoft Edge'il ei tööta näiteks audio)
+
+funktsionaalsus:
+* Saab panna mängima taustamuusika, mis on valitud tekitamaks õige meeleolu vastavalt autori ettekujutlusele.
+* Teksti suurusi saab muuta ekraani vasakul menüüs olevate nuppudega.
+* Tausta värv on muudetav, hetkel saab tausta värvi näha silmade värvi funktsiooniga, sest
+siis muutub tegelikult terve tausta värv, kuid kuna ainult silmad on tehtud läbipaistvamaks .png pildiformaadis, näeb taustavärvi ainult läbi silmade.
+* Kella ja kuupäeva saab mõlemat eraldi liigutada üles, alla, paremale, vasakule vastavatelt nuppudelt.
+* Kella ja kuupäeva suurusi saab mõlemat eraldi muuta vastavatelt nuppudelt.
+* Kuupäeva helendava effekti värv on muudetav eraldi.
+* Kella helendava effekti värv on muudetav eraldi.
+* Kell on mahutatud täisekraanile ja käitub õigesti.
+* Kellale on lisatud animatsioon.
 
 ## Nõuded
 
@@ -30,8 +42,3 @@ Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella t�
 * Kirjatüüpi saab ka muuta, [google.com/fonts](https://www.google.com/fonts)
 * Kasutaja saab lisada või kasutajaöe näidatakse mitu kellaaega erinevatest maailma kohtadest
 
-## Abimaterjal
-
-* Sündmuste loetelu [HTML DOM Events](http://www.w3schools.com/jsref/dom_obj_event.asp)
-* Ajal põhinevad sündmused [JavaScript Timing Events](http://www.w3schools.com/js/js_timing.asp)
-* CSSi muutmine [HTML DOM Style Object](http://www.w3schools.com/jsref/dom_obj_style.asp)
