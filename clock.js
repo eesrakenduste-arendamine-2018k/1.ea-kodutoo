@@ -2,6 +2,8 @@
 let clockContainer // = null
 let changeColorButton 
 var day = 'True'
+var months = ['Jaanuar', 'Veebruar', 'Märts', 'Aprill', 'Mai', 'Juuni', 'Juuli', 'August', 'September', 'Oktoober', 'November', 'Detsember']
+var days = ['Pühapäev', 'Esmaspäev', 'Teisipäev', 'Kolmapäev', 'Neljapäev', 'Reede', 'Laupäev']
 
 window.onload = function () {
   init()
@@ -56,12 +58,17 @@ function dayMode() {
 //Viide https://stackoverflow.com/questions/15195209/how-to-get-font-size-in-html
 function sizeUp () {
 	var style = window.getComputedStyle(clock, null).getPropertyValue('font-size');
-	var size = parseFloat(style);
-	if (size<175){
+	var clockSize = parseFloat(style);
+	style = window.getComputedStyle(date, null).getPropertyValue('font-size');
+	var dateSize = parseFloat(style);
+	if (clockSize<155){
 		console.log('Suurendan kella')
 		clock.style.transition = "font 0.3s linear 0s";
-		size = size +5;
-		clock.style.fontSize = size + 'px';
+		date.style.transition = "font 0.3s linear 0s";
+		clockSize = clockSize +5;
+		dateSize = dateSize +5;
+		clock.style.fontSize = clockSize + 'px';
+		date.style.fontSize = dateSize + 'px';
 	} else {
 		alert("Enam suuremaks kella teha ei saa");
 		console.log('Limiteeritud')
@@ -70,12 +77,17 @@ function sizeUp () {
 
 function sizeDown () {
 	var style = window.getComputedStyle(clock, null).getPropertyValue('font-size');
-	var size = parseFloat(style);
-	if (size>20) {
-		size = size-5;
+	var clockSize = parseFloat(style);
+	style = window.getComputedStyle(date, null).getPropertyValue('font-size');
+	var dateSize = parseFloat(style);
+	if (clockSize>35) {
+		clockSize = clockSize-5;
+		dateSize = dateSize -5;
 		console.log('Vähendan kella') 
 		clock.style.transition = "font 0.3s linear 0s";
-		clock.style.fontSize = size + 'px'
+		date.style.transition = "font 0.3s linear 0s";
+		clock.style.fontSize = clockSize + 'px'
+		date.style.fontSize = dateSize + 'px';
 	} else {
 		alert("Enam väiksemaks kella teha ei saa");
 		console.log('Limiteeritud')
@@ -85,11 +97,11 @@ function sizeDown () {
 function hideClock (event) {
 	console.log(event)
 	if (event.key == 'h') {
-		if (clockContainer.style.display != 'none') {
+		if (clock.style.display != 'none') {
 		console.log('peidan kella');
-		clockContainer.style.display = 'none';
+		innercont.style.display = 'none';
 		} else {
-		clockContainer.style.display = 'inherit';
+		innercont.style.display = 'inherit';
 		console.log('leian kella');
 		}
 	}
@@ -105,12 +117,17 @@ function startClock () {
 
 function updateClock () {
 	var d =  new Date()
-	if (d.getMinutes()>9){
+	if (d.getMinutes()>9 && d.getHours()>9){
 		var displayTime = d.getHours() + ":" + d.getMinutes();
+	}
+	if (d.getMinutes()>9 || d.getHours()<9)	{
+		var displayTime = "0"+d.getHours() + ":" + d.getMinutes();
 	} else {
 		var displayTime = d.getHours() + ":" + "0" + d.getMinutes();
 	}
 	//document.getElementById("clock").innerHTML = d.toLocaleTimeString('et-et');
+	var displayDate = days[d.getDay()] +", "+d.getDate() + ". " +months[d.getMonth()] 
 	document.getElementById("clock").innerHTML = displayTime;
+	document.getElementById("date").innerHTML = displayDate;
 	//clockContainer.innerHTML = new Date.getSeconds();
 }

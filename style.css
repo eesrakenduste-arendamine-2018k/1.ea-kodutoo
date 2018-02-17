@@ -5,6 +5,7 @@ body {
 	/*background-size: 102vw;*/
 	overflow-x:hidden;
     overflow-y:hidden;
+	display: inline-block;
 }
 
 #clock {
@@ -22,6 +23,22 @@ body {
 	top: 50%;
 	transform: translatex(-50%) translateY(-50%);
 }
+
+#date {
+	font-family: 'lato';
+	font-weight: 100;
+	font-size: 35px;
+	color: white;
+	text-shadow: 
+	-1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+	position: absolute;
+	left: 50%;
+	top: 59%;
+	transform: translatex(-50%) translateY(-50%);
+}
 .buttons {
 	position: absolute;
 	left: 50%;
@@ -37,7 +54,7 @@ button {
   color: #FFF;
   font-family: 'lato';
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 400;
   background-color: rgba(125, 125, 125, 0.4);
   border: 1px solid #000;
   text-align: center;
