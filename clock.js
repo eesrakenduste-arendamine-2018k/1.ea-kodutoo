@@ -127,12 +127,13 @@ function updateClock () {
 	if (d.getMinutes()>9 && d.getHours()>9){
 		var displayTime = d.getHours() + ":" + d.getMinutes();
 	}
-	if (d.getMinutes()>9 || d.getHours()<9)	{
+	if (d.getMinutes()>9 && d.getHours()<9)	{
 		var displayTime = "0"+d.getHours() + ":" + d.getMinutes();
 	}
-	if (d.getMinutes()<9 || d.getHours()<9)	{
+	if (d.getMinutes()<9 && d.getHours()<9)	{
 		var displayTime = "0"+d.getHours() + ":0" + d.getMinutes();
-	}else {
+	}
+	if (d.getMinutes()<9 && d.getHours()>9) {
 		var displayTime = d.getHours() + ":" + "0" + d.getMinutes();
 	}
 	//document.getElementById("clock").innerHTML = d.toLocaleTimeString('et-et');
