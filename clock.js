@@ -32,9 +32,13 @@ function init () {
 }
 
 function changeColor () {
-  console.log('muudab värvi')
-  clock.style.transition = "color 0.6s ease-out 0s";
-  clock.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16) 
+	console.log('muudab värvi')
+	clock.style.transition = "color 0.6s ease-out 0s";
+	date.style.transition = "color 0.6s ease-out 0s";
+	var color = '#' + Math.floor(Math.random() * 16777215).toString(16)
+	clock.style.color = color
+	date.style.color = color
+	name.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16)
 }
 
 function dayMode() {
@@ -70,6 +74,8 @@ function sizeUp () {
 		clock.style.fontSize = clockSize + 'px';
 		date.style.fontSize = dateSize + 'px';
 	} else {
+		clock.style.fontSize = 155 + 'px';
+		date.style.fontSize = 65 +'px';
 		alert("Enam suuremaks kella teha ei saa");
 		console.log('Limiteeritud')
 	}
@@ -80,7 +86,7 @@ function sizeDown () {
 	var clockSize = parseFloat(style);
 	style = window.getComputedStyle(date, null).getPropertyValue('font-size');
 	var dateSize = parseFloat(style);
-	if (clockSize>35) {
+	if (clockSize>65) {
 		clockSize = clockSize-5;
 		dateSize = dateSize -5;
 		console.log('Vähendan kella') 
@@ -89,6 +95,7 @@ function sizeDown () {
 		clock.style.fontSize = clockSize + 'px'
 		date.style.fontSize = dateSize + 'px';
 	} else {
+		clock.style.fontSize = 65 + 'px';;
 		alert("Enam väiksemaks kella teha ei saa");
 		console.log('Limiteeritud')
 	}
@@ -101,7 +108,7 @@ function hideClock (event) {
 		console.log('peidan kella');
 		innercont.style.display = 'none';
 		} else {
-		innercont.style.display = 'inherit';
+		innercont.style.display = 'normal';
 		console.log('leian kella');
 		}
 	}
@@ -122,7 +129,10 @@ function updateClock () {
 	}
 	if (d.getMinutes()>9 || d.getHours()<9)	{
 		var displayTime = "0"+d.getHours() + ":" + d.getMinutes();
-	} else {
+	}
+	if (d.getMinutes()<9 || d.getHours()<9)	{
+		var displayTime = "0"+d.getHours() + ":0" + d.getMinutes();
+	}else {
 		var displayTime = d.getHours() + ":" + "0" + d.getMinutes();
 	}
 	//document.getElementById("clock").innerHTML = d.toLocaleTimeString('et-et');
