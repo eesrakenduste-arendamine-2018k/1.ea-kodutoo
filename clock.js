@@ -28,44 +28,58 @@ function init () {
   
   changeColorButton.addEventListener('click', changeColor)
 }
-function buttonColor(){
-	console.log('Ayyy')
-	//clockContainer.style.backgroundColor = 'blue'
-}
+
 function changeColor () {
   console.log('muudab värvi')
-  clockContainer.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16) 
+  clock.style.transition = "color 0.6s ease-out 0s";
+  clock.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16) 
 }
 
 function dayMode() {
 	if (day == 'True') {
 		console.log('Switching to night mode');
-		(document.body).style.transition = "background 1s ease-out 0s";
-		(document.body).style.backgroundPosition = "0% 60%";
-		//(document.body).style.backgroundColor = 'grey';
+		cont.style.transition = "all 1s ease-in-out 0s";
+		cont.style.filter = "blur(5px) grayscale(50%)";
+		cont.style.transform = "scale(1.1)";
+		document.getElementById('day').innerHTML = "Unblur";
 		day = 'False'
 	} else {
 		console.log('Switching to day mode');
-		//(document.body).style.backgroundColor = 'white';
-		(document.body).style.transition = "background 1.5s ease-out 0s";
-		(document.body).style.backgroundPosition = "0% 0%";
+		cont.style.transition = "all 1s ease-in-out 0s";
+		cont.style.transform = "scale(1.01)";
+		cont.style.filter = "blur(0px) grayscale(0%)";
+		document.getElementById('day').innerHTML = "Blur";
 		day = 'True'
 	}
 }
 
 //Viide https://stackoverflow.com/questions/15195209/how-to-get-font-size-in-html
 function sizeUp () {
-	console.log('Suurendan kella')
 	var style = window.getComputedStyle(clock, null).getPropertyValue('font-size');
-	var size = parseFloat(style);  
-	clock.style.fontSize = (size + 3) + 'px'
+	var size = parseFloat(style);
+	if (size<175){
+		console.log('Suurendan kella')
+		clock.style.transition = "font 0.3s linear 0s";
+		size = size +5;
+		clock.style.fontSize = size + 'px';
+	} else {
+		alert("Enam suuremaks kella teha ei saa");
+		console.log('Limiteeritud')
+	}
 }
 
 function sizeDown () {
-	console.log('Vähendan kella')
 	var style = window.getComputedStyle(clock, null).getPropertyValue('font-size');
-	var size = parseFloat(style);  
-	clock.style.fontSize = (size + -3) + 'px'
+	var size = parseFloat(style);
+	if (size>20) {
+		size = size-5;
+		console.log('Vähendan kella') 
+		clock.style.transition = "font 0.3s linear 0s";
+		clock.style.fontSize = size + 'px'
+	} else {
+		alert("Enam väiksemaks kella teha ei saa");
+		console.log('Limiteeritud')
+	}
 }
 
 function hideClock (event) {
@@ -91,6 +105,12 @@ function startClock () {
 
 function updateClock () {
 	var d =  new Date()
-	document.getElementById("clock").innerHTML = d.toLocaleTimeString('et-et');
+	if (d.getMinutes()>9){
+		var displayTime = d.getHours() + ":" + d.getMinutes();
+	} else {
+		var displayTime = d.getHours() + ":" + "0" + d.getMinutes();
+	}
+	//document.getElementById("clock").innerHTML = d.toLocaleTimeString('et-et');
+	document.getElementById("clock").innerHTML = displayTime;
 	//clockContainer.innerHTML = new Date.getSeconds();
 }
