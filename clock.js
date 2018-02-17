@@ -25,11 +25,8 @@ function init () {
 	document
 	.querySelector('#day')
 	.addEventListener('click', dayMode)
-	/*document
-	.querySelector('#size-up')
-	.addEventListener('mouseover', buttonColor)*/
+  
   changeColorButton.addEventListener('click', changeColor)
-  //window.addEventListener('mousemove', changeBackgroundColor)
 }
 function buttonColor(){
 	console.log('Ayyy')
@@ -43,7 +40,7 @@ function changeColor () {
 function dayMode() {
 	if (day == 'True') {
 		console.log('Switching to night mode');
-		(document.body).style.transition = "background 1.5s ease-out 0s";
+		(document.body).style.transition = "background 1s ease-out 0s";
 		(document.body).style.backgroundPosition = "0% 60%";
 		//(document.body).style.backgroundColor = 'grey';
 		day = 'False'
@@ -56,23 +53,31 @@ function dayMode() {
 	}
 }
 
+//Viide https://stackoverflow.com/questions/15195209/how-to-get-font-size-in-html
 function sizeUp () {
-	//console.log('muudan suurust')
-	size = document.getElementById("clock").style.fontSize 
-	console.log(size)
+	console.log('Suurendan kella')
+	var style = window.getComputedStyle(clock, null).getPropertyValue('font-size');
+	var size = parseFloat(style);  
 	clock.style.fontSize = (size + 3) + 'px'
 }
 
 function sizeDown () {
-	console.log('muudan suurust')
-	clockContainer.style.fontSize = '5px'
+	console.log('Vähendan kella')
+	var style = window.getComputedStyle(clock, null).getPropertyValue('font-size');
+	var size = parseFloat(style);  
+	clock.style.fontSize = (size + -3) + 'px'
 }
 
 function hideClock (event) {
 	console.log(event)
 	if (event.key == 'h') {
-		clockContainer.style.display = 'none'
-		//clockContainer.style.visibility = 'hidden'
+		if (clockContainer.style.display != 'none') {
+		console.log('peidan kella');
+		clockContainer.style.display = 'none';
+		} else {
+		clockContainer.style.display = 'inherit';
+		console.log('leian kella');
+		}
 	}
 }
 
