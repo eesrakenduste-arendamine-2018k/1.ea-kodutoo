@@ -18,3 +18,7 @@ siis muutub tegelikult terve tausta värv, kuid kuna ainult silmad on tehtud lä
 * Kell on mahutatud täisekraanile ja käitub õigesti.
 * Kellale on lisatud animatsioon.
 
+Kell pole tehtud copy paste'ga kellegi teise tööst vaid nägin ise meeletult palju vaeva ja õppisin ka hämmastavalt palju tänu sellele. 
+Järgmine kord taolist ülesannet tehes kuluks kindlasti vähemalt poole vähem aega (kulus ikka mitukümmend tundi selle tegemisele), kuna enamus ajast kulus mõistatamisele, 
+sest nii javascript kui CSS olid mõlemad minu jaoks täiesti tundmatud keeled.
+
