@@ -67,6 +67,26 @@ button {
     1px 1px 0 #000;
 }
 
+button:active {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #FFF;
+  font-family: 'lato';
+  font-size: 16px;
+  font-weight: 400;
+  background-color: rgba(125, 125, 125, 1);
+  border: 1px solid #000;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  text-shadow: 
+	-1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
 #cont{
 	position:absolute;
     width: 100%;
