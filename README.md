@@ -4,7 +4,7 @@
 ![Siin peaks pilt olema](https://github.com/TaaviMeinberg/1.ea-kodutoo/blob/master/Capture.PNG "Text")
 
 ## Autor
-Taavi Meinberg
+Taavi Meinberg, lehel: http://greeny.cs.tlu.ee/~meintaav/1.ea-kodutoo/index.html
 
 ## Tähtpäev 18.02.2018 23:59
 
