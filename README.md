@@ -1,6 +1,16 @@
 Autor: Roland Kasenurm
 
 
+Funktsionaalsus:
+"Color" nupp muudab teksti värvi nelja olemasoleva värvi hulgast. Värv muutub suvalises järjekorras.
+"Background" nupp muudab suvaliselt kolme pildi vahelt taustapilti.
+"Bigger" ja "Smaller" nupud muudavad teksti vastavalt suuremaks ja väiksemaks. 
+Saatmise hetkel ei töötanud "Bigger" ja "Smaller" päris korrektselt.(Suurused muutusid vastavalt default suurusele, mitte suurusele,
+mille ma määrasin)
+
+All vasakus nurgas on hüperlink minu nimega ja link viib minu github'i lehele.
+
+
 # 1. kodutöö – Lauakell
 
 ## Tähtpäev 18.02.2018 23:59
