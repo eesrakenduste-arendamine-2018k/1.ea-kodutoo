@@ -2,6 +2,9 @@
 
 Author: Mihkel Jäe
 
+Funtsionaalsus: Kasutaja saab kella asukohta muuta, taustaväri muuta ja kella suurust vastavalt soovile kas suurendada või vähendada. Lisaks saab kasutaja ära peita kella atribuutide nuppe vajutades  klahvi "H" ja samamoodi ka neid uuesti esile kutsuda.
+
+![alt text](.../screenshot.png)
 
 ## Tähtpäev 18.02.2018 23:59
 
