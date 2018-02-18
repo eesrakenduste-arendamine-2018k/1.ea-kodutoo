@@ -2,7 +2,7 @@
 
 Kevin Kodasma
 
-*Taustapilt
+*Taustapilt https://www.upload.ee/image/8061459/Kella_screenshot.jpg
 *Võimalus muuta kella suurust
 *Võimalus muuta kella ja kuupäeva värvi
 *Võimalus peita/tuua nähtavale kell ja kuupäev
