@@ -41,9 +41,11 @@ Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella t�
 
 RAUNO PIIBOR
 LINK LEHELE: http://greeny.cs.tlu.ee/~piibraun/1.ea-kodutoo/1_kodutoo_test/
-![alt text](kodutöö 1.png "Description goes here")
+KODUTÖÖ PILDID LINGIL: http://greeny.cs.tlu.ee/~piibraun/1.ea-kodutoo/1_kodutoo_test/kodut%c3%b6%c3%b6_pildid/
 
-
+Kasutaja saab vahetada kas tavalise pildi või öö režiimi vahel(öö pilt on tumedam).
+Kasutaja saab vahetada kella värve.
+Kasutaja saab vahetada kella stiili nt. panna italicu.
 
 
 
