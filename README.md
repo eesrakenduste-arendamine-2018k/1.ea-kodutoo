@@ -1,4 +1,13 @@
 # 1. kodutöö – Lauakell
+Autor: Valeri Valentinov
+
+Kirjeldus: Leht, kus näeb lauakella. Lehe taustapilti saab muuta - valida saab kolme värvi: Pantone 2017 ja 2018 ning valge värvi. Kella fonti saab ka muuta.
+
+Repositooriumi link: http://localhost:5555/~valevale/eesrakendused/1.ea-kodutoo/
+http://greeny.cs.tlu.ee/~valevale/eesrakendused/1.ea-kodutoo/
+
+![alt text](valeri.png "Väljanägemine")
+
 
 ## Tähtpäev 18.02.2018 23:59
 
