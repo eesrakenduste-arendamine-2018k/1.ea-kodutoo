@@ -86,4 +86,123 @@ function addZeroBefore(dateNumber) {
 }
 
 
+function musicOn() {
+	document.getElementById("mp3").play();}
+
+function musicOff() {
+	document.getElementById("mp3").pause();}
+
+
+	var color = 1;
+	var colors = [
+		"red", "yellow", "green", "blue", "black", "red"
+	];
+
+	var ran = Math.round(Math.random()*6);
+
+	
+
+function changeClockColor(){	
+		switch(color) {
+		case 1:
+			document.getElementById('clock').style.color = colors[1];
+			color=2;
+			break;
+		case 2:
+			document.getElementById('clock').style.color = colors[2];
+			color=3;
+			break;
+		case 3:
+			document.getElementById('clock').style.color = colors[3];
+			color=4;
+			break;
+		case 4:
+			document.getElementById('clock').style.color = colors[4];
+			color=5;
+			break;			
+		case 5:
+			document.getElementById('clock').style.color = colors[0];
+			color=1;
+			break;
+		}
+	}
+	function changeDateColor(){	
+		switch(color) {
+		case 1:
+			document.getElementById('date').style.color = colors[1];
+			color=2;
+			break;
+		case 2:
+			document.getElementById('date').style.color = colors[2];
+			color=3;
+			break;
+		case 3:
+			document.getElementById('date').style.color = colors[3];
+			color=4;
+			break;
+		case 4:
+			document.getElementById('date').style.color = colors[4];
+			color=5;
+			break;			
+		case 5:
+			document.getElementById('date').style.color = colors[0];
+			color=1;
+			break;
+		}
+	}
+
+	var font = 1;
+	var fonts = ["2vmax 'Merriweather', monospace", "3vmax 'Merriweather', monospace", "5vmax 'Merriweather', monospace",
+	"6.5vmax 'Merriweather', monospace"	];
+
+	var ran = Math.round(Math.random()*4);
+
+function changeDateSize(){	
+		switch(font) {
+		case 1:
+			document.getElementById('date').style.font = fonts[1];
+			font=2;
+			break;
+		case 2:
+			document.getElementById('date').style.font = fonts[2];
+			font=3;
+			break;
+		case 3:
+			document.getElementById('date').style.font = fonts[3];
+			font=4;
+			break;
+		case 4:
+			document.getElementById('date').style.font = fonts[4];
+			font=5;
+			break;
+		case 5:
+			document.getElementById('date').style.font = fonts[0];
+			font=1;
+			break;
+			}
+		}
+function changeClockSize(){	
+		switch(font) {
+		case 1:
+			document.getElementById('clock').style.font = fonts[1];
+			font=2;
+			break;
+		case 2:
+			document.getElementById('clock').style.font = fonts[2];
+			font=3;
+			break;
+		case 3:
+			document.getElementById('clock').style.font = fonts[3];
+			font=4;
+			break;
+		case 4:
+			document.getElementById('clock').style.font = fonts[4];
+			font=5;
+			break;
+		case 5:
+			document.getElementById('clock').style.font = fonts[0];
+			font=1;
+			break;
+			}
+		}
 
