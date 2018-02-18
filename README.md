@@ -9,4 +9,4 @@ Lauakella funktsionaalsused:
 * Saab muuta kuupäeva värvi ja suurust.
 * Saab panna mängima taustamuusika.
 
-![Alt text](https://i.gyazo.com/cc7645e4f6134b63bbf235a8ae42c713.jpg?raw=true "Title")
+![Alt text](https://i.gyazo.com/a0c8310fa19eea4b9a64b008dbe12f8a.jpg?raw=true "Title")
