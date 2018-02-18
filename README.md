@@ -1,8 +1,20 @@
 # 1. kodutöö – Lauakell
-
+Autor - Marek Kivikink 
 ## Tähtpäev 18.02.2018 23:59
 
 Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella täisekraanile, et saaks kasutada lauakella või ekraanisäästja asemel. Selleks, et see sobiks paljudele ekraanidele, kasuta kujunduse loomisel protsendilisi väärtusi (nt width: 100%; ) või nt võimalda kella suurust kasutajal muuta.
+
+## Ekraanitõmmis
+ ![alt text](https://i.imgur.com/sP4NrwV.jpg)
+## Funktsionaalsus
+
+* Teksti värvi muutmine
+* Tausta uduseks tegemine
+* Teksti suuruse muutmine
+* Kõik muutused toimuvad sujuvalt animatsioonidega
+* Nimele vajutades pääseb repositooriumisse
+* vajutades H tähte peidab kõik peale tausta ning uuesti vajutades kuvab jälle kõik
+* vajutades G täähte jääb nähtavale vaid kell ja kuupäev
 
 ## Nõuded
 
