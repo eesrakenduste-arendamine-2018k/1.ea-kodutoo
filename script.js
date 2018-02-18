@@ -3,9 +3,8 @@ let clockContainer // = null
 let rgb = []
 let w = window.innerWidth
 let h = window.innerHeight
-let clockFont = 54
-let dateFont = 20
-
+let sizeChange = 5
+ 
 window.onload = function () {
   init()
 }
@@ -13,13 +12,13 @@ window.onload = function () {
 function init () {
   clockContainer = document.querySelector('#clock')
   dateContainer = document.querySelector('#date')
+  fullDateContainer = document.querySelector('#fullDate')
   console.log(clockContainer)
 
   startClock()
-
-  document.querySelector('#reset').addEventListener("mousemove", resetSize)
-  document.querySelector('#enlarge').addEventListener('mousemove', increaseSize)
-  document.querySelector('#decrease').addEventListener('mousemove', decreaseSize)
+  document.querySelector('#changePosition').addEventListener('click', changePosition)
+  document.querySelector('#enlarge').addEventListener('click', increaseSize)
+  document.querySelector('#decrease').addEventListener('click', decreaseSize)
   document.querySelector('#container').addEventListener('mousemove', 
   function(event) {
       color(event)
@@ -40,23 +39,31 @@ function color(e){
 }
 
 function increaseSize(){
-    document.getElementById('clock').style.fontSize = "80px"//(clockFont+4).toString()+"px"
+    let el = document.getElementById("clock");
+    let style = window.getComputedStyle(el, null).getPropertyValue('font-size');
+    let fontSize = parseFloat(style);
+    document.getElementById('clock').style.fontSize = 
+    (fontSize+sizeChange).toString() + "px"
 }
 
 function decreaseSize(){
-
-    document.getElementById('clock').style.fontSize = "24px"//(clockFont-4).toString()+"px"
+    let el = document.getElementById("clock");
+    let style = window.getComputedStyle(el, null).getPropertyValue('font-size');
+    let fontSize = parseFloat(style);
+    document.getElementById('clock').style.fontSize = 
+    (fontSize-sizeChange).toString() + "px"
 }
 
 
 function resetSize(){
-    document.getElementById('clock').style.fontSize = "54px"
+    sizeChange = 0
+    document.getElementById('clock').style.fontSize = clockFont.toString() + "px"
 }
-function changePosition() {
+function changePosition(event) {
     console.log(event)
 
-    dateContainer.style.left = Math.round(Math.random()*window.innerWidth) + 'px';
-    dateContainer.style.top = Math.round(Math.random()*window.innerHeight) + 'px';;
+    fullDateContainer.style.left = Math.round(Math.random()*w-365) + 'px';
+    fullDateContainer.style.top = Math.round(Math.random()*h-450) + 'px';;
 }
 
 function startClock () {
