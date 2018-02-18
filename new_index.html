@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="java.js"></script>
+  <style>
+
+.clock {
+	position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+	color:'';
+	text-shadow: 1px 1px;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  width: 160px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+  </style>
+   
+  
+</head>
+<body>
+
+	
+	<div class="clock"></div>
+	<button class="button" onclick="showPicture()"><span>Pilt </span></button>
+	<button class="button" onclick="goNightmode()"><span>Öörežiim </span></button>
+	<button class="button" onclick="changeClockColorRandom()"><span>Vaheta kirja värvi </span></button>
+	<button class="button" onclick="changeFontItalic()"><span>Vaheta font </span></button>
+	
+</div>
+</body>
+</html>

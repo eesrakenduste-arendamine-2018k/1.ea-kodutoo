@@ -1,5 +1,7 @@
 # 1. kodutöö – Lauakell
 
+## Autor: Rauno Piibor
+
 ## Tähtpäev 18.02.2018 23:59
 
 Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella täisekraanile, et saaks kasutada lauakella või ekraanisäästja asemel. Selleks, et see sobiks paljudele ekraanidele, kasuta kujunduse loomisel protsendilisi väärtusi (nt width: 100%; ) või nt võimalda kella suurust kasutajal muuta.
@@ -33,3 +35,20 @@ Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella t�
 * Sündmuste loetelu [HTML DOM Events](http://www.w3schools.com/jsref/dom_obj_event.asp)
 * Ajal põhinevad sündmused [JavaScript Timing Events](http://www.w3schools.com/js/js_timing.asp)
 * CSSi muutmine [HTML DOM Style Object](http://www.w3schools.com/jsref/dom_obj_style.asp)
+
+
+-----KODUTÖÖ-----
+
+RAUNO PIIBOR
+LINK LEHELE: http://greeny.cs.tlu.ee/~piibraun/1.ea-kodutoo/1_kodutoo_test/
+KODUTÖÖ PILDID LINGIL: http://greeny.cs.tlu.ee/~piibraun/1.ea-kodutoo/1_kodutoo_test/kodut%c3%b6%c3%b6_pildid/
+
+Kasutaja saab vahetada kas tavalise pildi või öö režiimi vahel(öö pilt on tumedam).
+Kasutaja saab vahetada kella värve.
+Kasutaja saab vahetada kella stiili nt. panna italicu.
+
+
+
+
+
+
