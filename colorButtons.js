@@ -18,7 +18,7 @@ $(document).ready(function() {
     });
 });
 // Date size -
-while (dateDefaultSize<8){
+
 $(document).ready(function() {
     $("#dateSmaller").click(function(){
         dateDefaultSize--;
@@ -26,7 +26,6 @@ $(document).ready(function() {
         $("#dateSmaller").text(counter);
     });
 });
-}
 
 // Clock size +
 $(document).ready(function() {

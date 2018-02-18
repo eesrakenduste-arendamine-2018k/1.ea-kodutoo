@@ -3,7 +3,7 @@ body{
     text-align: center;    
     font-family: 'Arial', sans-serif;
     /*placement of the background image*/
-    background-image: url("pennywiseeyes3.png");  
+    background-image: url("pennywiseeyes2.png");  
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -25,7 +25,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0 auto;
-    color: black;
+    color: rgb(0, 0, 0);
     text-align: center;
     font-size: 3vw;    
     text-shadow: 0px 0px 20px rgb(255, 0, 0);
@@ -77,14 +77,41 @@ body{
 100% {opacity:1.0; text-shadow:0 0 40px rgb(255, 255, 255);}	
 }
 
-/* Author name on bottom left *//*
+/* Author name on bottom left */
 authorName {
-    color: rgb(82, 81, 81);
-    text-align: absolute;
-    font-size: 15px;
-    text-shadow: 0px 0px 20px rgb(255, 0, 0);
-    bottom: 1%;
+    color: rgb(0, 0, 0);
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    text-align: fixed;
+    font-size: 100%;
+    text-shadow: 0px 0px 15px rgb(255, 0, 0);
+    bottom: 0%;
     font-family: 'calibri', cursive;
     animation:pulseAuthorName 5s ease infinite;
-    animation-name: pulsateWhite;
+    animation-name: pulsateRed;
+}
+/*
+authorRepoLink {
+    color: rgb(0, 0, 0);
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    text-align: fixed;
+    font-size: 0.3vw;
+    text-shadow: 0px 0px 15px rgb(255, 0, 0);
+    bottom: 1%;
+    font-family: 'calibri', cursive;
+    animation:pulseAuthorName 3s ease infinite;
+    animation-name: pulsateRed;
 }*/
+
+authorRepoLink {
+    position: fixed;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
