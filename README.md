@@ -2,6 +2,10 @@
 
 ## Author - Rasmus Kello
 
+Funktsionaalsus:
+Kasutaja saab muuta kella värvi, suurust ja asukohta.
+Tausta värv sõltub muutuvalt sellest kas on öö või päev.
+
 ## Tähtpäev 18.02.2018 23:59
 
 Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella täisekraanile, et saaks kasutada lauakella või ekraanisäästja asemel. Selleks, et see sobiks paljudele ekraanidele, kasuta kujunduse loomisel protsendilisi väärtusi (nt width: 100%; ) või nt võimalda kella suurust kasutajal muuta.
