@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kell</title>
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script src="js/clock.js"></script>
+</head>
+<body>
+    <div class="header noshow" id="header">
+        <ul class="settings">
+            <button onclick="dropdown()" class="headerButton" id="settingsButton"><img class="settingsIcon" src="images/settingsmenu.png" alt="Seaded"></button>
+            <button onclick="changeLang()" class="headerButton" id="langBut"></button>
+            <button class="headerButton" onclick="goToUrl('https://github.com/ErikEnden/1.ea-kodutoo', '_blank')"><img class="githubLogo" src="images/GitHub-Mark-Light-64px.png" alt="github"></button>
+            <div id="dropdown" class="dropdown-content">
+                    <p id="colorBg"></p>
+                    <input type="color" class="dropdownButtons" id="bgSelector">
+                    <p id="colorText"></p>
+                    <input type="color" class="dropdownButtons" id="textSelector">
+                    <p id="backgroundImgText">Lingi taust</p>
+                    <input type="text" id="backgroundImgInput">
+                    <p id="timeFormat"></p>
+                    <div class="timeFormatLabelContainer">
+                        <span>24h</span>
+                        <span>12h</span>
+                    </div>
+                    <div class="timeFormatButtonContainer" id="formatSelect">
+                        <input type="radio" id="formatText24h" value="24" name="timeFormat">
+                        <input type="radio" id="formatText12h" value="12" name="timeFormat">
+                    </div>
+                    <button id="settingsSet" class="dropdownButtons" onclick="settingsSet()"></button>
+                </div>
+        </ul>                      
+    </div>
+    <div class="content">
+        <div class="barButtonCont">
+                <button id="settingsBarButton" onclick="displaySettings()">
+                </button>
+        </div>
+        <div class="day" id="day">
+
+        </div>
+        <div class="date">
+            <span><span class="date" id="dateText"></span>
+        <div class="clock" id="clock">
+            <span class="time" id="time"></span>
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footerName">Autor: Erik Enden</span>
+    </div>
+</body>
+</html>
