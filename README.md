@@ -2,6 +2,11 @@
 
 Autor: Grete Ojavere
 
+![screen shot 2018-02-18 at 18 54 41](https://user-images.githubusercontent.com/31847425/36354517-6c165cbc-14de-11e8-8395-be2940f61385.png)
+
+
+![screen shot 2018-02-18 at 18 54 23](https://user-images.githubusercontent.com/31847425/36354526-9643d262-14de-11e8-8afe-377b33fa287f.png)
+
 ## Tähtpäev 18.02.2018 23:59
 
 Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella täisekraanile, et saaks kasutada lauakella või ekraanisäästja asemel. Selleks, et see sobiks paljudele ekraanidele, kasuta kujunduse loomisel protsendilisi väärtusi (nt width: 100%; ) või nt võimalda kella suurust kasutajal muuta.
