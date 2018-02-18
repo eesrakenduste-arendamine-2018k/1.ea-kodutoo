@@ -9,12 +9,9 @@ function init () {
   clockContainer = document.querySelector('#clock')
   console.log(clockContainer)
  startClock()
-
 }
 
-function changeTime(time){
-  console.log('muudan aega')
-  console.log(time.value);
+function changeBackground(time){
   if (time.value == "day"){
     document.body.style.backgroundImage = "url('http://www.wallcoo.net/flower/Pure_Sweet_Wildflowers_3_1920x1200/wallpapers/1920x1200/Soft_focus_sweet_flowers_JK090_350A.jpg')" ;
     document.body.style.backgroundSize = "100%";
@@ -25,8 +22,6 @@ function changeTime(time){
 }
 
 function changeFont(font){
-  console.log('muudan kirjastiili')
-  console.log(font.value);
   document.getElementById("clock").style.fontFamily = font.value;
 }
 
