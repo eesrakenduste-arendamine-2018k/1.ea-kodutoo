@@ -108,8 +108,8 @@ function updateClock () {
 function currentDate(){
   let date = new Date()
 
-  let kuud = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  let month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
  
 
-  dateContainer.innerHTML =date.getDate()+". "+kuud[date.getMonth()]+" "+date.getFullYear()
+  dateContainer.innerHTML =date.getDate()+". "+month[date.getMonth()]+" "+date.getFullYear()
 }
