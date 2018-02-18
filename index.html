@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="clock.js"></script>
+<style>
+.centered {
+  position: fixed;
+  top: 82%;
+  left: 8%;
+  /* -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+}
+.centeredDate{
+  position: fixed;
+  top: 75%;
+  left: 8%;
+}
+.botright {
+  position: fixed;
+  top: 93%;
+  left: 93%;
+}
+.buttonPlus {
+  position: fixed;
+  top: 93%;
+  left: 13%
+}
+.buttonMinus {
+  position: fixed;
+  top: 93%;
+  left: 10%;
+}
+.gitHub {
+  position: fixed;
+  top: 10%;
+  left: 90%;
+}
+
+</style>
+</head>
+<body background="images/clockbackground.jpeg">
+  <div style="font-size:3em" class="centered" id="clock"></div>
+  <div style="font-size:3em" class="centeredDate" id="date"></div>
+  <button class="buttonMinus" id="size-down">-</button>
+  <button class="buttonPlus" id="size-up">+</button>
+  <div class="botright" id="authorName"></div>
+  <a class="gitHub" href="https://github.com/serfro/1.ea-kodutoo">GitHub</a>
+</body>
+</html>
