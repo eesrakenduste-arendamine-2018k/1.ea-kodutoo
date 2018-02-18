@@ -1,5 +1,11 @@
 # 1. kodutöö – Lauakell
 
+Author: Mihkel Jäe
+
+Funktsionaalsus: Kasutaja saab kella asukohta muuta, taustaväri muuta ja kella suurust vastavalt soovile kas suurendada või vähendada. Lisaks saab kasutaja ära peita kella atribuutide nuppe vajutades  klahvi "H" ja samamoodi ka neid uuesti esile kutsuda.
+
+![screenshot](screenshot.PNG)
+
 ## Tähtpäev 18.02.2018 23:59
 
 Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella täisekraanile, et saaks kasutada lauakella või ekraanisäästja asemel. Selleks, et see sobiks paljudele ekraanidele, kasuta kujunduse loomisel protsendilisi väärtusi (nt width: 100%; ) või nt võimalda kella suurust kasutajal muuta.
