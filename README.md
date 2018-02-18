@@ -1,5 +1,19 @@
 # 1. kodutöö – Lauakell
 
+Autor: Kertu Kipper
+
+Funktsionaalsus: 
+
+  1. Liikudes üle nädalapäeva ja kuupäeva suureneb antud tekst.
+  2. Värvi vahetamise nupu alt on võimalik valida sobiv värv kella kuvamiseks.
+  3. Teise nupu alt on võimalik muuta font Arialiks. 
+  4. Kella näitamisel on kasutatud visualiseerimiseks ristkülikuid ja nende täitumist. 
+  5. Taustal olevad täpid reageerivad punkti vajutamisele ekraanil. 
+
+Pilt rakendusest: 
+![Screenshot](screenshot.png)
+
+
 ## Tähtpäev 18.02.2018 23:59
 
 Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella täisekraanile, et saaks kasutada lauakella või ekraanisäästja asemel. Selleks, et see sobiks paljudele ekraanidele, kasuta kujunduse loomisel protsendilisi väärtusi (nt width: 100%; ) või nt võimalda kella suurust kasutajal muuta.
