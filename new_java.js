@@ -21,6 +21,10 @@ function changeClockColorRandom(){
 	
 }
 
+function changeFontItalic() {
+	clockContainer.style.fontStyle= 'italic';
+}
+
 	function showPicture() {
     document.body.style.backgroundColor = "#f3f3f3";
     document.body.style.backgroundImage = "url('http://greeny.cs.tlu.ee/~piibraun/1.ea-kodutoo/1_kodutoo_test/pics/wallpaper.jpg')";
@@ -30,7 +34,6 @@ function changeClockColorRandom(){
     document.body.style.backgroundImage = "url('http://greeny.cs.tlu.ee/~piibraun/1.ea-kodutoo/1_kodutoo_test/pics/nightmode.jpg')";
 }
 
-   
 
 function clock() {
 var time = new Date(),
@@ -52,4 +55,7 @@ document.querySelectorAll('.clock')[0].innerHTML = harold(hours) + ":" + harold(
 }
 setInterval(clock, 1000);
 
+/*Rauno Piibor 
+if17
+*/
 
