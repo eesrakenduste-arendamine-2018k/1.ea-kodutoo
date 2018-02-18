@@ -1,19 +1,41 @@
 let clockContainer
-let language = "est";
+let language = "est"
+let bgColor
+let clockFormat
+let amPm
+let settingsBarStatus
+let hours
+let minutes
+let seconds
+let hours12h
+let selectedFormat
 
 window.onload = function () {
     init()
 }
 
 function init () {
-    hoursContainer = document.querySelector('#hours')
-    minutesContainer = document.querySelector('#minutes')
-    secondsContainer = document.querySelector('#seconds')
+    timeContainer = document.querySelector('#time')
     dayContainer = document.querySelector('#day')
-    dateDayContainer = document.querySelector('#dateDay')
-    dateMonthContainer = document.querySelector('#dateMonth')
-    dateYearContainer = document.querySelector('#dateYear')
+    dateContainer = document.querySelector('#dateText')
     langButton = document.querySelector('#langBut')
+    colorText = document.querySelector('#colorText')
+    colorBgText = document.querySelector('#colorBg')
+    settingsSetButtonText = document.querySelector('#settingsSet')
+    settingsButtonText = document.querySelector('#settingsButton')
+    settingsBarArrow = document.querySelector('#settingsBarButton')
+    timeFormatText = document.querySelector('#timeFormat')
+    settingsBarArrow.innerHTML = "<i class='fas fa-angle-down'></i>"
+    langButton.innerHTML = '<img src="images/estonian.png" alt="Eesti">'
+    colorText.innerHTML = 'Taustavärv:'
+    colorBg.innerHTML = 'Taustavärv:'
+    settingsSetButtonText.innerHTML = 'Säti'
+    timeFormatText.innerHTML = 'Ajaformaat:'
+    bgColor = "#65b869"
+    selectedFormat = "24"
+    settingsBarStatus = "closed"
+    document.getElementById('bgSelector').value = "#65b869"
+    document.getElementById('textSelector').value = "#FFFFFF"
     console.log(clockContainer)
     console.log(language)
 
@@ -23,9 +45,10 @@ function init () {
 function startClock () {
     window.setInterval(function () {
         const date = new Date()
-        let hours = date.getHours()
-        let minutes = date.getMinutes()
-        let seconds = date.getSeconds()
+        hours = date.getHours()
+        minutes = date.getMinutes()
+        seconds = date.getSeconds()
+        hours12h
         const day = date.getDay()
         
         let dayName
@@ -43,13 +66,29 @@ function startClock () {
         if(seconds < 10){
             seconds = "0" + seconds
         }
-        hoursContainer.innerHTML = hours
-        minutesContainer.innerHTML = minutes
-        secondsContainer.innerHTML = seconds
+        if(hours < 12){
+            amPm = "AM"
+        } else {
+            amPm = "PM"
+        }
+        if(amPm == "PM"){
+            hours12h = hours - 12
+        } else {
+            hours12h = hours
+        }
+        if (selectedFormat == "24"){
+            time = hours + ":" + minutes + ":" + seconds
+        } else {
+            time = hours12h + ":" + minutes + ":" + seconds + " " + amPm
+        }
+        timeContainer.innerHTML = time
+        dateText = dateDay + ". " + monthText(dateMonth, language) + " " + dateYear
+        dateContainer.innerHTML = dateText
         dayContainer.innerHTML = dayName
-        dateDayContainer.innerHTML = dateDay
-        dateMonthContainer.innerHTML = monthText(dateMonth, language)
-        dateYearContainer.innerHTML = dateYear
+        console.log(selectedFormat)
+        console.log(amPm)
+        console.log(hours)
+        console.log(hours12h)
     }, 1000)
 }
 
@@ -77,7 +116,49 @@ function monthText(monthNumber, language){
 function changeLang(){
     if (language == "est"){
         language = "eng"
+        colorBg.innerHTML = 'Colour:'
+        colorText.innerHTML = 'Text colour:'
+        settingsSetButtonText.innerHTML = 'Set'
+        langButton.innerHTML = '<img src="images/english.png" alt="Inglise">'
     } else if (language == "eng"){
         language = "est"
+        colorBg.innerHTML = 'Taustavärv:'
+        colorText.innerHTML = 'Tekstivärv:'
+        settingsSetButtonText.innerHTML = 'Säti'
+        langButton.innerHTML = '<img src="images/estonian.png" alt="Eesti">'
+    }
+}
+
+function dropdown(){
+    document.getElementById("dropdown").classList.toggle("show")
+}
+
+function settingsSet(){
+    bgColor = document.getElementById('bgSelector').value
+    textColor = document.getElementById('textSelector').value
+    document.body.style.color = textColor
+    document.body.style.backgroundColor = bgColor
+    document.getElementById("settingsBarButton").style.color = textColor
+    if (document.getElementById('formatText24h').checked){
+        selectedFormat = "24"
+    } else if (document.getElementById('formatText12h').checked){
+        selectedFormat = "12"
+        console.log("12 valitud")
+    }
+}
+function goToUrl(url){
+    let win = window.open(url, '_blank')
+    win.focus()
+}
+
+function settingsBarArrowChange(){
+    if (settingsBarStatus == "open"){
+        settingsBarStatus = "closed"
+        settingsBarArrow.innerHTML = "<i class='fas fa-angle-down'></i>"
+        document.getElementById("header").classList.add("noshow")
+    } else {
+        settingsBarStatus = "open"
+        settingsBarArrow.innerHTML = "<i class='fas fa-angle-up'></i>"
+        document.getElementById("header").classList.remove("noshow") 
     }
 }

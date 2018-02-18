@@ -1,8 +1,10 @@
 # 1. kodutöö – Lauakell
 
-## Tähtpäev 18.02.2018 23:59
+## Autor: Erik Enden
 
-Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella täisekraanile, et saaks kasutada lauakella või ekraanisäästja asemel. Selleks, et see sobiks paljudele ekraanidele, kasuta kujunduse loomisel protsendilisi väärtusi (nt width: 100%; ) või nt võimalda kella suurust kasutajal muuta.
+## Funktsionaalsus
+
+Võimalik muuta lehe keelt, taustavärvi, teksti värvi, aja ning kuupäeva formaati ning lisada taustapilti.
 
 ## Nõuded
 
@@ -14,6 +16,7 @@ Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella t�
 1. Kood on vormistatud vastavalt stiilijuhendile
 1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
 
+## 
 ## Mõned ideed võimalikeks täiendusteks (lihtsalt, et mõte hakkaks jooksma)
 
 * Vahetuda võivad taustapildid, taustal võib mängida muusika
