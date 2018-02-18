@@ -2,7 +2,7 @@
 
   Autor : Hendrik Heinsar
 
-![alt text](https://raw.githubusercontent.com/HendrikHeinsar/1.ea-kodutoo/to/iksde.jpg)
+![alt text](https://raw.github.com/HendrikHeinsar/1.ea-kodutoo/to/iksde.jpg)
 
 ## Nõuded
 
