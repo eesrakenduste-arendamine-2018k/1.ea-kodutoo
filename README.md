@@ -8,7 +8,7 @@ Kevin Kodasma
 *Võimalus peita/tuua nähtavale kell ja kuupäev
 *Autori nimi
 *Link githubi
-Ekraani vaade - https://www.upload.ee/image/8061459/Kella_screenshot.jpg
+*Ekraani vaade - https://www.upload.ee/image/8061459/Kella_screenshot.jpg
 
 
 ## Tähtpäev 18.02.2018 23:59
