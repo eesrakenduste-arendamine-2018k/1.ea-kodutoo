@@ -1,6 +1,6 @@
-// Avalikud muutujad
-let clockContainer // = null
-let changeColorButton 
+let clockContainer
+let fontSizeValue = 15
+let fonts = ["courier", "verdana","Comic Sans MS", "Impact"]
 
 
 window.onload = function () {
@@ -10,13 +10,19 @@ window.onload = function () {
 function init () {
   clockContainer = document.querySelector('#clock')
   console.log(clockContainer)
-  changeColorButton = document.querySelector('#change-color')
 
   startClock()
+  document.querySelector('#change-color').addEventListener('click',changeBackgroundColor)
+  document.querySelector('#sizeUp').addEventListener('click',sizeUp)
+  document.querySelector('#sizeDown').addEventListener('click',sizeDown)
+  document.querySelector('#randomFont').addEventListener('click',giveRandomFont)
+  
+  window.addEventListener('keypress', hideClock)
+}
 
-    document.querySelector('#sizeUp').addEventListener('click',sizeUp)
-    document.querySelector('#sizeDown').addEventListener('click',sizeDown)
-    window.addEventListener('keypress', hideClock)
+function giveRandomFont(){
+  randomNumber = Math.floor((Math.random() * fonts.length));
+  clockContainer.style.fontFamily = fonts[randomNumber]
 }
 
 function hideClock(event){
@@ -27,12 +33,17 @@ function hideClock(event){
 }
 
 function sizeUp(){
-    console.log('+')
-    clockContainer.style.fontSize = '25px'
+  fontSizeValue += 5
+    
+  console.log('"'+fontSizeValue+'px"')
+  clockContainer.style.fontSize = fontSizeValue+"px"
+  
 }
 function sizeDown(){
-    console.log('-')
-    clockContainer.style.fontSize = '5px'
+  fontSizeValue -= 5
+
+    console.log(fontSizeValue)
+    clockContainer.style.fontSize = fontSizeValue+"px"
 }
 
 function changeBackgroundColor () {
