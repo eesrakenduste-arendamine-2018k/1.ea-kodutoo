@@ -7,7 +7,7 @@ Autor: Tuule Põldsaar
 Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella täisekraanile, et saaks kasutada lauakella või ekraanisäästja asemel. Selleks, et see sobiks paljudele ekraanidele, kasuta kujunduse loomisel protsendilisi väärtusi (nt width: 100%; ) või nt võimalda kella suurust kasutajal muuta.
 
 ## Ekraanitõmmis
-![alt text](https://imgur.com/a/3yMWG)
+![ekraanitommis](https://imgur.com/Fg4wunw)
 
 
 ## Nõuded
