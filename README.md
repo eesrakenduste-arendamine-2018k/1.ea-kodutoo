@@ -4,6 +4,9 @@
 
 Sten-Erik Tool IF-16
 
-Antud lauakella rakenduses saab muuta kella värvi ja suurust, kuupäeva värvi ja suurust ning saab ka panna taustal mängima taustamuusika.
+Lauakella funktsionaalsused:
+-Saab muuta kella värvi ja suurust.
+-Saab muuta kuupäeva värvi ja suurust.
+-Saab panna mängima taustamuusika.
 
 ![Alt text](https://i.gyazo.com/cc7645e4f6134b63bbf235a8ae42c713.jpg?raw=true "Title")
