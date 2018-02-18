@@ -6,7 +6,7 @@ Funktsionaalsus:
 Kasutaja saab muuta kella värvi, suurust ja asukohta.
 Tausta värv sõltub muutuvalt sellest kas on öö või päev.
 
-<a href="https://i.gyazo.com/c47fb76cead64853fb1e461a9c040b9d.png">Preview</a>
+[Preview](https://i.gyazo.com/c47fb76cead64853fb1e461a9c040b9d.png)
 
 
 ## Tähtpäev 18.02.2018 23:59
