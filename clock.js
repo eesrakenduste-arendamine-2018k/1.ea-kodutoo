@@ -1,6 +1,7 @@
 window.onload = function (){
     startTime();
 }
+
 // Create time
 function startTime() {
     var today = new Date();
@@ -13,11 +14,13 @@ function startTime() {
     h + ":" + m + ":" + s;
     var t = setTimeout(startTime, 500);
 }
+
 // Check if time needs 0 in front
 function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // function for adding zero in front of numbers < 10
+    if (i < 10) {i = "0" + i};  // adding zero in front of numbers < 10
     return i;
 }
+
 // Add names for months and days
 $(document).ready(function() {
     var monthNames = [ "Jaanuar", "Veebruar", "Märts", "Aprill", "Mai", "Juuni", "Juuli", "August", "September", "Oktoober", "November", "Detsember" ]; 
@@ -26,6 +29,5 @@ $(document).ready(function() {
     var newDate = new Date();
     newDate.setDate(newDate.getDate());
     // Output of the day, date, month and year  
-    $('#Date').html(dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
-    
+    $('#Date').html(dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());  
 }); 

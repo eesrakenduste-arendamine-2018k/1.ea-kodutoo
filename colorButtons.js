@@ -7,8 +7,10 @@
     $("body").css("background-color", "rgb("+$pageX+","+$pageY+","+$pageX+")");	
 }); 
 */
+
 var dateDefaultSize = 3; //Global start variable for Date text size
 var clockDefaultSize = 6; //Global start variable for Clock text size
+
 // Clock size + function
 $(document).ready(function() {
     $("#dateLarger").click(function(){
@@ -17,8 +19,8 @@ $(document).ready(function() {
         $("#dateLarger").text(counter);
     });
 });
-// Date size -
 
+// Date size -
 $(document).ready(function() {
     $("#dateSmaller").click(function(){
         dateDefaultSize--;
@@ -85,7 +87,7 @@ $(document).ready(function() {
     });
 });
 
-// // Global clock position variables at startup
+// Global clock position variables at startup
 var clockDefaultPositionVertical = 65;
 var clockDefaultPositionHorizontal = 50;
 
@@ -125,17 +127,7 @@ $(document).ready(function() {
     });
 });
 
-/*
-function chooseEyeColor() {
-    var x = document.getElementById("myEyeColor").value;
-    $("body").css("background-color", x);
-}*/
-
-/*function redEyes() {
-    var x = document.createElement("INPUT");
-    $("body").css("background-color", "rgb(255,0,0)");
-}*/
-
+// Red Eyes/Date/Clock
 function redEyes() {
     $("body").css("background-color", "rgb(255,0,0)");
 }
@@ -147,6 +139,7 @@ function pulsateRedClock() {
     $(".clockClass").css("animation", "pulsateRed 1s ease infinite");
 }
 
+// Green Eyes/Date/Clock
 function greenEyes() {
     $("body").css("background-color", "rgb(0,255,0)");
 }
@@ -158,6 +151,7 @@ function pulsateGreenClock() {
     $(".clockClass").css("animation", "pulsateGreen 1s ease infinite");
 }
 
+// Blue Eyes/Date/Clock
 function blueEyes() {
     $("body").css("background-color", "rgb(0,0,255)");
 }
@@ -169,6 +163,7 @@ function pulsateBlueClock() {
     $(".clockClass").css("animation", "pulsateBlue 1s ease infinite");
 }
 
+// White Eyes/Date/Clock
 function whiteEyes() {
     $("body").css("background-color", "rgb(255,255,255)");
 }
@@ -178,4 +173,14 @@ function whiteDate() {
 }
 function pulsateWhiteClock() {
     $(".clockClass").css("-animation", "pulsateWhite 1s ease infinite");
+}
+
+
+function menuHiding() {
+    var x = document.getElementById("div2");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
 }

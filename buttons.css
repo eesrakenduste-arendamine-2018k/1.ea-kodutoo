@@ -1,11 +1,11 @@
-#p1 {
+/*#p1 {
     position: left;
     background-color:rgb(0, 0, 0); opacity:0.8;
     position: fixed;
     text-align: center;
     top: 5px;
     left: 5px;
-}
+}*/
 /*
 txtshadow {
     text-shadow: 0px 0px 5px red;  
@@ -30,9 +30,8 @@ txtshadow {
     transform: translate(-50%, -50%);
 }*/
 
+/* Menu button class */
 .btn-group .button {
-
-
     background-color: rgb(0, 0, 0);
     border: 1px solid rgb(255, 0, 0);
     color: rgb(255, 0, 0);
@@ -40,25 +39,24 @@ txtshadow {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 0.5vw;
+    font-size: 0.6vw;
     cursor: pointer;
-    height: 5%;
-    width: 5%;
+    height: 6%;
+    width: 6%;
     display: block;
     opacity: 0.3;
     position: relative;
     top: 1%;
     left: -47%;
     margin: 0 auto;
-
-
-
 }
 
+/* Prevent double borders */
 .btn-group .button:not(:last-child) {
-    border-bottom: none; /* Prevent double borders */
+    border-bottom: none;
 }
 
+/* Menu button hover effect */
 .btn-group .button:hover {
     background-color: #000000;
     color: rgb(255, 0, 0);
