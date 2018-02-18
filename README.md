@@ -15,10 +15,12 @@ siis muutub tegelikult terve tausta värv, kuid kuna ainult silmad on tehtud lä
 * Kella ja kuupäeva suurusi saab mõlemat eraldi muuta vastavatelt nuppudelt.
 * Kuupäeva helendava effekti värv on muudetav eraldi.
 * Kella helendava effekti värv on muudetav eraldi.
-* Kell on mahutatud täisekraanile ja käitub õigesti.
+* Taustapilt on mahutatud täisekraanile ja käitub õigesti vastavalt erinevate ekraanide suurustele ja lehte suuremaks/väiksemaks tehes.
+* Kell ja kuupäev on protsendiliste väärtustega ja käituvad õigesti iga ekraani suurusega ja lehte suuremaks/väiksemaks tehes.
 * Kellale on lisatud animatsioon.
 
 Kell pole tehtud copy paste'ga kellegi teise tööst vaid nägin ise meeletult palju vaeva ja õppisin ka hämmastavalt palju tänu sellele. 
 Järgmine kord taolist ülesannet tehes kuluks kindlasti vähemalt poole vähem aega (kulus ikka mitukümmend tundi selle tegemisele), kuna enamus ajast kulus mõistatamisele, 
 sest nii javascript kui CSS olid mõlemad minu jaoks täiesti tundmatud keeled.
 
+![alt tag](https://github.com/K3RTTAMM/1.ea-kodutoo/blob/master/lehenäidis.jpg)

@@ -18,6 +18,7 @@ $(document).ready(function() {
     });
 });
 // Date size -
+while (dateDefaultSize<8){
 $(document).ready(function() {
     $("#dateSmaller").click(function(){
         dateDefaultSize--;
@@ -25,8 +26,9 @@ $(document).ready(function() {
         $("#dateSmaller").text(counter);
     });
 });
-// Clock size +
+}
 
+// Clock size +
 $(document).ready(function() {
     $("#clockLarger").click(function(){
         clockDefaultSize++;
@@ -34,6 +36,7 @@ $(document).ready(function() {
         $("#clockLarger").text(counter);
     });
 });
+
 // Clock size -
 $(document).ready(function() {
     $("#clockSmaller").click(function(){
@@ -42,6 +45,7 @@ $(document).ready(function() {
         $("#clockSmaller").text(counter);
     });
 });
+
 // Global date position variables at startup
 var dateDefaultPositionVertical = 50;
 var dateDefaultPositionHorizontal = 50;
@@ -63,6 +67,7 @@ $(document).ready(function() {
         $("#dateDown").text(counter);
     });
 });
+
 // Move date left
 $(document).ready(function() {
     $("#dateLeft").click(function(){
@@ -71,6 +76,7 @@ $(document).ready(function() {
         $("#dateLeft").text(counter);
     });
 });
+
 // Move date right
 $(document).ready(function() {
     $("#dateRight").click(function(){
@@ -79,6 +85,7 @@ $(document).ready(function() {
         $("#dateRight").text(counter);
     });
 });
+
 // // Global clock position variables at startup
 var clockDefaultPositionVertical = 65;
 var clockDefaultPositionHorizontal = 50;
@@ -100,6 +107,7 @@ $(document).ready(function() {
         $("#clockDown").text(counter);
     });
 });
+
 // Move clock left
 $(document).ready(function() {
     $("#clockLeft").click(function(){
@@ -108,6 +116,7 @@ $(document).ready(function() {
         $("#clockLeft").text(counter);
     });
 });
+
 // Move clock right
 $(document).ready(function() {
     $("#clockRight").click(function(){
