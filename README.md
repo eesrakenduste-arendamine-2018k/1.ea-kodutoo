@@ -5,7 +5,7 @@ Autor: Tim Jaanson
 Funktsionaalsus:
 kasutajal on võimalik muuta kellaaja suurust ning kuupäeva ja kellaaja asukohta
 Screenshot:
-![alt text](https://imgur.com/a/EPaxX)
+![alt text](https://i.imgur.com/DLrQYjp.png)
 
 
 ## Tähtpäev 18.02.2018 23:59
