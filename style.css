@@ -1,0 +1,50 @@
+html,
+body {
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: lightgoldenrodyellow;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding-top: 15%;
+    box-sizing: border-box;
+}
+
+.container {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 15px;
+}
+
+.clocks {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.clocks > div {
+    display: none;
+}
+
+.buttons {
+    margin: 20px 0 5px;
+}
+
+.buttons button {
+    font-size: 13px;
+    margin: 0 10px;
+}
+
+.author {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+}
