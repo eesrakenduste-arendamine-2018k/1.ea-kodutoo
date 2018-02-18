@@ -1,0 +1,333 @@
+<style>
+body {
+background: url("background.jpg");
+}
+		
+#clock {
+			
+position: fixed;
+top: 25%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: blue;
+//text-shadow: 0 0 1px black;
+opacity: 1;
+font: 5vmax 'Merriweather', monospace;
+//-webkit-transition: font 1.0s ease; 
+//transition: opacity 1s ease;
+}		
+
+#date {
+			
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: red;
+//text-shadow: 0 0 1px black;
+opacity: 1;
+font: 3vmax 'Merriweather', monospace;
+text-align: center;
+//-webkit-transition: font 1.0s ease;
+//transition: opacity 1s ease;
+font-weight: bold;
+}	
+#nupp3 {
+	position: fixed;
+	top: 10%;
+	left: 10%;
+	opacity: 1;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 1.25vmax;
+	transform: translate(-50%, -50%);
+	color: black;
+	user-select:none;
+	display: inline;
+	white-space: nowrap;
+	text-decoration: none;
+	font-weight: bold;
+}
+#nupp30 {
+	position: fixed;
+	top: 13%;
+	left: 10%;
+	opacity: 1;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 1.25vmax;
+	transform: translate(-50%, -50%);
+	color: black;
+	user-select:none;
+	display: inline;
+	white-space: nowrap;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#nupp1 {
+	position: fixed;
+	top: 26%;
+	left: 10%;
+	opacity: 1;
+	font-family: 'Lucida Console', monospace;
+	font-size: 1.25vmax;
+	transform: translate(-50%, -50%);
+	color: black;
+	user-select:none;
+	display: inline;
+	white-space: nowrap;
+	text-decoration: none;
+	font-weight: bold;
+}	
+#nupp10 {
+	position: fixed;
+	top: 29%;
+	left: 10%;
+	opacity: 1;
+	font-family: 'Lucida Console', monospace;
+	font-size: 1.25vmax;
+	transform: translate(-50%, -50%);
+	color: black;
+	user-select:none;
+	display: inline;
+	white-space: nowrap;
+	text-decoration: none;
+	font-weight: bold;
+}	
+#nupp2 {
+	position: fixed;
+	top: 39%;
+	left: 10%;
+	opacity: 1;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 1.25vmax;
+	transform: translate(-50%, -50%);
+	color: black;
+	user-select:none;
+	display: inline;
+	white-space: nowrap;
+	text-decoration: none;
+	font-weight: bold;
+}
+#nupp20 {
+	position: fixed;
+	top: 42%;
+	left: 10%;
+	opacity: 1;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 1.25vmax;
+	transform: translate(-50%, -50%);
+	color: black;
+	user-select:none;
+	display: inline;
+	white-space: nowrap;
+	text-decoration: none;
+	font-weight: bold;
+}
+#nimi {
+	position: fixed;
+	top: 90%;
+	left: 95%;
+	opacity: 1;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 1.25vmax;
+	transform: translate(-50%, -50%);
+	color: black;
+	user-select:none;
+	display: inline;
+	white-space: nowrap;
+	text-decoration: none;
+	font-weight: bold;
+}
+#repo {
+	position: fixed;
+	top: 95%;
+	left: 88%;
+	opacity: 1;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 1.25vmax;
+	transform: translate(-50%, -50%);
+	color: black;
+	user-select:none;
+	display: inline;
+	white-space: nowrap;
+	text-decoration: none;
+	font-weight: bold;
+}
+#nupp1:hover {
+	cursor: pointer;
+	font-size: 1.65vmax;
+}
+#nupp2:hover {
+	cursor: pointer;
+	font-size: 1.65vmax;
+
+}	
+#nupp20:hover {
+	cursor: pointer;
+	font-size: 1.65vmax;
+
+}
+#nupp3:hover {
+	cursor: pointer;
+	font-size: 1.65vmax;
+
+}	
+#nupp30:hover {
+	cursor: pointer;
+	font-size: 1.65vmax;
+
+}	
+#nupp10:hover {
+	cursor: pointer;
+	font-size: 1.65vmax;
+
+}		
+</style>
+<title>
+Sten-Erik Tool
+</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="clock.js" charset="utf-8">
+	</script>
+<script>
+function musicOn() {
+	document.getElementById("mp3").play();}
+
+function musicOff() {
+	document.getElementById("mp3").pause();}
+</script>
+<script>
+	var color = 1;
+	var colors = [
+		"red", "yellow", "green", "blue", "black", "red"
+	];
+
+	var ran = Math.round(Math.random()*6);
+
+	
+
+function changeClockColor(){	
+		switch(color) {
+		case 1:
+			document.getElementById('clock').style.color = colors[1];
+			color=2;
+			break;
+		case 2:
+			document.getElementById('clock').style.color = colors[2];
+			color=3;
+			break;
+		case 3:
+			document.getElementById('clock').style.color = colors[3];
+			color=4;
+			break;
+		case 4:
+			document.getElementById('clock').style.color = colors[4];
+			color=5;
+			break;			
+		case 5:
+			document.getElementById('clock').style.color = colors[0];
+			color=1;
+			break;
+		}
+	}
+	function changeDateColor(){	
+		switch(color) {
+		case 1:
+			document.getElementById('date').style.color = colors[1];
+			color=2;
+			break;
+		case 2:
+			document.getElementById('date').style.color = colors[2];
+			color=3;
+			break;
+		case 3:
+			document.getElementById('date').style.color = colors[3];
+			color=4;
+			break;
+		case 4:
+			document.getElementById('date').style.color = colors[4];
+			color=5;
+			break;			
+		case 5:
+			document.getElementById('date').style.color = colors[0];
+			color=1;
+			break;
+		}
+	}
+</script>
+<script>
+	var font = 1;
+	var fonts = ["2vmax 'Merriweather', monospace", "3vmax 'Merriweather', monospace", "5vmax 'Merriweather', monospace",
+	"6.5vmax 'Merriweather', monospace"	];
+
+	var ran = Math.round(Math.random()*4);
+
+function changeDateSize(){	
+		switch(font) {
+		case 1:
+			document.getElementById('date').style.font = fonts[1];
+			font=2;
+			break;
+		case 2:
+			document.getElementById('date').style.font = fonts[2];
+			font=3;
+			break;
+		case 3:
+			document.getElementById('date').style.font = fonts[3];
+			font=4;
+			break;
+		case 4:
+			document.getElementById('date').style.font = fonts[4];
+			font=5;
+			break;
+		case 5:
+			document.getElementById('date').style.font = fonts[0];
+			font=1;
+			break;
+			}
+		}
+function changeClockSize(){	
+		switch(font) {
+		case 1:
+			document.getElementById('clock').style.font = fonts[1];
+			font=2;
+			break;
+		case 2:
+			document.getElementById('clock').style.font = fonts[2];
+			font=3;
+			break;
+		case 3:
+			document.getElementById('clock').style.font = fonts[3];
+			font=4;
+			break;
+		case 4:
+			document.getElementById('clock').style.font = fonts[4];
+			font=5;
+			break;
+		case 5:
+			document.getElementById('clock').style.font = fonts[0];
+			font=1;
+			break;
+			}
+		}
+</script>
+</head>
+<body>
+    <div id="clock"></div>
+	<div id="date"></div>
+	<div id="nupp1" onClick="musicOn()">Music ON</div>
+	<div id="nupp10" onClick="musicOff()">Music Off</div>
+	<div id="nupp2" onClick="changeClockColor()">Clock color</div>
+	<div id="nupp20" onClick="changeDateColor()">Date color</div>
+	<div id="nupp3" onClick="changeClockSize()">Clock size</div>
+	<div id="nupp30" onClick="changeDateSize()">Date size</div>
+	<div id="nimi">Sten-Erik Tool</div>
+	<div id="repo">https://github.com/Toolsten/1.ea-kodutoo</div>
+	<audio id="mp3" src="Background-music.mp3" ></audio>
+</body>
+</html>
