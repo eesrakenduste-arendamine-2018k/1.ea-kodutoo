@@ -9,6 +9,12 @@ Kujunda kellan채ide vastavalt maitsele v천i kindlale teemale, mahutades kella t�
 ## Ekraanit천mmis
 ![ekraanitommis](https://scontent-arn2-1.xx.fbcdn.net/v/t35.0-12/28208024_10214457351204339_1768559493_o.jpg?oh=11003616c09f634f1fafded8c48ce998&oe=5A8C4D3F)
 
+## Funktsionaalsus
+
+- Kirjat체체bi muutmine
+- Taustapildi muutmine
+- Raadiokanali muutmine
+- Nimele vajutades avaneb link repositooriumisse
 
 ## N천uded
 
