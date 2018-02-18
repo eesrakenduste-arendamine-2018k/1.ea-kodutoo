@@ -1,0 +1,52 @@
+<!Doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Kell</title>
+		<link rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src="scripts.js"></script>
+		
+	</head>
+	
+	
+	<body id="taust" onLoad="renderTime();starting();"></body>
+	
+		<div id="clockDisplay"></div>
+		
+		<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var time = new Date().getHours();
+    var greeting;
+    if (time < 20) {
+        greeting = "Good day";
+    } else {
+        greeting = "Good evening";
+    }
+    document.getElementById("demo").innerHTML = greeting;
+	}
+</script>
+	
+</body>
+<body>
+		<script type="text/javascript">
+			var d = new Date();
+			var time = d.getHours();
+		
+			if (time < 12) 
+			  {
+			  document.write("<b>Good morning!</b>");
+			  }
+			if (time > 12) 
+			  {
+			  document.write("<b>Good afternoon!</b>");
+			  }
+			if (time == 12) 
+			  {
+			  document.write("<b>Go eat lunch!</b>");
+			  }
+			</script>
+</body>
+</html>
