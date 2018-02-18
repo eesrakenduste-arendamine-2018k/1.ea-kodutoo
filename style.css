@@ -1,0 +1,63 @@
+body {
+    background-image: url("bg2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.clock-container {
+    font-family: "Verdana";
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+
+}
+
+.container {
+
+	/*height: 150%;*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*border: 10px solid black;*/
+    background-color: rgba(255,255,255, 0.7);
+
+}
+
+.time {
+    font-size: 40px;
+}
+
+.date {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.change-btn {
+    border-width: 0;
+    border-color: white;
+    border-style: none;
+    padding: 10px;
+    background-color: rgba(217, 217, 217, 0.5);
+    width: 32.9%;
+}
+
+.change-btn:hover {
+    background-color: rgba(255,255,255, 0.7);
+}
+
+#logo {
+    position: fixed;
+    top: 100%;
+    left: 100%;
+    width: 200px;
+    transform: translate(-100%, -100%);
+}
+
