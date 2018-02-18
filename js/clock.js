@@ -38,7 +38,6 @@ function init () {
     settingsBarStatus = 'closed'
     document.getElementById('bgSelector').value = '#65b869'
     document.getElementById('textSelector').value = '#FFFFFF'
-    console.log(clockContainer)
 
     startClock()
 }
