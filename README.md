@@ -10,6 +10,7 @@ pole väga peensusteni langenud lehe kõigi elementide paika timmimisega.
 
 funktsionaalsus:
 * Saab panna mängima taustamuusika, mis on valitud tekitamaks õige meeleolu vastavalt autori ettekujutlusele.
+* Valikute menüüd saab peita/kuvada.
 * Kuupäeva suurust ja asukohta saab muuta lehe vasakul menüüs olevate nuppudega.
 * Kella suurust ja asukohta saab muuta lehe vasakul menüüs olevate nuppudega.
 * Tausta värv on muudetav, hetkel saab tausta värvi näha silmade värvi funktsiooniga, sest
@@ -26,4 +27,4 @@ Kell pole tehtud copy paste'ga kellegi teise tööst vaid nägin ise meeletult p
 Järgmine kord taolist ülesannet tehes kuluks kindlasti vähemalt poole vähem aega (kulus ikka tubli mitukümmend tundi selle tegemisele), kuna enamus ajast kulus mõistatamisele, 
 sest nii javascript kui CSS olid mõlemad minu jaoks täiesti tundmatud keeled.
 
-![alt tag](https://github.com/K3RTTAMM/1.ea-kodutoo/blob/master/lehenäidis.jpg)
+![alt tag](https://github.com/K3RTTAMM/1.ea-kodutoo/blob/master/demoimage.jpg)
