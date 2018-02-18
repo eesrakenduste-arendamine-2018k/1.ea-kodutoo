@@ -1,7 +1,7 @@
 # 1. kodutöö – Lauakell
 
 ## Ekraanipilt
-![siin peaks pilt olema](Capture.png)
+![Siin peaks pilt olema](https://github.com/TaaviMeinberg/1.ea-kodutoo/blob/master/Capture.PNG "Text")
 
 ## Autor
 Taavi Meinberg
