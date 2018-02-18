@@ -2,12 +2,13 @@
 
 Kevin Kodasma
 
-*Taustapilt https://www.upload.ee/image/8061459/Kella_screenshot.jpg
+*Taustapilt
 *Võimalus muuta kella suurust
 *Võimalus muuta kella ja kuupäeva värvi
 *Võimalus peita/tuua nähtavale kell ja kuupäev
 *Autori nimi
 *Link githubi
+Ekraani vaade - https://www.upload.ee/image/8061459/Kella_screenshot.jpg
 
 
 ## Tähtpäev 18.02.2018 23:59
