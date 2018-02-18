@@ -1,25 +1,32 @@
 body {
         font-family: 'Lato';
-        margin-top: 10%;
+        margin-top: 5%;
         text-align: center;
         color: #fff;
     }
-div {
+header {
+    transition: color 2s, font-size 2s;
+}
+header:hover {
+    color: #fff;
+    font-size: 55px;
+}
+#hex-color, #back-color {
     font-style: oblique;
     transition: font-size 2s, color 1s;
     }
 
-div:hover {
+#hex-color:hover, #back-color:hover{
     color: #fff;
     font-size: 55px;
 }
-/*
-#back-color:hover {
+
+#footer:hover{
     color: #fff;
     font-size: 55px;
 }
-*/
-#clock {
+
+#clock, #dayDate {
         font-weight: 300;
         font-size: 100px;
 
@@ -30,8 +37,9 @@ div:hover {
         
         transition: color 2s, font-size 2s;
     }
-#clock:hover {
-    font-size: 120px;
+#clock:hover, #dayDate:hover {
+    font-size: 110px;
     color: #fff
 }
+
 
