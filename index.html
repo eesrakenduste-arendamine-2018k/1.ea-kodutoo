@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Clock</title>
+  <script src="clock.js"></script>
+</head>
+<style type="text/css">
+body {
+  background-image: url("https://wallpaperscraft.com/image/firewood_timber_woodpile_119540_1920x1080.jpg");
+  background-size: cover;
+  font-family: "Copperplate Gothic Light";
+}
+#clock {
+  margin-top: 100px;
+  font-size: 80px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 900;
+	line-height: 46.4px;
+  text-decoration: underline;
+  text-align: center;
+  color:white;
+}
+#date {
+  margin-top: 200px;
+  ont-size: 70px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 25.4px;
+  text-decoration: underline;
+  text-align: center;
+  color:white;
+}
+small{
+  color:white;
+  position:absolute;
+  left:5px;
+  bottom:0px;
+}
+#link{
+  color:white;
+  position:absolute;
+  text-align: center;
+
+}
+
+#buttons{
+margin-left: 675px;
+width: 200px;
+}
+
+#size-up,#size-down,#link {
+    background-color:white;
+    border: none;
+    color: darkgrey;
+    padding: 15px 32px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+#size-up:hover,#size-down:hover,#link:hover{
+  background-color:darkgrey;
+}
+  </style>
+
+<body>
+
+    <div id="date"></div>
+
+    <div id="clock"></div><br>
+    <div id="buttons">
+    <button id="size-up" >+</button>
+    <button id="size-down" >-</button>
+    <br></div>
+    <a style = "margin-left: 725px; color: white;"href='https://github.com/kogerj/1.ea-kodutoo'>GitHub<br>
+    <small>Autor: Jaroslava Koger</small>
+</body>
+</html>
