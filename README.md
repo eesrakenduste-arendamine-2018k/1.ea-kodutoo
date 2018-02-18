@@ -14,6 +14,7 @@ Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella t�
 * Kõik muutused toimuvad sujuvalt animatsioonidega
 * Nimele vajutades pääseb repositooriumisse
 * vajutades H tähte peidab kõik peale tausta ning uuesti vajutades kuvab jälle kõik
+* vajutades G täähte jääb nähtavale vaid kell ja kuupäev
 
 ## Nõuded
 

@@ -4,7 +4,7 @@ let changeColorButton
 var day = 'True'
 var months = ['Jaanuar', 'Veebruar', 'Märts', 'Aprill', 'Mai', 'Juuni', 'Juuli', 'August', 'September', 'Oktoober', 'November', 'Detsember']
 var days = ['Pühapäev', 'Esmaspäev', 'Teisipäev', 'Kolmapäev', 'Neljapäev', 'Reede', 'Laupäev']
-
+var hideStat = 0;
 window.onload = function () {
   init()
 }
@@ -23,7 +23,7 @@ function init () {
 	.addEventListener('click', sizeDown)
 	
 	window.addEventListener('keypress', hideClock)
-	
+	window.addEventListener('keypress', hideRest)
 	document
 	.querySelector('#day')
 	.addEventListener('click', dayMode)
@@ -99,7 +99,22 @@ function sizeDown () {
 		console.log('Limiteeritud')
 	}
 }
-
+function hideRest() {
+	console.log(event)
+	if (event.key == 'g') {
+		if (hideStat == 0) {
+			console.log('peidan kõik peale kella');
+			document.getElementById('name').style.visibility = 'hidden';
+			buttons.style.visibility = 'hidden';
+			hideStat = 1;
+		} else {
+			console.log('leian elemendid');
+			document.getElementById('name').style.visibility = 'visible';
+			buttons.style.visibility = 'visible';
+			hideStat = 0;
+		}
+	}
+}
 function hideClock (event) {
 	console.log(event)
 	if (event.key == 'h') {
