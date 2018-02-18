@@ -4,18 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="design.css">
+  <title>Clock</title>
   <script src="clock.js"></script>
-  <style>
-	#clock {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-	}
-  </style>
 </head>
 <body>
+  <div id="day"></div>
   <div id="clock"></div>
-  <button id="change-position">Vaheta asukoht</button>
+  <div id="date"></div>
+  <div class="btn-group-vertical">
+    <button id="change-color" class="btn btn-outline-dark"><span>Vaheta kella värvi</span></button>
+    <button id="change-winpic" class="btn btn-outline-primary">Vaheta talve pilti</button>
+    <button id="change-spripic" class="btn btn-outline-success">Vaheta kevade pilti</button>
+    <button id="change-sumpic" class="btn btn-outline-danger">Vaheta suve pilti</button>
+    <button id="change-fallpic" class="btn btn-outline-warning">Vaheta sügise pilti</button>
+</div>
+</body>
 </body>
 </html>
