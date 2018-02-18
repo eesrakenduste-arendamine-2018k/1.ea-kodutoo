@@ -5,7 +5,7 @@ Autor: Kert Tamm
 Õuduka IT stiilis kell.
 
 NB!!! Palun kasutada lehe vaatamiseks Google Chrome'i (Firefox peal pole enamus funktsionaalsustest olemas ja Microsoft Edge'il ei tööta näiteks audio)
-Kindlasti võib tekkida ka mõningaid väiksemaid probleeme seoses erinevate ekraanidega lehte kuvades, kuna seda sai testitud ainult 1920x1080resolutsiooniga ja 
+Kindlasti võib tekkida ka mõningaid väiksemaid probleeme seoses erinevate ekraanidega lehte kuvades, kuna seda sai testitud ainult 1920x1080 resolutsiooniga ekraaniga ja 
 pole väga peensusteni langenud lehe kõigi elementide paika timmimisega.
 
 funktsionaalsus:
