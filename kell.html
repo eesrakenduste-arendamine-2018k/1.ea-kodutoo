@@ -1,0 +1,137 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<header></header>
+	<meta charset="UTF-8" />
+	<title>Kell</title>
+	<style>
+		html {
+  height: 100%;
+}
+		body {
+			background-size:     cover;                      /* <------ */
+			background-repeat:   no-repeat;
+			background-position: center center;              /* optional, center the image */
+			height: 100%;
+			opacity: 0.5;
+			
+	}
+</style>
+	<script>
+	
+		
+	
+	
+		// kuulame lehe valmis laadimist
+		window.onload = function () {
+		
+			//alert('Leht on laetud.');
+			console.log('Leht on laetud.')
+		
+			trukiKell();
+
+			setInterval(function () {
+			
+				trukiKell();
+			
+			}, 5);
+			var algSuurus = 16;
+            var Suurus = algSuurus;
+			document.getElementById('suurus').addEventListener('click', function (event) {
+				
+					Suurus = Suurus * 1.2;
+					//console.log(event);
+					document.getElementById('asukoht').style.fontSize = Suurus + "px";
+			});
+            document.getElementById('algneSuurus').addEventListener('click', function (event) {
+				
+                Suurus = algSuurus;
+                //console.log(event);
+                document.getElementById('asukoht').style.fontSize = Suurus + "px";
+			});
+		}
+
+	
+		
+		
+		var juhu_varv = function () {
+		
+			var r = Math.round(Math.random()*255); //1-255
+			var g = Math.round(Math.random()*255); //1-255
+			var b = Math.round(Math.random()*255); //1-255
+
+		var juhuslik_varv = "rgb("+r+","+g+","+b+")";
+		document.body.style.color = juhuslik_varv
+		
+		
+		}
+		// kella tr�kkimis funktsioon p#asukoht
+		
+		
+		var trukiKell = function () {
+		
+			var kell = new Date();
+			
+			var kuud = kell.getMonth();
+			var kuupaevad = kell.getDate();
+			var tunnid = kell.getHours();
+			var minutid = kell.getMinutes();
+			var sekundid = kell.getSeconds();
+			var millisekundid = kell.getMilliseconds();
+			var nadalapaevad =  ["Pühapäev", 'Esmaspäev', 'Teisipäev', 'Kolmapäev', 'Neljapäev', 'Reede', 'Laupäev'];
+			var kuunimetused =  ["jaanuar", 'veebruar', 'märts', 'aprill', 'mai', 'juuni', 'juuli', 'august', 'september', 'oktoober', 'november', 'detsember'];
+			
+			var np = kell.getDay()
+			
+		
+			
+			
+			 
+			var ilusKell = nadalapaevad[np] + ' ' + nullEtte(tunnid) + ':' + nullEtte(minutid) + ':' + nullEtte(sekundid) + ', ' + nullEtte(kuupaevad) + '. ' + kuunimetused[kuud]
+			
+			
+			
+			document.getElementById('asukoht').innerHTML = ilusKell;
+			
+		}
+
+		var nullEtte = function (number) {
+		
+			if (number < 10) {
+			
+					number = "0" + number;
+			
+			}
+		
+			return number;
+		
+		}
+		
+		document.getElementById('suurus');
+		
+		
+	
+		
+	</script>
+</head>
+<body style="background-image: url(https://mariadissertation.files.wordpress.com/2013/12/picture-2sahding.png);">
+
+
+		<center>
+		<button id="Color" onclick="juhu_varv()">COLOR</button>
+        <button id="suurus" onclick="trukiKell()">SIZE UP</button>
+		<button id="algneSuurus" onclick="trukiKell()">RESIZE</button>
+		<button id="changeSpot" onclick="juhu_koht()">CHANGE LOCATION</button>
+		</center>
+		<center>
+			<div id="kell" style="margin-top: 10%;">
+			<H1 font="arial" size="40px">AEG EESTIS</H1>
+			<p id="asukoht"></p>
+			<H2 font="arial" style="color:aliceblue">Hendrik Heinsar</H2>
+			<a href="https://github.com/HendrikHeinsar/1.ea-kodutoo" style="color:aliceblue">repositoorium</a>
+			</div>
+		</center>
+	
+</body>
+</html>
