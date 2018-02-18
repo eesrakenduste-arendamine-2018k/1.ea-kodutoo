@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Clock</title>
+  <script src="clock.js"></script>
+ 
+</head>
+<body>
+
+  <select id="time" class="input" onchange="changeBackground(this);">
+    <option value="day">Päev</option>
+    <option value="night">Öö</option>
+  </select>
+  <select id="color"  class="input" onchange="changeColor(this);">
+    <option value="default">Vali värv</option>
+    <option value="black">must</option>
+    <option value="blue">sinine</option>
+    <option value="red">punane</option>
+    <option value="green">roheline</option>
+  </select>
+  
+  <button id="bigger" onclick="changeSizeBigger()" >Suuremaks</button>
+  <button id="smaller" onclick="changeSizeSmaller()" >Väiksemaks</button><br>
+  <div id="clock"></div>
+  <style>
+body{
+    color: white;
+    background-image: url("pics/haapsalukallas.jpg");
+    background-size: 100%;
+  }
+  p, a{
+    text-align: bottom-left;
+    font-size: 20px;
+    color: white;
+  }
+  button, select{
+    text-align: left;
+	border-radius: 12px;
+	padding: 5px 10px;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  #clock {
+    color:white;
+	position: relative;
+	padding: 200px 0;
+    text-align: center;
+    font-size: 200px;
+    text-shadow: 3px 3px 3px rgb(146, 142, 133);
+    font-family: 'Nanum Myeongjo', serif;
+}
+</style>  
+  <p><a href="https://github.com/julimai/1.ea-kodutoo">Julika Maiste</a></p>
+</body>
+</html>
