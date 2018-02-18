@@ -152,8 +152,8 @@ function changeClockColor(){
 	}
 
 	var font = 1;
-	var fonts = ["2vmax 'Merriweather', monospace", "3vmax 'Merriweather', monospace", "5vmax 'Merriweather', monospace",
-	"6.5vmax 'Merriweather', monospace"	];
+	var fonts = ["2vmax 'Verdana, Geneva, sans-serif'", "3vmax 'Verdana, Geneva, sans-serif'", "5vmax 'Verdana, Geneva, sans-serif'",
+	"6.5vmax 'Verdana, Geneva, sans-serif'"	];
 
 	var ran = Math.round(Math.random()*4);
 
@@ -161,48 +161,58 @@ function changeDateSize(){
 		switch(font) {
 		case 1:
 			document.getElementById('date').style.font = fonts[1];
+            document.getElementById('date').style.fontStyle='italic';
 			font=2;
 			break;
 		case 2:
 			document.getElementById('date').style.font = fonts[2];
+            document.getElementById('date').style.fontStyle='italic';
 			font=3;
 			break;
 		case 3:
 			document.getElementById('date').style.font = fonts[3];
+            document.getElementById('date').style.fontStyle='italic';
 			font=4;
 			break;
 		case 4:
 			document.getElementById('date').style.font = fonts[4];
+            document.getElementById('date').style.fontStyle='italic';
 			font=5;
 			break;
 		case 5:
 			document.getElementById('date').style.font = fonts[0];
+            document.getElementById('date').style.fontStyle='italic';
 			font=1;
 			break;
 			}
-		}
+}
 function changeClockSize(){	
 		switch(font) {
 		case 1:
 			document.getElementById('clock').style.font = fonts[1];
+            document.getElementById('clock').style.fontStyle='italic';
 			font=2;
 			break;
 		case 2:
 			document.getElementById('clock').style.font = fonts[2];
+            document.getElementById('clock').style.fontStyle='italic';
 			font=3;
 			break;
 		case 3:
 			document.getElementById('clock').style.font = fonts[3];
+            document.getElementById('clock').style.fontStyle='italic';
 			font=4;
 			break;
 		case 4:
 			document.getElementById('clock').style.font = fonts[4];
+            document.getElementById('clock').style.fontStyle='italic';
 			font=5;
 			break;
 		case 5:
 			document.getElementById('clock').style.font = fonts[0];
+            document.getElementById('clock').style.fontStyle='italic';
 			font=1;
 			break;
 			}
-		}
+}
 
