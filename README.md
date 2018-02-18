@@ -13,7 +13,7 @@
 
 
 ## SCREENSHOTS: ##   
-![Screenshot 1](screens/screen1.png "Regular")  
+![Screenshot 1](screens/screen1.PNG "Regular")  
 ![Screenshot 1](screens/screen2.png "Night mode + Date hidden + Fullscreen + Authors name colored for better visibility")  
 
 
