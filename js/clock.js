@@ -39,7 +39,6 @@ function init () {
     document.getElementById('bgSelector').value = '#65b869'
     document.getElementById('textSelector').value = '#FFFFFF'
     console.log(clockContainer)
-    console.log(language)
 
     startClock()
 }
@@ -89,10 +88,6 @@ function startClock () {
             ' ' + dateYear
         dateContainer.innerHTML = dateText
         dayContainer.innerHTML = dayName
-        console.log(selectedFormat)
-        console.log(amPm)
-        console.log(hours)
-        console.log(hours12h)
     }, 1000)
 }
 
@@ -161,7 +156,6 @@ function settingsSet(){
         selectedFormat = '24'
     } else if (document.getElementById('formatText12h').checked){
         selectedFormat = '12'
-        console.log('12 valitud')
     }
 }
 
