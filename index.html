@@ -31,7 +31,7 @@
         color:rgb(210, 242, 248);
        
     }
-    div.buttons1{
+    div.StyleChange{
     position: absolute;
     bottom: 20px;
     left: 16px;
@@ -39,14 +39,14 @@
 
       
     }    
-    div.buttons2{
+    div.Author{
       position: absolute;
       right: 0px;
       bottom: 0px;
       
       color: rgb(210, 242, 248);
     }
-    div.buttons3{
+    div.SizeChange{
       width:100%;
 
       position:fixed;
@@ -57,7 +57,12 @@
  
       
     }
-     #change-color, #myColor, #size-up, #size-down, #font-style, #git{
+     #change-color, 
+     #myColor, 
+     #size-up, 
+     #size-down,
+      #font-style,
+       #git{
     background-color:rgb(161, 216, 248);
     opacity: 0.6;
     border: none;
@@ -77,18 +82,18 @@
   <div class = "clock"  id="clock"></div>
   <div id="date"></div>
   
-  <div class ="buttons1" id ="buttons1">
+  <div class ="StyleChange" id ="StyleChange">
   <button id="change-color" >New color?</button>
   <input type="color" id="myColor">
   <button id="font-style" >New font?</button>
   </div>
   
-  <div class ="buttons2">
+  <div class ="Author">
   <button id="git" onclick="window.location.href='https://github.com/KertuMikk/1.ea-kodutoo.git'">GitHub</button>
   <p>Kertu Mikk</p>
   </div>
   
-<div class="buttons3" id="buttons3">
+<div class="SizeChange" id="SizeChange">
 <button id="size-up" >+</button>
 <button id="size-down" >-</button>
 </div>

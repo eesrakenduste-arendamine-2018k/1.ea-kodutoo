@@ -2,8 +2,8 @@
 let clockContainer 
 let dateContainer
 let changeColorButton 
-let buttons1
-let buttons3
+let StyleChange
+let SizeChange
 
 window.onload = function () {
   init()
@@ -11,8 +11,8 @@ window.onload = function () {
 
 function init () {
   clockContainer = document.querySelector('#clock')
-  buttons1 = document.querySelector('#buttons1') 
-  buttons3 = document.querySelector('#buttons3')
+  StyleChange = document.querySelector('#StyleChange') 
+  SizeChange = document.querySelector('#SizeChange')
   console.log(clockContainer)
   dateContainer = document.querySelector('#date')
   console.log(dateContainer)
@@ -34,8 +34,8 @@ function hideClock(event){
     if(event.key =='h'){
   clockContainer.style.display = 'none'
   dateContainer.style.display = 'none'
-  buttons1.style.display = 'none'
-  buttons3.style.display = 'none'
+  StyleChange.style.display = 'none'
+  SizeChange.style.display = 'none'
 }
   }
   function showClock(event){
@@ -43,8 +43,8 @@ function hideClock(event){
     if(event.key =='s'){
   clockContainer.style.display = 'block'
   dateContainer.style.display = 'block'
-  buttons1.style.display = 'block'
-  buttons3.style.display = 'block'}
+  StyleChange.style.display = 'block'
+  SizeChange.style.display = 'block'}
   }
   
 function changeColor () {
