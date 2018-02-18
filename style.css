@@ -1,0 +1,37 @@
+body {
+        font-family: 'Lato';
+        margin-top: 10%;
+        text-align: center;
+        color: #fff;
+    }
+div {
+    font-style: oblique;
+    transition: font-size 2s, color 1s;
+    }
+
+div:hover {
+    color: #fff;
+    font-size: 55px;
+}
+/*
+#back-color:hover {
+    color: #fff;
+    font-size: 55px;
+}
+*/
+#clock {
+        font-weight: 300;
+        font-size: 100px;
+
+        /*Erinevate browserite transition-id, aga hetkel toimib ka ilma.
+        -webkit-transition: color 2s, font-size 2s;
+        -moz-transition: color 2s, font-size 2s;
+        -o-transition: color 2s, font-size 2s;*/
+        
+        transition: color 2s, font-size 2s;
+    }
+#clock:hover {
+    font-size: 120px;
+    color: #fff
+}
+
