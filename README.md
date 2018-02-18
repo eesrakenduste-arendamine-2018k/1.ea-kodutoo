@@ -2,10 +2,15 @@
 
 Autor: Grete Ojavere
 
-![screen shot 2018-02-18 at 18 54 41](https://user-images.githubusercontent.com/31847425/36354517-6c165cbc-14de-11e8-8395-be2940f61385.png)
+Kasutaja saab:
+ - Valida kahe tausta vahel(päev/öö)
+ - Muuta kirjastiili
+ - Muuta kella suurust
 
+Pildid erinevatest valikutest: 
+(https://user-images.githubusercontent.com/31847425/36354517-6c165cbc-14de-11e8-8395-be2940f61385.png)
 
-![screen shot 2018-02-18 at 18 54 23](https://user-images.githubusercontent.com/31847425/36354526-9643d262-14de-11e8-8afe-377b33fa287f.png)
+(https://user-images.githubusercontent.com/31847425/36354526-9643d262-14de-11e8-8afe-377b33fa287f.png)
 
 ## Tähtpäev 18.02.2018 23:59
 
