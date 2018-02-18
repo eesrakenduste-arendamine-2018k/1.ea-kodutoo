@@ -6,7 +6,7 @@ Autor: Erik Enden
 
 ## Funktsionaalsus
 
-Võimalik muuta lehe keelt, taustavärvi, teksti värvi, aja ning kuupäeva formaati ning lisada taustapilti.
+Võimalik muuta lehe keelt, taustavärvi, teksti värvi, aja formaati ning lisada taustapilti.
 
 
 

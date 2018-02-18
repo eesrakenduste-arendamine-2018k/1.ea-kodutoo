@@ -6,6 +6,7 @@ body {
     font-family: 'Barlow Condensed', sans-serif;
     margin: 0px;
     overflow-x: hidden;
+    background-size: cover;
 }
 .content{
     height: 100%;
@@ -130,4 +131,7 @@ body {
     border: 0;
     font-size: 30px;
     color: #ffffff;
+}
+#backgroundImgInput {
+    width: 100%;
 }

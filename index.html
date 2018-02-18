@@ -21,6 +21,8 @@
                     <input type="color" class="dropdownButtons" id="bgSelector">
                     <p id="colorText"></p>
                     <input type="color" class="dropdownButtons" id="textSelector">
+                    <p id="backgroundImgText">Lingi taust</p>
+                    <input type="text" id="backgroundImgInput">
                     <p id="timeFormat"></p>
                     <div class="timeFormatLabelContainer">
                         <span>24h</span>
@@ -36,10 +38,9 @@
     </div>
     <div class="content">
         <div class="barButtonCont">
-                <button id="settingsBarButton" onclick="settingsBarArrowChange()">
+                <button id="settingsBarButton" onclick="displaySettings()">
                 </button>
         </div>
-
         <div class="day" id="day">
 
         </div>
@@ -48,9 +49,7 @@
         <div class="clock" id="clock">
             <span class="time" id="time"></span>
         </div>
-        
     </div>
-
     <div class="footer">
         <span class="footerName">Autor: Erik Enden</span>
     </div>
