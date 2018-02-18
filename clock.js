@@ -36,9 +36,8 @@ function changeColor () {
 	clock.style.transition = "color 0.6s ease-out 0s";
 	date.style.transition = "color 0.6s ease-out 0s";
 	var color = '#' + Math.floor(Math.random() * 16777215).toString(16)
-	clock.style.color = color
-	date.style.color = color
-	name.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16)
+	clock.style.color = color;
+	date.style.color = color;
 }
 
 function dayMode() {
@@ -104,12 +103,18 @@ function sizeDown () {
 function hideClock (event) {
 	console.log(event)
 	if (event.key == 'h') {
-		if (clock.style.display != 'none') {
+		if (clock.style.visibility != 'hidden') {
 		console.log('peidan kella');
-		innercont.style.display = 'none';
+		clock.style.visibility = 'hidden';
+		document.getElementById('name').style.visibility = 'hidden';
+		date.style.visibility = 'hidden';
+		buttons.style.visibility = 'hidden';
 		} else {
-		innercont.style.display = 'normal';
 		console.log('leian kella');
+		clock.style.visibility = 'visible';
+		document.getElementById('name').style.visibility = 'visible';
+		date.style.visibility = 'visible';
+		buttons.style.visibility = 'visible';
 		}
 	}
 }
@@ -127,13 +132,13 @@ function updateClock () {
 	if (d.getMinutes()>9 && d.getHours()>9){
 		var displayTime = d.getHours() + ":" + d.getMinutes();
 	}
-	if (d.getMinutes()>9 && d.getHours()<9)	{
+	if (d.getMinutes()>9&& d.getHours()<10)	{
 		var displayTime = "0"+d.getHours() + ":" + d.getMinutes();
 	}
-	if (d.getMinutes()<9 && d.getHours()<9)	{
+	if (d.getMinutes()<10 && d.getHours()<10)	{
 		var displayTime = "0"+d.getHours() + ":0" + d.getMinutes();
 	}
-	if (d.getMinutes()<9 && d.getHours()>9) {
+	if (d.getMinutes()<10 && d.getHours()>9) {
 		var displayTime = d.getHours() + ":" + "0" + d.getMinutes();
 	}
 	//document.getElementById("clock").innerHTML = d.toLocaleTimeString('et-et');
