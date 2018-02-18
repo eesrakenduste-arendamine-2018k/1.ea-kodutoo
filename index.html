@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="clock.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div id="flex-container">
+      <div id="outer">
+        <div id="clock" class="clock"></div>
+        <div class="social-btn-list">
+            <div id="date" class="date">
+            </div>
+            <div class="social-icon">
+              <a href="https://www.facebook.com" target="blank"><img src="assets/facebook-logo.png" alt="FB-icon"></a>
+            </div>
+            <div class="social-icon">
+              <a href="https://www.instagram.com" target="blank"><img src="assets/instagram-logo.png" alt="Instagram-icon"></a>
+            </div>
+            <div class="social-icon">
+                <a href="https://gmail.google.com" target="blank"><img src="assets/telegram-logo.png" alt="Gmail-icon"></a>
+            </div>
+            <div class="social-icon">
+                <a href="https://www.youtube.com" target="blank"><img src="assets/youtube-logo.png" alt="Youtube-icon"></a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="settings-btn-list">
+        <input type="button" class="custom-btn" value="fullscreen" onclick="toggleFullScreen()">
+        <input type="button" class="custom-btn" value="day" onclick="toggleBackgroundDay()">
+        <input type="button" class="custom-btn" value="night" onclick="toggleBackgroundNight()">
+        <input type="button" class="custom-btn" value="date" onclick="dateTransaprent()">
+        <input type="button" class="custom-btn" value="github" onclick="location.href='https://github.com/stenverkoop/1.ea-kodutoo'">
+        <input id="demo" type="button" class="custom-btn" value="tegi: stenver kööp" onclick="myFunction()">
+    </div>
+</body>
+</html>

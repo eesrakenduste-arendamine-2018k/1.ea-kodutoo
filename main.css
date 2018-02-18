@@ -1,0 +1,106 @@
+body, html {
+    height: 100%;
+    background-image: url(assets/bg-photo40.jpg);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-color: #999;
+    overflow: hidden;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+  
+#flex-container {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-box-flex-direction: row;
+    -moz-box-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    height:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+
+#clock {
+    color: white;
+    width: auto;
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Bungee Shade', cursive;
+
+}
+
+#date {
+    color: white;
+    width: auto;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Helvetica', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+
+#outer {
+    width: auto;
+    margin: auto;
+    width: 400px;
+
+}
+
+.social-icon img {
+    width: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.social-icon {
+    display:inline-block;
+    padding-bottom:20px;
+
+}
+
+.social-btn-list {
+    width: auto;
+    margin: auto;
+    text-align: center;
+    border-top: 4px solid #fff;    
+}
+
+.custom-btn {
+    margin-top: 15px;
+    font-family: 'Helvetica', sans-serif;
+    color: #c5c5c5;
+    background: none;
+    outline: none;
+    border: none;
+    
+}
+
+.settings-btn-list {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+/* Photo by André Cook from Pexels https://www.pexels.com/photo/clouds-daylight-environment-forest-396714/ */
+/* Icons made by http://www.freepik.com from https://www.flaticon.com/ */
