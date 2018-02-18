@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="buttons.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="clock.js"></script>
-    <script src="colorButtons.js"></script>
+    <script src="menuButtons.js"></script>
 </head>
 <body>
 
@@ -17,10 +17,11 @@
 <audio controls loop>
 <source src="scary.mp3" type="audio/ogg">
 </audio>
+<!-- Display date/clock/menu hide/show button-->
     <div id="Date" class="date1"></div>
     <div id="clock" class="clockClass"></div>  
     <div class="btn-group"></div>
-    <button class="button" onclick="menuHiding()">SHOW/HIDE MENU</button>
+    <button class="menuHide" onclick="menuHiding()">SHOW/HIDE MENU</button>
     <div id="div2">
 <!--Eye color buttons-->
     <div class="btn-group">
@@ -56,7 +57,6 @@
     <button class="button" onclick="moveClockRight()" id="clockRight";>CLOCK RIGHT</button>
     </div>
     </div>
-
     <footer>
         <authorName>Made by Kert Tamm</authorName>
         <authorRepoLink>
