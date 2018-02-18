@@ -24,7 +24,7 @@ siis muutub tegelikult terve tausta värv, kuid kuna ainult silmad on tehtud lä
 * Autori nimi on kuvatud lehe all keskel.
 
 Kell pole tehtud copy paste'ga kellegi teise tööst vaid nägin ise meeletult palju vaeva ja õppisin ka hämmastavalt palju tänu sellele. 
-Järgmine kord taolist ülesannet tehes kuluks kindlasti vähemalt poole vähem aega (kulus ikka tubli mitukümmend tundi selle tegemisele), kuna enamus ajast kulus mõistatamisele, 
+Järgmine kord taolist ülesannet tehes kuluks kindlasti vähemalt poole vähem aega (kulus ikka tubli mitukümmend tundi selle tegemisele), kuna enamus ajast kulus mõistatamisele ja igasugu erinevate asjade testimisele ja proovimisele, 
 sest nii javascript kui CSS olid mõlemad minu jaoks täiesti tundmatud keeled.
 
 ![alt tag](https://github.com/K3RTTAMM/1.ea-kodutoo/blob/master/demoimage.jpg)
