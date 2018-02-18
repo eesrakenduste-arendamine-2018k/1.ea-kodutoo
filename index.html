@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Clock</title>
+  <script src="clock.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Bellefair|Cormorant|Kavivanar|Poiret+One');
+  </style>
+ 
+</head>
+<body>
+  <h3> Grete Ojavere</h3>
+  <p><a href="https://github.com/GreteO/1.ea-kodutoo">Repo</a></p>
+  <select id= "time" class="input" onchange="changeBackground(this);">
+    <option value="day">Day</option>
+    <option value="night">Night</option>
+  </select><br>
+  <select id="font"  class="input" onchange="changeFont(this);">
+    <option value="default">Choose font</option>
+    <option value="cormorant">Cormorant</option>
+    <option value="poiret">Poiret One</option>
+    <option value="bellefair">Bellefair</option>
+    <option value="kavivanar">Kavivanar</option>
+  </select>
+  <br>
+  <button onclick="changeSizeBigger()" >Bigger font</button><br>
+  <button onclick="changeSizeSmaller()" >Smaller font</button><br>
+  <div id="clock"></div>
+    
+  <style>
+  body{
+    color: white;
+    background-image: url("http://www.wallcoo.net/flower/Pure_Sweet_Wildflowers_3_1920x1200/wallpapers/1920x1200/Soft_focus_sweet_flowers_JK090_350A.jpg");
+    background-size: 100%;
+  }
+  h3{
+    text-align: "left";
+    font-size: 20px;
+    color: white;
+  }
+  button{
+    text-align: "left";
+  }
+
+  #clock {
+    color:white;
+    text-align: center;
+    font-style: "white";
+    font-size: 70px;
+    text-shadow: 3px 3px 3px rgb(146, 142, 133);
+    font-family: 'Cormorant', serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Bellefair', serif;
+    font-family: 'Nanum Myeongjo', serif;
+
+}
+</style>
+</body>
+</html>
