@@ -42,13 +42,6 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
-.links {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    list-style-type: none;
-    margin: 0;
-}
 .githubLogo {
     height: 32px;
     justify-content: flex-end;
@@ -59,9 +52,6 @@ body {
     width: 100%;
     margin: 0;
     padding-left: 0;
-}
-.float-right {
-    justify-content: flex-end;
 }
 .footer{
     position: absolute;
@@ -97,9 +87,6 @@ body {
     padding-right: 2%;
     padding-bottom: 1%;
     text-align: center;
-}
-.show{
-    display: block;
 }
 .noshow{
     display: none;
