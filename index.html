@@ -4,10 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <script src="clock.js"></script>
+  <title>Kertu kell</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  
 </head>
 <body>
-  <div id="clock"></div>
+  <canvas id="c"></canvas>
+  <main>
+    <div class="date">
+      <div class="dateWeekday"></div>
+      <div class="dateDate"></div>
+    </div>
+    <div class="button">
+      <button class="buttonColor">Vaheta kella värvi</button>
+      <button class="buttonFont">Kui Arial on su lemmik</button>
+    </div>
+    <div class="barClock">
+      <div class="barClockHour"><div class="time"></div></div>
+      <div class="barClockMinutes"><div class="time"></div></div>
+      <div class="barClockSeconds"><div class="time"></div></div>
+    </div>
+    <div>
+      <div class="clockTime"></div>
+    </div>
+    <div class="author">
+      <h1>Kertu Kipper</h1>
+      <a href="https://github.com/phkel/1.ea-kodutoo" target="_blank">repositoorium</a>
+    </div>
+  </main>
+  <script src="clock.js"></script>
 </body>
 </html>
