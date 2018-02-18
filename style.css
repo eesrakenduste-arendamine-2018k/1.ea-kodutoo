@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  background-color: #a36363; 
+  text-align: center;
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: grey;
+}
+
+.creator {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+#txt {
+  font-size: 100px;
+  margin-bottom: 80px;
+}
+
+.dayOfWeek, .date {
+  font-size: 28px;
+}
+
+.date {
+  margin-bottom: 160px;
+}
