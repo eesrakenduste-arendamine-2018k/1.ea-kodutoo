@@ -114,12 +114,12 @@ function BackgroundPic() {
     const date = new Date()
     let h = date.getHours()
 
-    if (h >= 20 && h < 6) {
+    if (h >= 0 && h < 7 || h >= 21 && h <= 23) {
         ~~(Math.random()*2) ? document.getElementById("html").style.backgroundImage = images[6]
          : document.getElementById("html").style.backgroundImage = images[7]
     }
 
-    if (h >= 6 && h < 10) {
+    if (h >= 7 && h < 10) {
         ~~(Math.random()*2) ? document.getElementById("html").style.backgroundImage = images[0]
          : document.getElementById("html").style.backgroundImage = images[1]
     }
@@ -129,7 +129,7 @@ function BackgroundPic() {
          : document.getElementById("html").style.backgroundImage = images[3]
     }
 
-    if (h >= 18 && h> 20) {
+    if (h >= 18 && h < 21) {
         ~~(Math.random()*2) ? document.getElementById("html").style.backgroundImage = images[4]
          : document.getElementById("html").style.backgroundImage = images[5]
     }
