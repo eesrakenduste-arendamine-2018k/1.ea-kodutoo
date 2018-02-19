@@ -3,7 +3,7 @@
 Autor: Oskar Juksar
 Funktsionaalsus: Suuruse muutmine, tausta muutmine, peitmine ja nähtavaks tegemine
 <img src="https://imgur.com/a/n2Sgl">
-<img src="https://imgur.com/a/VWCuY">
+<img src="https://imgur.com/6AXJ8YN">
 
 ## Tähtpäev 18.02.2018 23:59
 
