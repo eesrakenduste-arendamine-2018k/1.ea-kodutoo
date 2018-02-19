@@ -2,7 +2,7 @@
 
   Autor : Hendrik Heinsar
 
-![iksde](https://user-images.githubusercontent.com/31885509/36358530-b22de406-1518-11e8-9186-472695885a3a.jpg)
+![iksde](https://user-images.githubusercontent.com/31885509/36358618-e56697a4-1519-11e8-9ac6-0cee902e4abe.jpg)
 
 ## Nõuded
 
