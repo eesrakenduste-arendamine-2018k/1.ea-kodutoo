@@ -1,0 +1,35 @@
+#clockDateBorder {
+	margin: center;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+	background-color: black;
+	font-family: Courier New;
+	color: limegreen;
+}
+
+#clock {
+	font-size: 60px
+}
+
+#date {
+	font-size: 60px
+}
+
+body{
+	background-color: lightblue;
+}
+
+#clockDateBorderUsa {
+	margin: center;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+	background-color: black;
+	font-family: Courier New;
+	color: limegreen;
+}
+
+#clockUsa {
+	font-size: 60px
+}

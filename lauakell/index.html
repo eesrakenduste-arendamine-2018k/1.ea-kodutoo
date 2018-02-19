@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kell</title>
+  <script src="clock.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<header>
+	<address>Töötav arvutikell lisafunktsioonidega</address>
+	<br>
+</header>
+<body onload="startTime(), startTimeUsa()">
+<div id="clockDateBorder">
+<div id="clock"></div>
+<div id="date"></div>
+</div>
+<div id="player">
+    <audio autoplay hidden>
+     <source src="hellouser.mp3" type="audio/mp3">
+                Teie brauser ei toeta sellist muusikafaili. 
+    </audio>
+</div>
+<br>
+<input type="button" value="Press to change background color" onclick="backgroundColor()">
+<input type="button" value="Press to change European clock color" onclick="javascript:changeClockStyle();">
+<input type="button" value="Press to change European date color" onclick="javascript:changeDateStyle();">
+<br>
+<br>
+<div id="clockDateBorderUsa">
+<div id="clockUsa"></div>
+</div>
+<br>
+<input type="button" value="Press to change American clock color" onclick="javascript:changeClockStyleUsa();">
+</body>
+<footer>
+	<br>
+	<address>Autor: Markus Heinsalu</address>
+	<a href="https://github.com/heinsalum/1.ea-kodutoo">Külastage minu GitHub repositooriumit!</a>
+	<address>Taustamuusika kuulub omanikule: Microsoft Corporation</address>
+</footer>
+</html>
