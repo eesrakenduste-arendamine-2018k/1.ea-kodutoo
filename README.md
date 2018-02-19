@@ -1,5 +1,14 @@
 # 1. kodutöö – Lauakell
 
+Autor: Sander Lukas
+
+Kellale on lisatud kolm eventlistener'i:
+  1) Klaviatuuri "w" ja "s" nuppudega saab kirja suuremaks teha ja siis ka taasta algne.
+  2) Vajutades vasakpoolset hiirenuppu muutub tausta värv.
+  3) Vajutades kellaaja peale muutub selle formaat(12h/24h).
+
+Ekraanipilt: http://greeny.cs.tlu.ee/~lukasand/kodutoo.PNG
+
 ## Tähtpäev 18.02.2018 23:59
 
 Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella täisekraanile, et saaks kasutada lauakella või ekraanisäästja asemel. Selleks, et see sobiks paljudele ekraanidele, kasuta kujunduse loomisel protsendilisi väärtusi (nt width: 100%; ) või nt võimalda kella suurust kasutajal muuta.
