@@ -2,12 +2,11 @@
 
 Autor: Markus Heinsalu
 
-Ekraanitõmmis kellast: https://imgur.com/a/C25RO
+Ekraanitõmmis kellast: https://imgur.com/a/rGmGC
 
 Kella võimalused:
 
-1. Muuta kella teksti värvi sisestades värv(näiteks: hotpink)
-2. Muuta lehekülje taustavärvi sisestades värv(näiteks: hotpink)
-***3. Muuta kella formaati vajutades nuppu(kui vajutad nuppu, siis kell läheb AM/PM süsteemile)
-
-DISCLAIMER: Funktsioon 3 ei hakanud tööle, tekkis ainult tühi kast. :-(
+1. Näitab kella Ameerika kui ka Euroopa formaadis. Kuvatakse ka kuupäev.
+2. Eraldi saab vahetada värve nii kellel kui ka kuupäeval(nii Ameerika kui ka Euroopa kellal).
+3. Vahetada saab taustavärvi sisestades kasutaja soovitud värv kasti(näiteks: hotpink).
+4. Taustal jookseb "Hello" muusika. 
