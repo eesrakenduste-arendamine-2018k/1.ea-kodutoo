@@ -1,6 +1,9 @@
 # 1. kodutöö – Lauakell
 
-Autor: Romil Rõbtšenkov 
+Autor: Oskar Juksar
+Funktsionaalsus: Suuruse muutmine, tausta muutmine, peitmine ja nähtavaks tegemine
+<img src="https://imgur.com/a/n2Sgl">
+<img src="https://imgur.com/a/VWCuY">
 
 ## Tähtpäev 18.02.2018 23:59
 
