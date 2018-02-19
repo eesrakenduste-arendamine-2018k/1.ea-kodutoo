@@ -1,8 +1,3 @@
-//avalikud muutujad
-
-let changeLocationButtonDown;
-let changeLocationButtonRigtht;
-
 //kell ja kuupäev
 
 function startTime() {
