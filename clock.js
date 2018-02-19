@@ -13,7 +13,7 @@ function init () {
     dateContainer = document.querySelector('#time')
     console.log(clockContainer)
 
-    BackroundPic()
+    BackgroundPic()
     startClock()
     window.setInterval(function () {
         startClock()
@@ -106,7 +106,37 @@ function textSize() {
     }
 }
 
-function BackroundPic() {
+function BackgroundPic() {
 
+    const images = new Array("url(pics/pic_1.jpg)", "url(pics/pic_2.jpg)", "url(pics/pic_3.jpg)",
+        "url(pics/pic_4.jpg)", "url(pics/pic_5.jpg)", "url(pics/pic_6.jpg)", "url(pics/pic_7.jpg)", "url(pics/pic_8.jpg)")
     
+    const date = new Date()
+
+    if (date.getHours() >= 20 && date.getHours() < 6) {
+
+        document.getElementById("html").style.backgroundImage = images[7]
+
+    }
+
+    if (date.getHours() >= 6 && date.getHours() < 10) {
+
+        document.getElementById("html").style.backgroundImage = images[1]
+
+    }
+
+    if (date.getHours() >= 10 && date.getHours() < 18) {
+
+        document.getElementById("html").style.backgroundImage = images[2]
+
+    }
+
+    if (date.getHours() >= 18 && date.getHours() > 20) {
+
+        document.getElementById("html").style.backgroundImage = images[5]
+        console.log(date.getHours())
+
+    }
+
+ 
 }
