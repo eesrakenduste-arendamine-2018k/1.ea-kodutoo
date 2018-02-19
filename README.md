@@ -1,6 +1,7 @@
 # 1. kodutöö – Lauakell
 
 Autor: Sander Lukas
+
 Kellale on lisatud kolm eventlistener'i:
   1) Klaviatuuri "w" ja "s" nuppudega saab kirja suuremaks teha ja siis ka taasta algne.
   2) Vajutades vasakpoolset hiirenuppu muutub tausta värv.
