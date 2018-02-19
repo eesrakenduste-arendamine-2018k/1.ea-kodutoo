@@ -37,7 +37,7 @@ function startClock () {
 }
 
 function textColor() {
-
+    //Teksti värvi muutmine
     if(count_c === 0){
         document.getElementById("clock").style.color = "blue"
         document.getElementById("time").style.color = "blue"
@@ -63,7 +63,7 @@ function textColor() {
 
 
 function textType() {
-
+    //Teksti kirjastiili muutmine
     if(count_t === 0){
         document.getElementById("clock").style.fontFamily = "Times"
         document.getElementById("time").style.fontFamily = "Times"
@@ -82,7 +82,7 @@ function textType() {
 }
 
 function textSize() {
-
+    //Teksti suuruse muutmine
     if(count_s === 0){
         document.getElementById("clock").style.fontSize = 130
         document.getElementById("time").style.fontSize = 70
@@ -107,36 +107,30 @@ function textSize() {
 }
 
 function BackgroundPic() {
-
+    //Olenevalt kellaajast näidatakse vastavat taustapilti
     const images = new Array("url(pics/pic_1.jpg)", "url(pics/pic_2.jpg)", "url(pics/pic_3.jpg)",
         "url(pics/pic_4.jpg)", "url(pics/pic_5.jpg)", "url(pics/pic_6.jpg)", "url(pics/pic_7.jpg)", "url(pics/pic_8.jpg)")
     
     const date = new Date()
+    let h = date.getHours()
 
-    if (date.getHours() >= 20 && date.getHours() < 6) {
-
-        document.getElementById("html").style.backgroundImage = images[7]
-
+    if (h >= 20 && h < 6) {
+        ~~(Math.random()*2) ? document.getElementById("html").style.backgroundImage = images[6]
+         : document.getElementById("html").style.backgroundImage = images[7]
     }
 
-    if (date.getHours() >= 6 && date.getHours() < 10) {
-
-        document.getElementById("html").style.backgroundImage = images[1]
-
+    if (h >= 6 && h < 10) {
+        ~~(Math.random()*2) ? document.getElementById("html").style.backgroundImage = images[0]
+         : document.getElementById("html").style.backgroundImage = images[1]
     }
 
-    if (date.getHours() >= 10 && date.getHours() < 18) {
-
-        document.getElementById("html").style.backgroundImage = images[2]
-
+    if (h >= 10 && h < 18) {
+        ~~(Math.random()*2) ? document.getElementById("html").style.backgroundImage = images[2]
+         : document.getElementById("html").style.backgroundImage = images[3]
     }
 
-    if (date.getHours() >= 18 && date.getHours() > 20) {
-
-        document.getElementById("html").style.backgroundImage = images[5]
-        console.log(date.getHours())
-
+    if (h >= 18 && h> 20) {
+        ~~(Math.random()*2) ? document.getElementById("html").style.backgroundImage = images[4]
+         : document.getElementById("html").style.backgroundImage = images[5]
     }
-
- 
 }
