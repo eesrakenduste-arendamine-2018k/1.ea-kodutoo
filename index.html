@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="clock.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+  <style>
+body {
+background-image: url("bg.png");
+background-repeat: repeat;
+
+}
+
+#clock {
+height: 100%;
+color:white;
+font-size: 40px;
+font-family: 'Roboto', sans-serif;
+text-shadow: 2px 2px 4px lightgray;
+font-weight: 600;
+width:100%;
+text-align:center;
+display: inline-block;
+vertical-align: middle;
+margin-top: 5px;
+}
+#btns {
+width: 90%;
+display:flex;
+justify-content:space-between;
+margin: 1% 5%;
+}
+  </style>
+</head>
+<body>
+
+<div class="container">
+<h3>Mihkel Haava</h3>
+	<div class="content">
+		<div id="btns">
+			<button id="size-up">+</button>
+			<input type="color" id="clockColor" value="#FFFFFF">
+			<button id="size-down">-</button>
+		</div>
+		<div id="clock"></div>
+		
+	</div>
+</div>
+</body>
+</html>
