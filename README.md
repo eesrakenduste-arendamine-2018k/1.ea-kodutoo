@@ -11,3 +11,5 @@ Autor : Robert Ševtšenko
 6.Kellaaega esitatakse analoogse kella kaudu.
 
 # pildid
+
+![](screenshots/git1.png)
