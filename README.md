@@ -10,6 +10,8 @@ Autor : Robert Ševtšenko
 5.Kella all sõltuvalt ajavahemikust muutub tervitus.
 6.Kellaaega esitatakse analoogse kella kaudu.
 
-# pildid
+# Pildid
 
 ![](screenshots/git1.PNG)
+![](screenshots/git2.PNG)
+![](screenshots/git3.PNG)
