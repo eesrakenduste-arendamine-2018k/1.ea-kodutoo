@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <title>Clock</title>
+        <link rel="stylesheet" href="clock.css">
+    </head>
+    <body onresize="changeBackgroundColor()">
+        <div class="grid-container">
+            <div class="header">
+                <h2>Lauakell</h2>
+                <button onclick="showDateMonth()">Kuupäev</button>
+            </div>
+            <div class="left">
+                <h3>Robert Ševtšenko</h3>
+                <p>eesrakenduste, kella kodune töö</p>
+            </div>
+            <div class="middle">
+                <canvas id="clock"></canvas>
+            </div>
+            <div class="right">
+                <p><a href="https://github.com/RobertShev/1.ea-kodutoo" target="_blank">GitHub</a></p>
+                <p><a href="https://www.w3schools.com/css/css_templates.asp" target="_blank">CSS grid</a></p>
+                <p><a href="https://www.w3schools.com/graphics/canvas_clock.asp" target="_blank">JS canvas</a></p>
+            </div>
+            <div class="footer">
+                <script src="clock.js"></script>
+            </div>
+            <div class="settings">
+                <p>Vali kirjastiili</p>
+                <select onchange="changeFont(this);">
+                        <option>Arial</option>
+                        <option>Arial Black</option>
+                        <option>Helvetica</option>
+                        <option>sans-serif</option>
+                        <option>Impact</option>
+                </select>
+            </div>
+        </div>
+     </body>
+</html>
