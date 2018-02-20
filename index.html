@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+    <meta charset="utf-8">
+    <title>Digitaalkell</title>
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/1Cs0qyG78qY?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <style type ="text/css">
+        body{
+            background: url("https://i.imgur.com/KPwiYiM.jpg");
+        }
+        .clock{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            color: #fff;
+            font-size: 90px;
+            border: 1px solid #ccc;
+            padding: 0px 20px 0px 20px;
+    
+        }
+        .date{
+            position: absolute;
+            top: 43%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            color: #fff;
+            font-size: 30px;
+        }
+        h1{
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            color: #fff; 
+            font-size: 24px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="DigitaalKell" class="clock"></div>
+        <div id="Date" class="date"></div>
+        <button type="button" class="button" onclick="changeBackground()">Lisa uus taustapilt</button>
+        <button type="button" class="button" onclick="increaseClockSize()">Suurenda kella</button>
+        <button type="button" class="button" onclick="decreaseClockSize()">Vähenda kella suurust</button>
+        <button type="button" class="button" onclick="increaseDateFont()">Muuda kuupäeva fonti suuremaks</button>
+        <button type="button" class="button" onclick="decreaseDateFont()">Muuda kuupäeva fonti väiksemaks</button>
+        <button type="button" class="button" onclick="DateUp()">Kuupäev üles</button>
+        <button type="button" class="button" onclick="DateDown()">Kuupäev alla</button>
+        <button type="button" class="button" onclick="fontColor()">Muuda fondi värvi</button>
+        
+        <h1>Kalmer Roopa 
+            https://github.com/eesrakenduste-arendamine-2018k/1.ea-kodutoo
+        </h1>
+
+        <script type="text/javascript">
+            function showTime(){
+                var date = new Date();
+                var h = date.getHours();
+                var m = date.getMinutes();
+                var s = date.getSeconds();
+
+                h = (h < 10) ? "0" + h : h;
+                m = (m < 10) ? "0" + m : m;
+                s = (s < 10) ? "0" + s : s;
+
+                var time = h + ":" + m + ":" + s;
+                document.getElementById("DigitaalKell").innerText = time;
+                document.getElementById("DigitaalKell").innerContent = time;
+
+                setTimeout(showTime, 1000);
+            
+            }
+            function showDate(){
+                var date = new Date;
+                var year = date.getFullYear();
+                var month = date.getMonth();
+                months = new Array('Jaanuar', 'Veebruar', 'Märts', 'Aprill', 'Mai', 'Juuni', 'Juuli', 'August', 'September', 'Oktoober', 'November', 'Detsember');
+                d = date.getDate();
+                day = date.getDay();
+                days = new Array ('Pühapäev', 'Esmaspäev', 'Teisipäev', 'Kolmapäev', 'Neljapäev', 'Reede', 'Laupäev'); //Lisasin listi pühapäeva esimesena, siis näitab õiget päeva
+                var result = ''+months[month]+' '+d+', '+days[day]+', '+year;
+                document.getElementById("Date").innerText = result;
+
+            }
+
+            function BGChanger() {}
+            BGChanger.prototype = {
+                constructor: BGChanger,
+                index: 0,
+                urls: ['https://i.imgur.com/KPwiYiM.jpg', 'https://i.imgur.com/4K2lvjk.jpg', 'https://i.imgur.com/KuQejKW.jpg', 'https://i.imgur.com/nknZFlt.jpg',],
+                preload: function() {
+                    for(var i in this.urls) {
+                        var img = new Image();
+                        img.src = this.urls[i];
+                    }
+                },
+                changeBG: function () {
+                    this.index = (this.index + 1) % this.urls.length;
+                    console.log(this.urls[this.index]);
+                    document.body.style.backgroundImage = "url(" + this.urls[this.index] + ")";
+                }
+            };
+        
+            var bgChanger = new BGChanger();
+            setTimeout(bgChanger.preload.bind(bgChanger), 1);
+            function changeBackground(){
+                bgChanger.changeBG();
+            
+
+            }
+
+            function fontColor(){
+                r = Math.round(Math.random() * 255)
+                g = Math.round(Math.random() * 255)
+                b = Math.round(Math.random() * 255)
+                document.getElementById("DigitaalKell").style.color='rgb('+ r +','+ g +','+ b +')';
+                document.getElementById("Date").style.color='rgb('+ r +','+ g +','+ b +')';
+            }
+
+            function increaseClockSize(){
+                var element = document.getElementById("DigitaalKell");
+                var style = window.getComputedStyle(element, null).getPropertyValue('font-size');
+                var fontSize = parseFloat(style);
+                element.style.fontSize = (fontSize + 10) + 'px';
+                }
+
+            function decreaseClockSize(){
+                var element = document.getElementById("DigitaalKell");
+                var style = window.getComputedStyle(element, null).getPropertyValue('font-size');
+                var fontSize = parseFloat(style);
+                    element.style.fontSize = (fontSize - 10) + 'px';
+            }
+            function increaseDateFont(){
+                var element = document.getElementById("Date");
+                var style = window.getComputedStyle(element, null).getPropertyValue('font-size');
+                var fontSize = parseFloat(style);
+                element.style.fontSize = (fontSize + 5) + 'px';
+                }
+            function decreaseDateFont(){
+                var element = document.getElementById("Date");
+                var style = window.getComputedStyle(element, null).getPropertyValue('font-size');
+                var fontSize = parseFloat(style);
+                element.style.fontSize = (fontSize - 5) + 'px';
+                }
+            function DateUp(){
+                var element = document.getElementById("Date");
+                var style = window.getComputedStyle(element, null).getPropertyValue('top');
+                var top = parseFloat(style);
+                element.style.top = (top - 5) + 'px';
+                }
+            function DateDown(){
+                var element = document.getElementById("Date");
+                var style = window.getComputedStyle(element, null).getPropertyValue('top');
+                var top = parseFloat(style);
+                element.style.top = (top + 5) + 'px';
+                }
+
+
+            
+            showTime();
+            showDate();
+        </script>
+
+<!-- Kasutatud materjalid: 
+https://stackoverflow.com/questions/15195209/how-to-get-font-size-in-html
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype
+https://www.youtube.com/watch?v=qvypCd2Vl4s
+Ja veel saite, kus sain killukese abi, kahjuks ei leidnud neid brauseri ajaloost üles.
+-->
+
+
+
+
+
+</html>
