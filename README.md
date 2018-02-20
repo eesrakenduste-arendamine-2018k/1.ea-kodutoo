@@ -12,4 +12,4 @@ Autor : Robert Ševtšenko
 
 # pildid
 
-![](screenshots/git1.png)
+![](screenshots/git1.PNG)
