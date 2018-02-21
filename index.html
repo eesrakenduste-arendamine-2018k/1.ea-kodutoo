@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<base target="_blank">
+	<style>
+
+	html { 
+		background: url(doge.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	div {
+		border-radius: 15px 47px;
+		width: 115px;
+		padding: 10px;
+		border: 10px solid gray;
+		margin: 0; 
+	}
+
+
+	.red-but{
+
+	color:red;
+	
+	}
+	.green-but{
+
+	color:green;
+	
+	}
+	.blue-but{
+
+	color:blue;
+
+	</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<script src="clock.js">
+	</script>
+</head>
+
+
+<body>
+	Maitsekalt kujundatud Silver Kaugemaa poolt :) <br/>
+	Link minu <a href= "https://github.com/silverkaugemaa/1.ea-kodutoo">repositooriumile</a>
+	<center>
+
+	<div id="clock"></div>
+		<button style="height:35px;width:175px"; id="change-color"> Vaheta kella tausta värvi </button>
+  
+	</center>
+
+	<input name="red" id="red" type="button" value="Red" class="red-but" onclick="colorred()" />
+	<input name="green" id="green" type="button" value="Green" class="green-but" onclick="colorgreen()" />
+	<input name="blue" id="blue" type="button" value="Blue" class="blue-but" onclick="colorblue()"/>
+	<p>Vali valikust oma lemmik värv</p>
+	<p id="colors"></p>
+	
+	<element align="justify">
+	<font color="orange"><h3>Tausta muusika</h3>
+		<h3><p>BEETHOVEN.ODE TO JOY</p></h3>
+		<li><audio controls>
+			<source src="BEETHOVEN.ODE TO JOY.mp3" type="audio/mp3"></br></li>
+		<h3><p>Sara perchè Ti Amo</p></h3>
+		<li><audio controls>
+			<source src="04 Sara perchè Ti Amo.mp3" type="audio/mp3"></br></li>
+		<h3><p>Dimitri Vegas & Like Mike vs W&W - Arcade</p></h3>
+		<li><audio controls>
+			<source src="Dimitri Vegas & Like Mike vs W&W - Arcade ( Official Video ).mp3" type="audio/mp3"></br></li>
+		</audio></font></element>
+	
+</body>
+</html>
