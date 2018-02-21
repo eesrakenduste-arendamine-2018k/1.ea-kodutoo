@@ -68,7 +68,7 @@ body{
 100% {opacity:1.0; text-shadow:0 0 40px rgb(255, 255, 255);}	
 }
 
-/* Author name on bottom left */
+/* Author name on bottom center */
 authorName {
     color: rgb(0, 0, 0);
     position: fixed;
@@ -84,6 +84,7 @@ authorName {
     animation-name: pulsateRed;
 }
 
+/* Author GitHub repository link on bottom center */
 authorRepoLink {
     position: fixed;
     bottom: 1%;
