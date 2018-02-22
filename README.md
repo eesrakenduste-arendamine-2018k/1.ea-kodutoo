@@ -2,6 +2,12 @@
 
   Autor : Hendrik Heinsar
 
+  Tegemist on lauakellaga mida saab kasutada live kella vaatamiseks.
+   -> Kellal saab muuta värvi nupuga [COLOR]
+   -> Kella saab muuta suuremaks nupuga [SIZE UP]
+   -> Kella saab algsesse suurusesse nupuga [RESIZE]
+   Olemas on ka "nupp"/tekst millele klikates suunatakse repositooriumile.
+
 ![iksde](https://user-images.githubusercontent.com/31885509/36358618-e56697a4-1519-11e8-9ac6-0cee902e4abe.jpg)
 
 ## Nõuded

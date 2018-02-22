@@ -7,8 +7,8 @@
 	<title>Kell</title>
 	<style>
 		html {
-  height: 100%;
-}
+  			height: 100%;
+		}
 		body {
 			background-size:     cover;                      /* <------ */
 			background-repeat:   no-repeat;
@@ -16,8 +16,8 @@
 			height: 100%;
 			opacity: 0.5;
 			
-	}
-</style>
+		}
+	</style>
 	<script>
 	
 		
@@ -29,74 +29,73 @@
 			//alert('Leht on laetud.');
 			console.log('Leht on laetud.')
 		
-			trukiKell();
+			displayClock();
 
 			setInterval(function () {
 			
-				trukiKell();
+				displayClock();
 			
 			}, 5);
-			var algSuurus = 16;
-            var Suurus = algSuurus;
-			document.getElementById('suurus').addEventListener('click', function (event) {
-				
-					Suurus = Suurus * 1.2;
-					//console.log(event);
-					document.getElementById('asukoht').style.fontSize = Suurus + "px";
+
+			var origSize = 16;
+            var Size = origSize;
+
+			document.getElementById('changeSize').addEventListener('click', function (event) {		
+				Size = Size * 1.2;
+				//console.log(event);
+				document.getElementById('clockLocation').style.fontSize = Size + "px";
 			});
-            document.getElementById('algneSuurus').addEventListener('click', function (event) {
-				
-                Suurus = algSuurus;
+
+            document.getElementById('reSize').addEventListener('click', function (event) {
+                Size = origSize;
                 //console.log(event);
-                document.getElementById('asukoht').style.fontSize = Suurus + "px";
+                document.getElementById('clockLocation').style.fontSize = Size + "px";
 			});
 		}
 
 	
 		
 		
-		var juhu_varv = function () {
+		var randColor = function () {
 		
 			var r = Math.round(Math.random()*255); //1-255
 			var g = Math.round(Math.random()*255); //1-255
 			var b = Math.round(Math.random()*255); //1-255
 
-		var juhuslik_varv = "rgb("+r+","+g+","+b+")";
-		document.body.style.color = juhuslik_varv
-		
+		var randomColor = "rgb("+r+","+g+","+b+")";
+		document.body.style.color = randomColor
 		
 		}
-		// kella tr�kkimis funktsioon p#asukoht
+		// kella tr�kkimis funktsioon p#clockLocation
 		
+		var displayClock = function () {
 		
-		var trukiKell = function () {
-		
-			var kell = new Date();
+			const clock = new Date();
 			
-			var kuud = kell.getMonth();
-			var kuupaevad = kell.getDate();
-			var tunnid = kell.getHours();
-			var minutid = kell.getMinutes();
-			var sekundid = kell.getSeconds();
-			var millisekundid = kell.getMilliseconds();
-			var nadalapaevad =  ["Pühapäev", 'Esmaspäev', 'Teisipäev', 'Kolmapäev', 'Neljapäev', 'Reede', 'Laupäev'];
-			var kuunimetused =  ["jaanuar", 'veebruar', 'märts', 'aprill', 'mai', 'juuni', 'juuli', 'august', 'september', 'oktoober', 'november', 'detsember'];
+			var months = clock.getMonth();
+			var dates = clock.getDate();
+			var hours = clock.getHours();
+			var minutes = clock.getMinutes();
+			var seconds = clock.getSeconds();
+			var milliseconds = clock.getMilliseconds();
+			var weekdays =  ["Pühapäev", 'Esmaspäev', 'Teisipäev', 'Kolmapäev', 'Neljapäev', 'Reede', 'Laupäev'];
+			var monthNames =  ["jaanuar", 'veebruar', 'märts', 'aprill', 'mai', 'juuni', 'juuli', 'august', 'september', 'oktoober', 'november', 'detsember'];
 			
-			var np = kell.getDay()
+			var np = clock.getDay()
 			
 		
 			
 			
 			 
-			var ilusKell = nadalapaevad[np] + ' ' + nullEtte(tunnid) + ':' + nullEtte(minutid) + ':' + nullEtte(sekundid) + ', ' + nullEtte(kuupaevad) + '. ' + kuunimetused[kuud]
+			var niceClock = weekdays[np] + ' ' + zeroFront(hours) + ':' + zeroFront(minutes) + ':' + zeroFront(seconds) + ', ' + zeroFront(dates) + '. ' + monthNames[months]
 			
 			
 			
-			document.getElementById('asukoht').innerHTML = ilusKell;
+			document.getElementById('clockLocation').innerHTML = niceClock;
 			
 		}
 
-		var nullEtte = function (number) {
+		var zeroFront = function (number) {
 		
 			if (number < 10) {
 			
@@ -108,7 +107,7 @@
 		
 		}
 		
-		document.getElementById('suurus');
+		document.getElementById('changeSize');
 		
 		
 	
@@ -116,22 +115,19 @@
 	</script>
 </head>
 <body style="background-image: url(https://mariadissertation.files.wordpress.com/2013/12/picture-2sahding.png);">
-
-
-		<center>
-		<button id="Color" onclick="juhu_varv()">COLOR</button>
-        <button id="suurus" onclick="trukiKell()">SIZE UP</button>
-		<button id="algneSuurus" onclick="trukiKell()">RESIZE</button>
-		<button id="changeSpot" onclick="juhu_koht()">CHANGE LOCATION</button>
-		</center>
-		<center>
-			<div id="kell" style="margin-top: 10%;">
-			<H1 font="arial" size="40px">AEG EESTIS</H1>
-			<p id="asukoht"></p>
-			<H2 font="arial" style="color:aliceblue">Hendrik Heinsar</H2>
-			<a href="https://github.com/HendrikHeinsar/1.ea-kodutoo" style="color:aliceblue">repositoorium</a>
-			</div>
-		</center>
+	<center>
+		<button id="Color" onclick="randColor()">COLOR</button>
+        <button id="changeSize" onclick="displayClock()">SIZE UP</button>
+		<button id="reSize" onclick="displayClock()">RESIZE</button>
+	</center>
+	<center>
+		<div id="clock" style="margin-top: 10%;">
+		<H1 font="arial" size="40px">AEG EESTIS</H1>
+		<p id="clockLocation"></p>
+		<H2 font="arial" style="color:aliceblue">Hendrik Heinsar</H2>
+		<a href="https://github.com/HendrikHeinsar/1.ea-kodutoo" style="color:aliceblue">repositoorium</a>
+		</div>
+	</center>
 	
 </body>
 </html>
