@@ -10,13 +10,13 @@
 	</head>
 	
 	
-	<body id="taust" onLoad="renderTime();starting();"></body>
+	<body id="backPicture" onLoad="renderTime();starting();"></body>
 	
 		<div id="clockDisplay"></div>
 		
 		<p id="demo"></p>
 
-<script>
+<!--<script>
 function myFunction() {
     var time = new Date().getHours();
     var greeting;
@@ -27,7 +27,7 @@ function myFunction() {
     }
     document.getElementById("demo").innerHTML = greeting;
 	}
-</script>
+</script>!-->
 	
 </body>
 <body>
@@ -39,14 +39,17 @@ function myFunction() {
 			  {
 			  document.write("<b>Good morning!</b>");
 			  }
-			if (time > 12) 
+			if (time > 12 && time <19) 
 			  {
 			  document.write("<b>Good afternoon!</b>");
 			  }
 			if (time == 12) 
 			  {
 			  document.write("<b>Go eat lunch!</b>");
-			  }
+				}
+			if (time < 3 && time >= 19);{
+				document.write("<b> Go to sleep!!!! </b>")
+			}
 			</script>
 </body>
 </html>

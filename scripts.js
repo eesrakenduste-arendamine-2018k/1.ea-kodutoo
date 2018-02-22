@@ -1,12 +1,12 @@
-var pilt = 0;
-var pildikood = new Array("pilt1.jpg", "pilt2.jpg", "pilt3.jpg", "pilt4.jpg", "pilt5.jpg");
+var picture = 0;
+var pictureCode = new Array("picture1.jpg", "picture2.jpg", "picture3.jpg", "picture4.jpg", "picture5.jpg");
 var condition = false;
 var esimene;
 var teine;
 
 function starting(){						 
-//document.getElementById("taust").style.backgroundColor = pildikood[pilt]; 
-document.getElementById("taust").style.backgroundImage = "url(" + pildikood[pilt] + ")";
+//document.getElementById("backPicture").style.backgroundColor = pictureCode[picture]; 
+document.getElementById("backPicture").style.backgroundImage = "url(" + picturecode[picture] + ")";
 
 /* esimene = document.getElementById("big");
  teine = document.getElementById("small");*/
@@ -87,35 +87,35 @@ function renderTime() {
   
 // change to arial
 function changeFont() {
-	document.getElementById("taust").style.fontFamily = "arial";
+	document.getElementById("backPicture").style.fontFamily = "arial";
 }
 //change to  Impact
 /*function changeFont2() {
-	document.getElementById("taust").style.fontFamily = "Impact";
+	document.getElementById("backPicture").style.fontFamily = "Impact";
 }
 //change font to Courier New
 function changeFont3() {
-	document.getElementById("taust").style.fontFamily = "Courier New";
+	document.getElementById("backPicture").style.fontFamily = "Courier New";
 }*/
 
 
 
 /*function changeNew(){
-	pilt++;
-	if(pilt > pildikood.length) {
-		pilt = 0;
+	picture++;
+	if(picture > pictureCode.length) {
+		picture = 0;
 	}
-	//document.getElementById("taust").style.backgroundColor = pildikood[pilt]; vana funktsioon taustavärvidega
-	document.getElementById("taust").style.backgroundImage = "url(" + pildikood[pilt] + ")";
+	//document.getElementById("backPicture").style.backgroundColor = pictureCode[picture]; vana funktsioon backPictureavärvidega
+	document.getElementById("backPicture").style.backgroundImage = "url(" + pictureCode[picture] + ")";
 }*/
 
 /*function changeBack() {
-	pilt--;
-	if(pilt < 0) {
-		pilt = pildikood.length;
+	picture--;
+	if(picture < 0) {
+		picture = pictureCode.length;
 	}
-	//document.getElementById("taust").style.backgroundColor = pildikood[pilt];	 vana funktsioon taustavärviga
-	document.getElementById("taust").style.backgroundImage = "url(" + pildikood[pilt] + ")";
+	//document.getElementById("backPicture").style.backgroundColor = pictureCode[picture];	 vana funktsioon backPictureavärviga
+	document.getElementById("backPicture").style.backgroundImage = "url(" + pictureCode[picture] + ")";
 }*/
 
 var currentSize = 80;
@@ -155,33 +155,33 @@ function alertFunc() {
 }
 
 */
-//var pildikood = new Array("#d3d3d3", "#bdbdbd", "#a8a8a8", "#939393", "#7e7e7e", "#545454", "#2a2a2a", "#151515", "#000000");
+//var pictureCode = new Array("#d3d3d3", "#bdbdbd", "#a8a8a8", "#939393", "#7e7e7e", "#545454", "#2a2a2a", "#151515", "#000000");
 /*function starting(){						 
-document.getElementById("taust").style.backgroundColor = pildikood[pilt];
+document.getElementById("backPicture").style.backgroundColor = pictureCode[picture];
 } */
 
 
 /*
-document.getElementById("taust").style.backgroundColor = "#b3ff99";	
+document.getElementById("backPicture").style.backgroundColor = "#b3ff99";	
 
-var pilt = 0;
-var pildikood = new Array("#b3ff99", "#c2c2d6", "#b3cccc");
+var picture = 0;
+var pictureCode = new Array("#b3ff99", "#c2c2d6", "#b3cccc");
 	function backgroundEdasi(){
-		pilt = pilt+1;
-		if (pilt > 2) {
-			pilt = 0;
+		picture = picture+1;
+		if (picture > 2) {
+			picture = 0;
 		}
-		document.getElementById("taust").style.backgroundColor = pildikood[pilt];
-		return pilt;
+		document.getElementById("backPicture").style.backgroundColor = pictureCode[picture];
+		return picture;
 		
 	}
 	function backgroundTagasi() {
-		pilt = pilt - 1;
-		if (pildikood < 0) {
-			pildikood = 2;
+		picture = picture - 1;
+		if (pictureCode < 0) {
+			pictureCode = 2;
 		}
-		document.getElementById("taust").style.backgroundColor = pildikood[pilt;];
-		return pilt;
+		document.getElementById("backPicture").style.backgroundColor = pictureCode[picture;];
+		return picture;
 	}
 	
 */
@@ -190,48 +190,12 @@ var pildikood = new Array("#b3ff99", "#c2c2d6", "#b3cccc");
 
 
 
-//tasutapilt test
+//tasutapicture test
 /*function changeImage(){
-		document.body.background = "pilt1.jpg";
+		document.body.background = "picture1.jpg";
 			}
 */
 
 
 	
 	
-/*	
-	//aeg
-	var currenttime = new Date();
-	var h = currentTime.getHours().toString();
-	var m = currentTime.getMinutes().toString();
-	var s = currentTime.getSeconds().toString();
-	
-		if(h==24) {
-			h=0;
-		} 
-		else if(h > 12){
-			h = h - 0;
-		}
-		
-		if(h.length < 2) {
-			h = "0" + h;
-		}
-		
-		if(m.length < 2) {
-			m = "0" + m;
-		}
-		
-		if(s.length < 2) {
-			s = "0" + s;
-		}
-		
-		var myClock = document.getElementById("clockDisplay");
-		
-		myClock.textContent = "" + dayarray[day] + " " + daym + " " + montharray[month] + " " + year + " | " + h + ":" + m + ":" + s;
-		myClock.innerText = "" + dayarray[day] + " " + daym + " " + montharray[month] + " " + year + " | " + h + ":" + m + ":" + s;
-		
-		setTimeout("renderTime()", 1000);
-}
-
-renderTime();	
-*/
