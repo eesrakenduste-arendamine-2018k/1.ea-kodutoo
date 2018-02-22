@@ -1,0 +1,54 @@
+body{
+    font-size: 7px;
+    font-family: 'Arial', sans-serif;
+    font-style: normal;
+}
+
+html{
+    background-image: url("pics/pic_7.jpg");
+    background-position: 100%;
+}
+
+.date{
+    color: white;
+}
+#clock{
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 120px;
+    padding-top: 15%;
+}
+
+#time{
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 60px;
+    padding: 20px;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.btn{
+    top: 10px;
+    font-size: 16px;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    border: 1px solid black;
+    background-color: beige;
+}
+
+.btn:hover {
+    background-color:black;
+    color: white;
+}
