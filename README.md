@@ -1,8 +1,14 @@
 # 1. kodutöö – Lauakell
 
-## Tähtpäev 18.02.2018 23:59
+  Autor : Hendrik Heinsar
 
-Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella täisekraanile, et saaks kasutada lauakella või ekraanisäästja asemel. Selleks, et see sobiks paljudele ekraanidele, kasuta kujunduse loomisel protsendilisi väärtusi (nt width: 100%; ) või nt võimalda kella suurust kasutajal muuta.
+  Tegemist on lauakellaga mida saab kasutada live kella vaatamiseks.
+   -> Kellal saab muuta värvi nupuga [COLOR]
+   -> Kella saab muuta suuremaks nupuga [SIZE UP]
+   -> Kella saab algsesse suurusesse nupuga [RESIZE]
+   Olemas on ka "nupp"/tekst millele klikates suunatakse repositooriumile.
+
+![iksde](https://user-images.githubusercontent.com/31885509/36358618-e56697a4-1519-11e8-9ac6-0cee902e4abe.jpg)
 
 ## Nõuded
 
@@ -13,20 +19,6 @@ Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella t�
 1. Lehel on viide rakenduse repositooriumile
 1. Kood on vormistatud vastavalt stiilijuhendile
 1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
-
-## Mõned ideed võimalikeks täiendusteks (lihtsalt, et mõte hakkaks jooksma)
-
-* Vahetuda võivad taustapildid, taustal võib mängida muusika
-* Taustale klikkides muudetakse kella taustaväri
-* Kellale klõpsides muudetakse numbrite värvi või numbrite suurust;
-* Iga numbri suurust saab eraldi muuta
-* Nooleklahvidega saab kella ekraanil liigutada
-* Küsi enne kella näitamise alustamist kasutajalt tema lemmikvärv ja tee sellest lähtudes midagi
-* Muuda kella ja tausta värvi vastavalt ajale (päev/öö)
-* Kella suurus ja asukoht sõltuvad hiire asukohast ekraanil
-* Äkki võiks tegu olla hoopis analoogkellaga
-* Kirjatüüpi saab ka muuta, [google.com/fonts](https://www.google.com/fonts)
-* Kasutaja saab lisada või kasutajaöe näidatakse mitu kellaaega erinevatest maailma kohtadest
 
 ## Abimaterjal
 

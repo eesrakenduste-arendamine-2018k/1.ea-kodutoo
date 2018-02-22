@@ -1,0 +1,133 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<header></header>
+	<meta charset="UTF-8" />
+	<title>Kell</title>
+	<style>
+		html {
+  			height: 100%;
+		}
+		body {
+			background-size:     cover;                      /* <------ */
+			background-repeat:   no-repeat;
+			background-position: center center;              /* optional, center the image */
+			height: 100%;
+			opacity: 0.5;
+			
+		}
+	</style>
+	<script>
+	
+		
+	
+	
+		// kuulame lehe valmis laadimist
+		window.onload = function () {
+		
+			//alert('Leht on laetud.');
+			console.log('Leht on laetud.')
+		
+			displayClock();
+
+			setInterval(function () {
+			
+				displayClock();
+			
+			}, 5);
+
+			var origSize = 16;
+            var Size = origSize;
+
+			document.getElementById('changeSize').addEventListener('click', function (event) {		
+				Size = Size * 1.2;
+				//console.log(event);
+				document.getElementById('clockLocation').style.fontSize = Size + "px";
+			});
+
+            document.getElementById('reSize').addEventListener('click', function (event) {
+                Size = origSize;
+                //console.log(event);
+                document.getElementById('clockLocation').style.fontSize = Size + "px";
+			});
+		}
+
+	
+		
+		
+		var randColor = function () {
+		
+			var r = Math.round(Math.random()*255); //1-255
+			var g = Math.round(Math.random()*255); //1-255
+			var b = Math.round(Math.random()*255); //1-255
+
+		var randomColor = "rgb("+r+","+g+","+b+")";
+		document.body.style.color = randomColor
+		
+		}
+		// kella tr�kkimis funktsioon p#clockLocation
+		
+		var displayClock = function () {
+		
+			const clock = new Date();
+			
+			var months = clock.getMonth();
+			var dates = clock.getDate();
+			var hours = clock.getHours();
+			var minutes = clock.getMinutes();
+			var seconds = clock.getSeconds();
+			var milliseconds = clock.getMilliseconds();
+			var weekdays =  ["Pühapäev", 'Esmaspäev', 'Teisipäev', 'Kolmapäev', 'Neljapäev', 'Reede', 'Laupäev'];
+			var monthNames =  ["jaanuar", 'veebruar', 'märts', 'aprill', 'mai', 'juuni', 'juuli', 'august', 'september', 'oktoober', 'november', 'detsember'];
+			
+			var np = clock.getDay()
+			
+		
+			
+			
+			 
+			var niceClock = weekdays[np] + ' ' + zeroFront(hours) + ':' + zeroFront(minutes) + ':' + zeroFront(seconds) + ', ' + zeroFront(dates) + '. ' + monthNames[months]
+			
+			
+			
+			document.getElementById('clockLocation').innerHTML = niceClock;
+			
+		}
+
+		var zeroFront = function (number) {
+		
+			if (number < 10) {
+			
+					number = "0" + number;
+			
+			}
+		
+			return number;
+		
+		}
+		
+		document.getElementById('changeSize');
+		
+		
+	
+		
+	</script>
+</head>
+<body style="background-image: url(https://mariadissertation.files.wordpress.com/2013/12/picture-2sahding.png);">
+	<center>
+		<button id="Color" onclick="randColor()">COLOR</button>
+        <button id="changeSize" onclick="displayClock()">SIZE UP</button>
+		<button id="reSize" onclick="displayClock()">RESIZE</button>
+	</center>
+	<center>
+		<div id="clock" style="margin-top: 10%;">
+		<H1 font="arial" size="40px">AEG EESTIS</H1>
+		<p id="clockLocation"></p>
+		<H2 font="arial" style="color:aliceblue">Hendrik Heinsar</H2>
+		<a href="https://github.com/HendrikHeinsar/1.ea-kodutoo" style="color:aliceblue">repositoorium</a>
+		</div>
+	</center>
+	
+</body>
+</html>
