@@ -1,0 +1,67 @@
+h1 {
+	text-align: center;
+	color: white;
+	font-size: 100px;
+	font-weight: bold;
+	padding-top: 150px;
+	text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+}
+
+body, html, section {
+	font-family: "Montserrat", sans-serif;
+    height: 100%;
+}
+
+#myBackground { 
+    background-image: url("maed.jpg");
+    height: 102.25%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	margin-top: -100px;
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-bottom: -25px;
+}
+
+#clock{
+	text-align: center;
+	color: white;
+	font-size: 50px;
+	font-weight: ;
+	width: ;
+	padding-top: 0px;
+	-webkit-filter: blur(var(--blur));
+	filter: blur(var(--blur));
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+}
+
+:root {
+  --blur: 10px;
+}
+
+div {
+	text-align: center;
+	color: white;
+}
+
+button{
+	background-color: white;
+    border: none;
+    color: black;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+	border: 2px solid #555555;
+}
+
+button:hover {
+	background-color: #555555;
+	color: white;
+}
