@@ -15,3 +15,4 @@ Kell on automaatselt 24 tunniline kell.
 
 ## Ekraanipilt
 
+https://imgur.com/a/zd78M
