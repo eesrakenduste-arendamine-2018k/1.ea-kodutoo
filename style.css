@@ -1,0 +1,38 @@
+
+body {
+	font-family: 'FreeMono';
+	text-align: center;
+}
+
+#clock {
+	font-weight: 300;
+	font-size: 100px;
+	border: 1px solid #FFF;
+	padding: 0px 7px 0px 7px;
+	background-color: rgba(255,255,255,0.5);  
+	margin-top : 200px;  
+}
+
+#date {
+	position: relative;
+    font-size: 40px;
+	font-weight: 20px;
+    letter-spacing: 10px;
+    cursor: pointer;
+    width: 50%;
+ }
+ 
+#random{
+	height: 800px;
+	width: 100%;
+	background-image: url('https://www.hdwallpapers.in/walls/beach_resort_sunset-wide.jpg');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;  
+}
+
+#author{
+	letter-spacing: 10px;
+	margin-top : 300px; 
+}
+
