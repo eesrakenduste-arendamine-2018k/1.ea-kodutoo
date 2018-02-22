@@ -6,7 +6,37 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Clock</title>
   <script src="clock.js"></script>
- 
+	<style>
+body{
+    color: white;
+    background-image: url("pics/kosk.jpg");
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-attachment: fixed;
+  }
+a{
+    attachment: fixed;
+    text-align: right;
+    font-size: 20px;
+    color: white;
+  }
+button, select{
+    text-align: left;
+	border-radius: 12px;
+	padding: 5px 10px;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+#clock {
+    color:white;
+	position: relative;
+	padding: 10px;
+    text-align: center;
+    font-size: 70px;
+    text-shadow: 3px 3px 3px rgb(146, 142, 133);
+    font-family: 'Nanum Myeongjo', serif;
+}
+</style>  
 </head>
 <body>
 
@@ -15,43 +45,23 @@
     <option value="night">Öö</option>
   </select>
   <select id="color"  class="input" onchange="changeColor(this);">
-    <option value="default">Vali värv</option>
-    <option value="black">must</option>
-    <option value="blue">sinine</option>
+    <option value="default">Vali teksti värv</option>
+    <option value="navy">sinine</option>
+	<option value="black">must</option>
+    <option value="white">valge</option>
+	<option value="green">roheline</option>
     <option value="red">punane</option>
-    <option value="green">roheline</option>
+	<option value="plum">lilla</option>
+	<option value="skyblue">taevasinine</option>
+	<option value="seashell">beež</option>
+    
   </select>
   
-  <button id="bigger" onclick="changeSizeBigger()" >Suuremaks</button>
-  <button id="smaller" onclick="changeSizeSmaller()" >Väiksemaks</button><br>
+  <button id="bigger" onclick="changeSizeBigger()" >Tekst suuremaks</button>
+  <button id="smaller" onclick="changeSizeSmaller()" >Tekst väiksemaks</button>
+  <p><a href="https://github.com/julimai/1.ea-kodutoo">Julika Maiste</a></p><br>
   <div id="clock"></div>
-  <style>
-body{
-    color: white;
-    background-image: url("pics/haapsalukallas.jpg");
-    background-size: 100%;
-  }
-  p, a{
-    text-align: bottom-left;
-    font-size: 20px;
-    color: white;
-  }
-  button, select{
-    text-align: left;
-	border-radius: 12px;
-	padding: 5px 10px;
-	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  }
-  #clock {
-    color:white;
-	position: relative;
-	padding: 200px 0;
-    text-align: center;
-    font-size: 200px;
-    text-shadow: 3px 3px 3px rgb(146, 142, 133);
-    font-family: 'Nanum Myeongjo', serif;
-}
-</style>  
-  <p><a href="https://github.com/julimai/1.ea-kodutoo">Julika Maiste</a></p>
+  
+  
 </body>
 </html>

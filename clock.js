@@ -13,26 +13,29 @@ function init () {
 
 function changeBackground(time){
   if (time.value == "day"){
-    document.body.style.backgroundImage = url("pics/kosk.jpg") ;
-
+    document.body.style.backgroundImage = 'url("pics/kosk.jpg")';
+	document.body.style.backgroundSize = cover;
   } 
-  if (time.value == "night") {
-    document.body.style.backgroundImage = url("pics/haapsalukallas.jpg");
+  if (time.value == "night"){
+    document.body.style.backgroundImage = 'url("pics/haapsalukallas.jpg")';
+	document.body.style.backgroundSize = cover;
   }
 }
 
 function changeColor(color){
-  document.getElementById("color").style.color = color.value;
+  clockContainer.style.color = color.value;
 }
 
-let defaultFontSize = 100;
+let defaultFontSize = 70;
+
 function changeSizeBigger(){
     defaultFontSize += 10;
-    document.getElementById("bigger").style.fontSize = defaultFontSize + "px";
+    clockContainer.style.fontSize = defaultFontSize + "px";
   }
-  function changeSizeSmaller(){
+function changeSizeSmaller(){
     defaultFontSize -= 10;
-    document.getElementById("smaller").style.fontSize = defaultFontSize + "px";
+    clockContainer.style.fontSize = defaultFontSize + "px";
+	
   }
 
 function addZero(i) {
@@ -42,18 +45,18 @@ function addZero(i) {
 
 function startClock () {
   window.setInterval(function () { 
-    const date = new Date();
+	  let date = new Date();
       let hours= date.getHours(); 
       let minutes = date.getMinutes(); 
       let seconds = date.getSeconds(); 
 
       let day= date.getDate(); 
-      let months = new Array("January","February","March","April","May","June","July","August","September","October"," November", "December");
+      let months = new Array("jaanuar","veebruar","märts","aprill","mai","juuni","juuli","august","september","oktoober"," november", "detsember");
       let month = months[date.getMonth()];
 
       let year = date.getFullYear();
 
-      let weekdays = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+      let weekdays = new Array("Pühapäev","Esmaspäev","Teisipäev","Kolmapäev","Neljapäev","Reede","Laupäev");
       let weekday = weekdays[date.getDay()];
 
       hours = addZero(hours);
@@ -61,7 +64,7 @@ function startClock () {
       seconds = addZero(seconds);
       day = addZero(day);
 
-      clockContainer.innerHTML = hours+':'+minutes+':'+seconds+'<br>'+day+'.'+month+'.'+year+'<br>'+weekday
+      clockContainer.innerHTML = hours+':'+minutes+':'+seconds+'<br>'+day+'.'+month+' '+year+'<br>'+weekday
   })
 }
 
