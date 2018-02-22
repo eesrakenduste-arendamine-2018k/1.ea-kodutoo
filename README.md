@@ -8,3 +8,5 @@ Lehe funktsionaalsus:
 6)lisatud nupp, et vahetada kella taustavärvi
 7)minu valitud taustamuusika 
 8)minu valitud taustapilt 
+9)lisatud nupud "+" ja "-"
+10)nupud "+" ja "-" suurendavad ja vähendavad fondi suurust 
