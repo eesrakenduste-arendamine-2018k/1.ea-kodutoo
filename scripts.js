@@ -1,4 +1,4 @@
-var picture = 0;
+const picture = 0;
 var pictureCode = new Array("picture1.jpg", "picture2.jpg", "picture3.jpg", "picture4.jpg", "picture5.jpg");
 var condition = false;
 var esimene;
@@ -89,113 +89,9 @@ function renderTime() {
 function changeFont() {
 	document.getElementById("backPicture").style.fontFamily = "arial";
 }
-//change to  Impact
-/*function changeFont2() {
-	document.getElementById("backPicture").style.fontFamily = "Impact";
-}
-//change font to Courier New
-function changeFont3() {
-	document.getElementById("backPicture").style.fontFamily = "Courier New";
-}*/
-
-
-
-/*function changeNew(){
-	picture++;
-	if(picture > pictureCode.length) {
-		picture = 0;
-	}
-	//document.getElementById("backPicture").style.backgroundColor = pictureCode[picture]; vana funktsioon backPictureavärvidega
-	document.getElementById("backPicture").style.backgroundImage = "url(" + pictureCode[picture] + ")";
-}*/
-
-/*function changeBack() {
-	picture--;
-	if(picture < 0) {
-		picture = pictureCode.length;
-	}
-	//document.getElementById("backPicture").style.backgroundColor = pictureCode[picture];	 vana funktsioon backPictureavärviga
-	document.getElementById("backPicture").style.backgroundImage = "url(" + pictureCode[picture] + ")";
-}*/
-
-var currentSize = 80;
-
-
-/*function fontSmaller () {
-	if(currentSize <= 10){
-		alert("Kella suurus on liiga väike!");
-	}
-	else {
-	currentSize -= 7;
-	document.getElementById("clockDisplay").style.fontSize = currentSize + "px"; 
-	console.log(currentSize);
-	}
-}*/
-
-/*function fontBigger() {
-	if(currentSize >= 129){
-		alert("Kella suurus on liiga suur!");
-	} 
-	else {
-		currentSize += 7;
-		document.getElementById("clockDisplay").style.fontSize = currentSize + "px";
-		console.log(currentSize);
-	}	
-}*/
-
-/*
-var myVar;
-
-function myFunction() {
-    myVar = setInterval(alertFunc, 3000);
-}
-
-function alertFunc() {
-    alert("Hello!");
-}
-
-*/
-//var pictureCode = new Array("#d3d3d3", "#bdbdbd", "#a8a8a8", "#939393", "#7e7e7e", "#545454", "#2a2a2a", "#151515", "#000000");
-/*function starting(){						 
-document.getElementById("backPicture").style.backgroundColor = pictureCode[picture];
-} */
-
-
-/*
-document.getElementById("backPicture").style.backgroundColor = "#b3ff99";	
-
-var picture = 0;
-var pictureCode = new Array("#b3ff99", "#c2c2d6", "#b3cccc");
-	function backgroundEdasi(){
-		picture = picture+1;
-		if (picture > 2) {
-			picture = 0;
-		}
-		document.getElementById("backPicture").style.backgroundColor = pictureCode[picture];
-		return picture;
-		
-	}
-	function backgroundTagasi() {
-		picture = picture - 1;
-		if (pictureCode < 0) {
-			pictureCode = 2;
-		}
-		document.getElementById("backPicture").style.backgroundColor = pictureCode[picture;];
-		return picture;
-	}
-	
-*/
 
 
 
 
 
-//tasutapicture test
-/*function changeImage(){
-		document.body.background = "picture1.jpg";
-			}
-*/
-
-
-	
 	

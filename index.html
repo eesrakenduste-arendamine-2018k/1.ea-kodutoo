@@ -35,7 +35,7 @@ function myFunction() {
 			var d = new Date();
 			var time = d.getHours();
 		
-			if (time < 12) 
+			if (time >=3 && time < 12) 
 			  {
 			  document.write("<b>Good morning!</b>");
 			  }
@@ -51,5 +51,32 @@ function myFunction() {
 				document.write("<b> Go to sleep!!!! </b>")
 			}
 			</script>
+			
+			
+			<script type="text/javascript">
+
+				var currentTime = new Date().getHours();
+				if ( currentTime> 6 | currentTime<9) {
+				if(document.body) {
+				document.body.background = "picture1.jpg";
+				}
+				}
+				else if (currentTime>=9 &&currentTime < 20) {
+				if(document.body) {
+				document.body.background = "picture2.jpg";
+				}
+				}
+				else if (currentTime>20 &&currentTime < 24) {
+				if(document.body) {
+				document.body.background = "picture3.jpg";
+				}
+				}
+				else {
+				if (document.body) {
+				document.body.background = "picture4.jpg";
+				}
+				}
+				
+				</script>
 </body>
 </html>
