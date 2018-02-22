@@ -1,5 +1,19 @@
 # 1. kodutöö – Lauakell
 
+Autor: Julika Maiste
+
+<img src="paevakell.jpg"></img>
+
+<img src="nightclock.jpg"></img>
+
+Funktsionaalsus:
+* Kuvatud on kell, kuupäev, aasta ja nädalapäev.
+* Valida saab kahe etteantud taustapildi vahel.
+* Valida saab teksti värvi etteantud valikust.
+* Nuppudele vajutades saab teksti muuta suuremaks ja väiksemaks.
+* Autori nimele vajutades saab rakenduse Githubi repositooriumisse.
+
+
 ## Tähtpäev 18.02.2018 23:59
 
 Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella täisekraanile, et saaks kasutada lauakella või ekraanisäästja asemel. Selleks, et see sobiks paljudele ekraanidele, kasuta kujunduse loomisel protsendilisi väärtusi (nt width: 100%; ) või nt võimalda kella suurust kasutajal muuta.
