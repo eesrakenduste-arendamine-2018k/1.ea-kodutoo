@@ -12,7 +12,7 @@ body, html, section {
     height: 100%;
 }
 
-#taust { 
+#myBackground { 
     background-image: url("maed.jpg");
     height: 102.25%; 
     background-position: center;

@@ -12,20 +12,20 @@
 </head>
 <body>
 	<section>
-		<div id="taust">
-				<h1>Tere, Egert!</h1>
-				<p id="clock"></p>
+		<div id="myBackground">
+			<h1>Tere, Egert!</h1>
+			<p id="clock"></p>
 				
-			<div class="controls">
-				<label>Hägusus:</label>
-				<input type="range" id="blur" min="0" max="25" value="0">
-			</div>
+		<div class="controls">
+			<label>Hägusus:</label>
+			<input type="range" id="blur" min="0" max="25" value="0">
+		</div>
 
-			<button onclick="peidaKell()">Näita/peida kell</button>
-			<div id="clock"></div>
+		<button onclick="hideClock()">Näita/peida kell</button>
+		<div id="clock"></div>
 			
-			<button onclick="suuremaks()">kell suuremaks</button>
-			<button onclick="vaiksemaks()">kell väiksemaks</button>
+		<button onclick="bigger()">kell suuremaks</button>
+		<button onclick="smaller()">kell väiksemaks</button>
 		</div>
 	</section>
 </body>
