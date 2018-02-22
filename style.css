@@ -1,0 +1,27 @@
+.displayclock {
+    font-weight: 300;
+    font-size: 100px;
+}
+.name {
+    font-weight: 100;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+body {
+    font-family: 'Lato';  
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    background-color: #003399;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+a {
+    color: white;
+}
