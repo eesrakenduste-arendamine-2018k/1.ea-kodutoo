@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="design.css">
+    <link rel="stylesheet" type="text/css" href="buttons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="clock.js"></script>
+    <script src="menuButtons.js"></script>
+</head>
+<body>
+
+<!--Background music player-->
+<audio controls loop>
+<source src="scary.mp3" type="audio/ogg">
+</audio>
+<!-- Display date/clock/menu hide/show button-->
+    <div id="Date" class="date1"></div>
+    <div id="clock" class="clockClass"></div>  
+    <div class="btn-group"></div>
+    <button class="menuHide" onclick="menuHiding()">SHOW/HIDE MENU</button>
+    <div id="div2">
+<!--Eye color buttons-->
+    <div class="btn-group">
+    <button class="button" onclick="redEyes()" id="rEYES";>RED EYES</button>
+    <button class="button" onclick="greenEyes()" id="gEYES";>GREEN EYES</button>
+    <button class="button" onclick="blueEyes()" id="bEYES";>BLUE EYES</button>
+    <button class="button" onclick="whiteEyes()" id="wEYES";>WHITE EYES</button>
+<!--Date color buttons-->
+    <button class="button" onclick="redDate()" id="rDATE";>RED DATE</button>
+    <button class="button" onclick="greenDate()" id="gDATE";>GREEN DATE</button>
+    <button class="button" onclick="blueDate()" id="bDATE";>BLUE DATE</button>
+    <button class="button" onclick="whiteDate()" id="wDATE";>WHITE DATE</button>
+<!--Clock pulsating color buttons-->
+    <button class="button" onclick="pulsateRedClock()" id="pulseR";>PULSATE RED</button>
+    <button class="button" onclick="pulsateGreenClock()" id="pulseG";>PULSATE GREEN</button>
+    <button class="button" onclick="pulsateBlueClock()" id="pulseB";>PULSATE BLUE</button>
+    <button class="button" onclick="pulsateWhiteClock()" id="pulseW";>PULSATE WHITE</button>
+<!--Buttons for changing Date and Clock sizes-->
+    <button class="button" onclick="makeDateLarger()" id="dateLarger";>DATE SIZE +</button>
+    <button class="button" onclick="makeDateSmaller()" id="dateSmaller";>DATE SIZE -</button>
+    <button class="button" onclick="makeClockLarger()" id="clockLarger";>CLOCK SIZE +</button>
+    <button class="button" onclick="makeClockSmaller()" id="clockSmaller";>CLOCK SIZE -</button>
+    <!--<p id="demo"></p><input type="color" id="myEyeColor"></p><button class="button" onclick="chooseEyeColor()";>CHOOSE COLOR</button>-->
+<!--Buttons for moving date up, down, left, right-->
+    <button class="button" onclick="moveDateUp()" id="dateUp";>DATE UP</button>
+    <button class="button" onclick="moveDateDown()" id="dateDown";>DATE DOWN</button>
+    <button class="button" onclick="moveDateLeft()" id="dateLeft";>DATE LEFT</button>
+    <button class="button" onclick="moveDateRight()" id="dateRight";>DATE RIGHT</button>
+<!--Buttons for moving clock up, down, left, right-->
+    <button class="button" onclick="moveClockUp()" id="clockUp";>CLOCK UP</button>
+    <button class="button" onclick="moveClockDown()" id="clockDown";>CLOCK DOWN</button>
+    <button class="button" onclick="moveClockLeft()" id="clockLeft";>CLOCK LEFT</button>
+    <button class="button" onclick="moveClockRight()" id="clockRight";>CLOCK RIGHT</button>
+    </div>
+    </div>
+    <footer>
+        <authorName>Made by Kert Tamm</authorName>
+        <authorRepoLink>
+            <a href="https://github.com/K3RTTAMM/1.ea-kodutoo">
+            <img border="0" alt="W3Schools" src="GitHub-Mark-120px-plus.png" width=32px height=32px>
+            </a>
+        </authorRepoLink>
+    </footer>
+</body>
+</html>
