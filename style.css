@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#bg {
+	position:relative;
+	width:100%;
+	height:100%;
+	top: 0;
+	left: 0;
+	max-width: 1920px;
+	background-image: url("taust2.jpg");
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#clock {
+  height: 20vh;
+  color: white;
+  font-size: 100px;
+  font-family: sans-serif;
+  line-height: 20.4vh;
+  display: clock;
+  position: absolute;
+  overflow: hidden;
+}
+
+
+
+#date {
+	font-family: sans-serif;
+	font-weight: 100;
+	font-size: 35px;
+	color: white;
+	text-shadow: 
+	-1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+	position: absolute;
+	left: 50%;
+	top: 59%;
+	transform: translatex(-50%) translateY(-50%);
+}
+
+#buttons {
+	position: absolute;
+	left: 50%;
+	top: 65%;
+	transform: translatex(-50%) translateY(-50%);
+  
+}
+
+button {
+	width: 100px;
+	padding: 6px;
+	font-size: 16px;
+	color: #FFF;
+	display: inline-block;
+	background-color: black;
+	background-repeat:no-repeat;
+	border: none;
+	cursor:pointer;
+	overflow: hidden;
+}
+
+#name{
+	font-family: sans-serif;
+	font-weight: 100;
+	font-size: 30px;
+	position: absolute;
+	right: -1%;
+	bottom: 0%;
+	transform: translatex(-50%) translateY(-50%);
+	color: #FFF;
+}
