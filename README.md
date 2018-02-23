@@ -1,3 +1,6 @@
+[Screenshot 1](Sc1.png "Regular")
+Rakendus on ka k�ttesaadaval lingil "http://www.tlu.ee/~kivig/Romil_Tund/"  
+
 # 1. kodutöö – Lauakell
 
 ## Tähtpäev 18.02.2018 23:59
