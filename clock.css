@@ -1,0 +1,95 @@
+body
+{
+	background-color: #8CC5FF;
+	font-family: verdana;
+	font-size: 1em;
+	padding: 0px;
+	margin: 0px;
+    background-image: url("pildid/taustapilv.png");
+	background-position: left ;
+    background-repeat: repeat-y;
+
+  
+}
+
+@font-face
+{
+	font-family:"McKloud Black";
+	src: url("MCKLB.TTF");
+
+}
+
+@media screen and (max-width: 900px) {
+  body{
+    background-image: none;
+  }
+  #main{
+	  margin-right:0px;
+	  margin-left:0px;
+	  
+  }
+}
+
+
+#main
+{
+	padding-bottom:100px;
+	margin-right:200px;
+	margin-left:200px;
+	padding: 0px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+
+
+
+h1
+{
+	color: white;
+    text-align: center;
+	font-family: "McKloud Black";
+
+}
+
+h2
+{
+	color: white;
+    text-align: center;
+	font-family: "McKloud Black";
+
+}
+
+h2:before
+{
+    content: url("pildid/pealkirja_pilv.png");
+	margin: 5px;
+}
+
+h2:after
+{
+    content: url("pildid/pealkirja_pilv.png");
+	margin: 5px;
+}
+
+h2:hover 
+{
+	opacity: 0.5;
+}
+
+
+
+#alumine{
+	font-family:"McKloud Black";
+	font-size:50px;
+	color: white;
+	height: padding;
+	position:fixed;
+	bottom:0;
+	right:0;
+	background-color :#8CC5FF;
+	text-align:center;
+	width:100vw;
+	}
+	
