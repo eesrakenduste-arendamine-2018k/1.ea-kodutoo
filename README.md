@@ -10,7 +10,7 @@ Sten Piirsalu
 * nimele vajutades pääseb respositooriumi.
 
 ## ekraanitõmmis: 
-![alt text](https://imgur.com/a/V1asw)
+![alt text](https://imgur.com/a/V1asw.jpg)
 
 	
 
