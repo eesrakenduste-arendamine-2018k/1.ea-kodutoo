@@ -11,7 +11,7 @@ Sten Piirsalu
 
 ## ekraanitõmmis: 
 https://imgur.com/DuIwq6Q
-![alt text](https://imgur.com/DuIwq6Q)
+![alt text](ekraanitõmmis.jpg)
 
 	
 
