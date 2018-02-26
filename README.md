@@ -1,1 +1,1 @@
-Taustapildi temaatika muutub vastavalt kellaajale. Lisaks muutub kellal või kuupäeval klikkides nende värvus. On olemas ka countdown loendur, kus saab valida kuupäeva ja nupule vajutades hakkab jooksma kell, mis loeb aega valitud kuupäevani.
+Taustapildi temaatika muutub vastavalt kellaajale. Lisaks muutub kellal või kuupäeval klikkides nende värvus. On olemas scrolldown menüü, kus saab valida kella kirjatüübi.
