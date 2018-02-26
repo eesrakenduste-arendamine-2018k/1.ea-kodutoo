@@ -1,3 +1,7 @@
+
+
+
+
 var clock = document.getElementById('clock');
 var date = document.getElementById('date');
 
@@ -102,43 +106,40 @@ function changeColor() {
 	document.getElementById("date").style.color = color;
 }
 
-
-//var countdowndate = document.getElementById("countdown");
-function getTimeRemaining(endtime){
-  var t = Date.parse(endtime) - Date.parse(new Date());
-  var seconds = Math.floor( (t/1000) % 60 );
-  var minutes = Math.floor( (t/1000/60) % 60 );
-  var hours = Math.floor( (t/(1000*60*60)) % 24 );
-  var days = Math.floor( t/(1000*60*60*24) );
-  var time = hours + ':' + seconds + ':' + seconds;
-  demo.textContent = time;
-    return {
-    'total': t,
-    'days': days,
-    'hours': hours,
-    'minutes': minutes,
-    'seconds': seconds
-  };
+function changeFont(selectTag) {
+    var listValue = selectTag.options[selectTag.selectedIndex].text;
+    document.getElementById("clock").style.fontFamily = listValue;
 }
-
-function cownDownClock(){
-  var endtime = document.getElementById("endtime").value;
-  var clock = document.getElementById("demo");
-  var timeinterval = setInterval(function(){
-    var t = getTimeRemaining(endtime);
-    clock.innerHTML = t.days + 'päeva :' +
-                      t.hours + 'minutit :' +
-                      t.minutes + 'sekundit :' +
-                      t.seconds;
-    if(t.total<=0){
-      clearInterval(timeinterval);
-    }
-  },1000);
-}
-
 Clock();
 dateTime();
 setInterval(Clock, 1000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
