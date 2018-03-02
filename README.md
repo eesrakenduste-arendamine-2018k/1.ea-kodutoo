@@ -1,2 +1,2 @@
 # 1. kodutöö – Lauakell
-Autor: Ea Rist .
+Autor: Ea Rist
