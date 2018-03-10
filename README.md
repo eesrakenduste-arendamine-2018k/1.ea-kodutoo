@@ -5,7 +5,11 @@ Funktsionaalsus:
 *Tegemist on digitaalkellaga, kus on võimalik muuta kella suurust suuremaks ja väiksemaks.
 *Saab muuta kuupäeva värvi(kuvatakse kuupäev suvalise värviga changeColor funktsioonist)
 *Kell tiksub reaalajas, pole vaja lehte uuendada
-*Taustal mängib youtube-ist muusika(iframe) 
+*Taustal mängib youtube-ist muusika(iframe)
+
+Kell põhi osa, funktsiooni hexClock loomiseks kasutasin abimaterjaliks youtube`ist leitud videot: https://www.youtube.com/watch?v=mnAqcmVHONY&t=794s 
+Edasiste funktsioonide loomisel(fontsizebigger, fontsizesmaller, read 57-75) Kalmer Roopa abi ja tema töö(https://github.com/KalmerR/1.ea-kodutoo)
+ChangeColor funktsioon(read 77-84) Sten Piirsalu abiga ja tema töö(https://github.com/piirsalusten/1.ea-kodutoo) 
 
 ## Tähtpäev 18.02.2018 23:59
 
