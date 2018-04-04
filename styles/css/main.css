@@ -34,7 +34,7 @@
   -o-transition: all 2.3s cubic-bezier(0.215, 0.610, 0.355, 1)
   transition: all 2.3s cubic-bezier(1, 0, 0, 1);
   position: absolute;
-  width: 300px;
+  width: 320px;
   height: 180px;
   top: 200px;
   left: 200px;

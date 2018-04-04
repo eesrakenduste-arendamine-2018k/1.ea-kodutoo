@@ -1,7 +1,7 @@
 
-// Avalikud muutujad
-let clockContainer // = null
-let changeColorButton //
+/*Clock */
+let clockContainer
+let changeColorButton
 
 
 window.onload = function () {
@@ -13,11 +13,11 @@ function init () {
   console.log(clockContainer)
   changeColorButton = document.querySelector('#change-color')
 
-  startClock() //alustan kellaga
+  startClock() //starting clock
 
   changeColorButton.addEventListener('click', changeBackgroundColor)
   
-  window.addEventListener('wheel', changeBackgroundColor) //sama asi, ainult hiire liigutamisega
+  window.addEventListener('wheel', changeBackgroundColor) //same, but scrolling
 }
 
 function changeBackgroundColor () {
@@ -32,13 +32,13 @@ function changeBackgroundColor () {
 
 
   function startClock () {
-    updateClock() //laeb kella kohe laadimise funkt, mitte ei oota 1000ms
+    updateClock() //loads clock immediately
     window.setInterval(function () {
       updateClock()
     }, 1000)
   }
 
-  function updateClock () {//laeb kella kohe, mitte ei oota 1000ms
+  function updateClock () {//loads clock immediately
 
     const date = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', second:'2-digit', hour12: false});
     clockContainer.innerHTML  = date 
@@ -60,13 +60,9 @@ function changeBackgroundColor () {
 
 
 /*
-The tile code is from here: https://github.com/MathiasPaumgarten/spread 
+Folding effect. The basis for the tile code is from: https://github.com/MathiasPaumgarten/spread 
 */
-/*
- * The original code uses AMD and can be 
- * found here:
- * https://github.com/MathiasPaumgarten/spread
- */
+
 
 var container = document.getElementById( "container" );
 var tag = document.getElementById( "tag" );
