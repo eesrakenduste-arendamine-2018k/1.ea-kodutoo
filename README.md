@@ -1,3 +1,11 @@
+Kell
+Kaur K.
+
+Funktsionaalsused:
+1) taustale klikates jooksevad lahti kastikesed
+2) 
+3) 
+
 # 1. kodutöö – Lauakell
 
 ## Tähtpäev 18.02.2018 23:59
