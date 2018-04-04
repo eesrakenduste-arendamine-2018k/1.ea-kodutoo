@@ -40,7 +40,7 @@ function changeBackgroundColor () {
 
   function updateClock () {//laeb kella kohe, mitte ei oota 1000ms
 
-    const date = new Date(milliseconds)
+    const date = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', second:'2-digit', hour12: false});
     clockContainer.innerHTML  = date 
   }
 
