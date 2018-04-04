@@ -7,4 +7,4 @@ Autor: Kaur K.
 * Rainbow nupule vajutades saab muuta kella tausta
 * Play/pause nuppudele vajutades saab mängida taustamuusikat
   
-![Screenshot](https:www.knowbase.ee/failid/clock.JPG)
+Markup : ![Screenshot](https:www.knowbase.ee/failid/clock.JPG)
