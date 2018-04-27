@@ -1,21 +1,60 @@
-// Avalikud muutujad
-let clockContainer // = null
-let changeColorButton
-
-window.onload = function () {
-  init()
+//KELL
+function digitalClock(){
+  //date metod
+  const date = new Date();
+  //muutujad
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var seconds = date.getSeconds();
+  var wd = new Array(7);
+    wd[0] =  "Sunday";
+    wd[1] = "Monday";
+    wd[2] = "Tuesday";
+    wd[3] = "Wednesday";
+    wd[4] = "Thursday";
+    wd[5] = "Friday";
+    wd[6] = "Saturday"; 
+  var weekdays = wd[date.getDay()];
+  var days = date.getDate();
+  var mnth = new Array();
+    mnth[0] = "January";
+    mnth[1] = "February";
+    mnth[2] = "March";
+    mnth[3] = "April";
+    mnth[4] = "May";
+    mnth[5] = "June";
+    mnth[6] = "July";
+    mnth[7] = "August";
+    mnth[8] = "September";
+    mnth[9] = "October";
+    mnth[10] = "November";
+    mnth[11] = "December";
+  var months = mnth[date.getMonth()];
+  var years = date.getFullYear();
+  //lisan nulli ette, kui numbrid on väiksem kui 10
+  if (hours < 10) {
+    hours = '0' + hours;
+  }
+  if (minutes < 10) {
+    minutes = '0' + minutes;
+  }
+  if (seconds < 10) {
+    seconds = '0' + seconds;
+  }
+  //lisan tähendused HTMLi
+  document.getElementById('hour').innerHTML = hours;
+  document.getElementById('minute').innerHTML = ':' + minutes;
+  document.getElementById('second').innerHTML = ':' + seconds;
+  document.getElementById('weekday').innerHTML = weekdays;
+  document.getElementById('day').innerHTML = days;
+  document.getElementById('month').innerHTML = months;
+  document.getElementById('year').innerHTML = years;
 }
 
-function init () {
-  clockContainer = document.querySelector('#clock')
-  console.log(clockContainer)
-  changeColorButton = document.querySelector('#change-color')
+setInterval(digitalClock, 1000);
 
-  startClock()
-  
-  changeColorButton.addEventListener('click', changeBackgroundColor)
-}
-function changeBackgroundColor () {
+/*
+function changeColor () {
 	console.log('muudan värvi')
 	
 
@@ -24,18 +63,5 @@ function changeBackgroundColor () {
 	const b = Math.round(Math.random() * 255)
 	
 	
-	clockContainer.style.backgroundColor = 'rgb('+ r + ', '+ g + ','+ b + ')'     //
-}
-
-function startClock () {
-	updateClock()
-  window.setInterval(function () {
-	updateClock()
-  }, 1000)
-}
-
-function updateClock () {
-	   const date = new Date()
-
-    clockContainer.innerHTML = date
-}
+	clockContainer.style.color = 'rgb('+ r + ', '+ g + ','+ b + ')'     //
+}*/
