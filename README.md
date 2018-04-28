@@ -1,4 +1,16 @@
-# 1. kodutöö – Lauakell
+﻿# 1. kodutöö – Lauakell
+
+Autor: Tatjana Kuznetsova
+
+## Funktsionaalsus:
+* COLOR - juhuslikult muutub kella värvi
+* SIZE - muutub texti suurust 25px/50px
+* BACKGROUND - muutub taustapilti 3 varianti vahel
+* MUSIC - lülitab sisse/välja taustamuusikat
+
+## Pildid:
+![Screenshot](screenshot1.JPG)
+![Screenshot](screenshot2.JPG)
 
 ## Tähtpäev 18.02.2018 23:59
 
