@@ -1,4 +1,5 @@
 //KELL
+//näidendina kasutasin järgmise video: https://www.youtube.com/watch?v=EOePhBhyB88
 function digitalClock(){
   //date metod
   const date = new Date();
@@ -50,7 +51,7 @@ function digitalClock(){
   document.getElementById('month').innerHTML = months;
   document.getElementById('year').innerHTML = years;
 }
-
+//kell automaatselt uueneb iga sekundi
 setInterval(digitalClock, 1000);
 
 /*
