@@ -55,8 +55,8 @@ function changeBackground (){
 }
 
 function onOffMusic (){
-  var audio = document.getElementById("bgm");
-  audio.play();
+  var myAudio = document.getElementById("bgm");
+  return myAudio.paused ? myAudio.play() : myAudio.pause();
 }
 //KELL
 //näidendina kasutasin järgmise video: https://www.youtube.com/watch?v=EOePhBhyB88
