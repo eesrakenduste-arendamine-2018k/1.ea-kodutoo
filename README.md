@@ -2,6 +2,16 @@
 
 Autor: Tatjana Kuznetsova
 
+## Funktsionaalsus:
+* COLOR - juhuslikult muutub kella värvi
+* SIZE - muutub texti suurust 25px/50px
+* BACKGROUND - muutub taustapilti 3 varianti vahel
+* MUSIC - lülitab sisse/välja taustamuusikat
+
+## Pildid:
+![Screenshot](screenshot1.JPG)
+![Screenshot](screenshot2.JPG)
+
 ## Tähtpäev 18.02.2018 23:59
 
 Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella täisekraanile, et saaks kasutada lauakella või ekraanisäästja asemel. Selleks, et see sobiks paljudele ekraanidele, kasuta kujunduse loomisel protsendilisi väärtusi (nt width: 100%; ) või nt võimalda kella suurust kasutajal muuta.
