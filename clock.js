@@ -1,3 +1,63 @@
+let clockContainer;
+let changeColorButton;
+let changeSizeButton;
+let changeBackgroundButton;
+let onOffMusicButton;
+
+window.onload = function () {
+  init()
+}
+
+function init () {
+  clockContainer = document.querySelector('#clock');
+  console.log(clockContainer);
+  //vaheta värvi nupp
+  changeColorButton = document.querySelector('#change-color');
+  changeColorButton.addEventListener('click', changeColor);
+  //vaheta suurus nupp
+  changeSizeButton = document.querySelector('#change-size');
+  changeSizeButton.addEventListener('click', changeSize);
+  //vaheta taustapilti pupp
+  changeBackgroundButton = document.querySelector('#change-image');
+  changeBackgroundButton.addEventListener('click', changeBackground);
+  //sisse/välja muusuka nupp
+  onOffMusicButton = document.querySelector('#onoff-music');
+  onOffMusicButton.addEventListener('click', onOffMusic);
+}
+//vaheta värvi funktsioon
+function changeColor () {
+	console.log('muudan värvi');
+	
+	const r = Math.round(Math.random() * 255);
+	const g = Math.round(Math.random() * 255);
+	const b = Math.round(Math.random() * 255);
+	
+	clockContainer.style.color = 'rgb('+ r + ', '+ g + ','+ b + ')';    
+}
+//vaheta suuruse funktsioon
+function changeSize (){ //w3schools
+  console.log('muudan suuruse');
+  var s = document.getElementById('clock');
+  var sstyle = window.getComputedStyle(s, null).getPropertyValue('font-size');
+  if (sstyle == "25px") {
+    s.style.fontSize = "50px";
+  } else{
+    s.style.fontSize = "25px";
+  }
+}
+//taustapildi funktsioon
+var x = 0; //stackoverflow
+var pics = ['plant.png', 'owl.png', 'blueberry.png'];
+function changeBackground (){
+  console.log('change background');
+  var b = document.getElementById('mainbody');
+  b.style.backgroundImage = 'url('+pics[(x++)%3]+')';
+}
+
+function onOffMusic (){
+  var audio = document.getElementById("bgm");
+  audio.play();
+}
 //KELL
 //näidendina kasutasin järgmise video: https://www.youtube.com/watch?v=EOePhBhyB88
 function digitalClock(){
@@ -7,7 +67,7 @@ function digitalClock(){
   var hours = date.getHours();
   var minutes = date.getMinutes();
   var seconds = date.getSeconds();
-  var wd = new Array(7);
+  var wd = new Array(7); //w3schools
     wd[0] =  "Sunday";
     wd[1] = "Monday";
     wd[2] = "Tuesday";
@@ -53,16 +113,3 @@ function digitalClock(){
 }
 //kell automaatselt uueneb iga sekundi
 setInterval(digitalClock, 1000);
-
-/*
-function changeColor () {
-	console.log('muudan värvi')
-	
-
-	const r = Math.round(Math.random() * 255)
-	const g = Math.round(Math.random() * 255)
-	const b = Math.round(Math.random() * 255)
-	
-	
-	clockContainer.style.color = 'rgb('+ r + ', '+ g + ','+ b + ')'     //
-}*/

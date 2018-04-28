@@ -5,7 +5,10 @@
 }
 
 body{
-    background: black;
+    background-image: url("blueberry.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
     font-family: 'Indie Flower';
     font-size: 20px;
     height: 100%;
@@ -21,8 +24,10 @@ body{
     color: white;
     text-align: center;
     font-weight: bold;
+    font-size: 25px;
     border-style: solid;
     border-color: white;
+    border-radius: 8px;
     padding: 50px;
     width: 500px;
     margin: 100px auto;
