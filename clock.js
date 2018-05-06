@@ -4,66 +4,66 @@
 //alert('Leht on laetud.');
 	console.log('Leht on laetud.')
 		
-	trukiKell();
+	printWatch();
 		
 	setInterval(function () {
 			
-		trukiKell();
+		printWatch();
 			
 	}, 5);
-	var algSuurus = 16;
-	var Suurus = algSuurus;
+	var beginSize = 16;
+	var size = beginSize;
 	
-	document.getElementById('suurus').addEventListener('click', function (event) {
+	document.getElementById('size').addEventListener('click', function (event) {
 				
-	Suurus = Suurus * 1.2;
+		size = size * 1.2;
 	//console.log(event);
-	document.getElementById('asukoht').style.fontSize = Suurus + "px";
+	document.getElementById('location').style.fontSize = size + "px";
 	});
-	document.getElementById('algneSuurus').addEventListener('click', function (event) {
+	document.getElementById('BeginningSize').addEventListener('click', function (event) {
 				
-	Suurus = algSuurus;
+		size = beginSize;
 	//console.log(event);
-	document.getElementById('asukoht').style.fontSize = Suurus + "px";
+	document.getElementById('location').style.fontSize = size + "px";
 	
 	});
 }		
 
-		var juhu_varv = function () {
+		var randcolor = function () {
 		
 		var r = Math.round(Math.random()*255); //1-255
 		var g = Math.round(Math.random()*255); //1-255
 		var b = Math.round(Math.random()*255); //1-255
 
-		var juhuslik_varv = "rgb("+r+","+g+","+b+")";
-		document.body.style.color = juhuslik_varv
+		var randomcolor = "rgb("+r+","+g+","+b+")";
+		document.body.style.color = randomcolor
 		
 		
 		}
 		// kella tr�kkimis funktsioon p#asukoht
 		
 		
-		var trukiKell = function () {
+		var printWatch = function () {
 		
-		var kell = new Date();
+		var clock = new Date();
 			
-		var kuud = kell.getMonth();
-		var kuupaevad = kell.getDate();
-		var tunnid = kell.getHours();
-		var minutid = kell.getMinutes();
-		var sekundid = kell.getSeconds();
-		var millisekundid = kell.getMilliseconds();
-		var kuunimetused =  ["jaanuar", 'veebruar', 'märts', 'aprill', 'mai', 'juuni', 'juuli', 'august', 'september', 'oktoober', 'november', 'detsember'];
+		var months = clock.getMonth();
+		var dates = clock.getDate();
+		var hours = clock.getHours();
+		var minutes = clock.getMinutes();
+		var seconds = clock.getSeconds();
+		var milliseconds = clock.getMilliseconds();
+		var monthnames =  ["jaanuar", 'veebruar', 'märts', 'aprill', 'mai', 'juuni', 'juuli', 'august', 'september', 'oktoober', 'november', 'detsember'];
 			
-		var np = kell.getDay()
+		var np = clock.getDay()
 	 
-		var ilusKell = nullEtte(kuupaevad) + '. ' + kuunimetused[kuud] + ', ' + nullEtte(tunnid) + ':' + nullEtte(minutid) + ':' + nullEtte(sekundid) 
+		var niceWatch = zerotofront(dates) + '. ' + monthnames[months] + ', ' + zerotofront(hours) + ':' + zerotofront(minutes) + ':' + zerotofront(seconds) 
 	
-		document.getElementById('asukoht').innerHTML = ilusKell;
+		document.getElementById('location').innerHTML = niceWatch;
 			
 		}
 		
-		var nullEtte = function (number) {
+		var zerotofront = function (number) {
 		
 			if (number < 10) {
 			
@@ -75,4 +75,4 @@
 		
 		}
 		
-		document.getElementById('suurus');
+		document.getElementById('size');
