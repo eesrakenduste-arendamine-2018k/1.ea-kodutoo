@@ -29,14 +29,14 @@
 	});
 }		
 
-		var randcolor = function () {
+		const randcolor = function () {
 		
-		var r = Math.round(Math.random()*255); //1-255
-		var g = Math.round(Math.random()*255); //1-255
-		var b = Math.round(Math.random()*255); //1-255
+			const r = Math.round(Math.random()*255); //1-255
+			const g = Math.round(Math.random()*255); //1-255
+			const b = Math.round(Math.random()*255); //1-255
 
-		var randomcolor = "rgb("+r+","+g+","+b+")";
-		document.body.style.color = randomcolor
+			const randomcolor = "rgb("+r+","+g+","+b+")";
+			document.body.style.color = randomcolor
 		
 		
 		}
