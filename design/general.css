@@ -1,0 +1,32 @@
+body {
+	background-image: url("http://localhost:5555/~kodakevi/2018/eesrakendused/pics/pilt.jpg");
+	background-color: #cccccc;
+	width: 100%;
+	position: absolute;
+}
+
+section {
+	text-align: center;
+	color: white;
+	font-family: "Courier New", Courier, monospace;
+}
+
+#clock {
+	font-size: 125px;
+	font-weight: bold;
+}
+
+#author {
+	font-size: 0.6vw;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    text-align: left;
+    background-color: #383838;
+    border-radius: 0vw 2vw 0vw 0vw;
+    padding-right: 1vw;
+    padding-top: 0.7vh;
+    padding-bottom: 0.3vh;
+    padding-left: 0.3vw;
+}
