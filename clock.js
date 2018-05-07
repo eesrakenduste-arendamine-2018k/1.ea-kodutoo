@@ -25,7 +25,6 @@ function init() {
 
 function changeColor (event){
     console.log(event)
-<<<<<<< HEAD
     let r = Math.round(Math.random() *  255);
 	let g = Math.round(Math.random() *  255);
 	let b = Math.round(Math.random() *  255);
@@ -35,14 +34,6 @@ function changeColor (event){
     } else {
         clockContainer.style.color = "rgb(" + r + "," + g + "," + b + ")";
         dateContainer.style.color = "rgb(" + r + "," + g + "," + b + ")";
-=======
-    if (clockContainer.style.color === "black" && dateContainer.style.color === "black") {
-        clockContainer.style.color = "white"
-        dateContainer.style.color = "white"
-    } else {
-        clockContainer.style.color = "black"
-        dateContainer.style.color = "black"
->>>>>>> 093e0858b679b12ea650fd6c50505a011604c58f
     }
 }
 
@@ -88,7 +79,7 @@ function updateClock() {
 }
 
 function currentDate() {
-    let date = new Date()
+    const date = new Date()
     
     let months = ['Jaanuar', 'veebruar', 'Märts', 'Aprill', 'Mai', 'Juuni', 'Juuli', 'August', 'September', 'Oktoober', 'November', 'Detsember']
     let days = ['','Esmaspäev', 'Teisipäev', 'Kolmapäev', 'Neljapäev', 'Reede', 'Laupäev', 'Pühapäev']
