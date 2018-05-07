@@ -1,5 +1,19 @@
 # 1. kodutöö – Lauakell
 
+Kevin Kodasma
+
+*Taustapilt
+*Võimalus muuta kella suurust
+*Võimalus muuta kella ja kuupäeva värvi
+*Võimalus peita/tuua nähtavale kell ja kuupäev
+*Autori nimi
+*Link githubi
+<<<<<<< HEAD
+=======
+*Ekraani vaade - https://www.upload.ee/image/8061459/Kella_screenshot.jpg
+>>>>>>> 093e0858b679b12ea650fd6c50505a011604c58f
+
+
 ## Tähtpäev 18.02.2018 23:59
 
 Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella täisekraanile, et saaks kasutada lauakella või ekraanisäästja asemel. Selleks, et see sobiks paljudele ekraanidele, kasuta kujunduse loomisel protsendilisi väärtusi (nt width: 100%; ) või nt võimalda kella suurust kasutajal muuta.
