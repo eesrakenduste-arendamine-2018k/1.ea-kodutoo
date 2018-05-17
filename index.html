@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <p>&copy; 2017 Dennis Richard Šulga</p>
-      <a href="https://github.com/desulg/1.ea-kodutoo">Lingike repositooriumile</a>
-    </header>  
-    <h1 id="clock"></h1>
-    <p id="dayDate"></p>
-    <div id="colorInfo">
-        <div>
-          <p id="hex-color"></p>
-        </div>
-        <div>
-          <p id="back-color"></p>
-        </div>
-        <script src="clock.js"></script>
-  </body>
-</html>
+<head>
+	<meta charset="UTF-8">
+	<title>DennisO'Clock</title>
+	<link rel="stylesheet" href="style.css" />
+	<script src="clock.js"></script>
+</head>
+<body> 
+		<div id="bigPic">
+			<div id="date" onclick="changeColor()"></div>
+			<button onclick="changeClockPos()">Liiguta kella</button>
+			<div id="clock" onclick="changeFont()"></div>
+      <button onclick="changeBgCol()">Vaheta taustavärvi</button>
+      <div id="link">
+        <p>Dennis Richard Šulga</p>
+        <a href="https://github.com/desulg/1.ea-kodutoo">Lingike repositooriumile</a>
+      </div>
+	</div>
+</body>
+</html> 
