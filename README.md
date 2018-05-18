@@ -8,6 +8,8 @@ Autor: Marianne Kristiina Orusalu
 
 PS! Võib teha ka väikse mängulise mõtlemise, et milline heli millise pildiga kokku läheb.
 
+![Screen Shot](https://github.com/marioru/1.ea-kodutoo/blob/master/Screen%20Shot.png)
+
 ___
 
 
