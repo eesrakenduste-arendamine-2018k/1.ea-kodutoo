@@ -1,0 +1,46 @@
+#clock {
+    padding: 25px;
+    font-size: 5px;
+}
+.container {
+    width: 75%;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: rgb(15, 45, 179);
+color: white;
+text-align: center;
+}
+h1 {
+    font-size: 35px;
+    margin-top: 5%;
+}
+h2 {
+    font-size: 25px;
+}
+button {
+    margin: 0 10px 10px 10px;
+    padding: 5px 10px;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.droptarget {
+    width: 75%;
+    height: 85px;
+    border: 3px solid blue;
+    margin: auto;
+    border-radius: 25px;
+}
+a {
+    color: white;
+}

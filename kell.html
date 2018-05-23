@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kell</title>
+    <script src="kell.js"></script>
+    <link rel="stylesheet" href="kell.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>Kell</h1>
+            <h2>1. Kell on liiga väike. Kõigepealt scrolli, et seda suuremalt näha.</h2>
+            <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">
+                    <div id="clock"></div>
+                </div>
+            </div>
+            <!-- <div id="clock"></div> -->
+
+            <div class="settings">
+                <h2>2. Muuda kirjastiili järgneva kolme valiku vahel</h2>
+                <button id="change-bold">Bold</button>
+                <button id="change-italics">Italics</button>
+                <button id="change-normal">Normal</button>
+            </div>
+
+            <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <h2>3. Proovi lohistada kella ühest sinisest kastist teise ja vastupidi</h2>
+        </div>
+        <footer>
+            <p>Rauno Kaldmaa @ <a href="https://github.com/lostinthemist/1.ea-kodutoo">Repositooriumi link</a></p>
+        </footer>
+    </div>
+ </body>
+</html>
+
