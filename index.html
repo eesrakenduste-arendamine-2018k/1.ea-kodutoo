@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<html lang="en">
+		<head>
+
+		  <meta charset="UTF-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		  <title>Klock</title>
+
+		<link rel="stylesheet" href="styles/css/main.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Quicksand:300,400,700" type="text/css">
+	</head>
+
+	<body>
+		
+		<div id="container"></div>
+		<div id="tag" class="before">
+			<button class="button button1" id="change-color" >Color</button>
+			<h1><div id="clock"></div></h1>
+			
+			<!-- AUDIO part-->
+			<audio id="myAudio">
+				<source src="https://www.knowbase.ee/failid/night.mp3" type="audio/mpeg">
+			</audio>  
+			<button class="button button1" onclick="playAudio()" type="button">Play</button>
+			<button class="button button1" onclick="pauseAudio()" type="button">Pause</button> 
+			<script>
+					var x = document.getElementById("myAudio"); 
+					
+					function playAudio() { 
+						x.play(); 
+					} 
+					
+					function pauseAudio() { 
+						x.pause(); 
+					} 
+			</script>
+			<p>	
+				<br>Kaur K.<br>
+				<a href="https://github.com/kkkaur/1.ea-kodutoo">Repo</a>
+			</p>
+
+		</div>
+
+		<script data-main="scripts/main" src="scripts/main.js"></script>
+
+	</body>
+</html>
+
