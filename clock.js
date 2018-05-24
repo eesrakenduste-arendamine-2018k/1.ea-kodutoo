@@ -1,59 +1,45 @@
-// Avalikud muutujad 
-
-let changeBackgroundContainer = document.querySelector('body');
+var clock = document.getElementById('clock');
+var hexColor = document.getElementById('hex-color');
 let dayOfWeekContainer = document.querySelector('.dayOfWeek');
 let dateContainer = document.querySelector('.date');
 
-changeBackgroundContainer.addEventListener('click', changeBackgroundColor);
+function hexClock() {
+  var time = new Date();
+  var hours = (time.getHours() % 12).toString();
+  var minutes = time.getMinutes().toString();
+  var seconds = time.getSeconds().toString();
 
-function startTime() {
-  var today = new Date();
-  var h = today.getHours();
-  var m = today.getMinutes();
-  var s = today.getSeconds();
-  m = checkTime(m);
-  document.getElementById('txt').innerHTML =
-  h + ":" + m + ":" + s;
-  var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-  if (i < 10) {i = "0" + i}
-  return i
-}
+  if (hours.length < 2) {
+    hours = '0' + hours;
+  }
 
-function date () {
-  const date = new Date()
+  if (minutes.length < 2) {
+    minutes = '0' + minutes;
+  }
 
-  const dayOfWeek = new Array('Pühapäev','Esmaspäev','Teisipäev','Kolmapäev','Neljapäev','Reede', 'Laupäev')
-  const getDayOfWeek = dayOfWeek[date.getDay()]
-  dayOfWeekContainer.innerHTML = getDayOfWeek
+  if (seconds.length < 2) {
+    seconds = '0' + seconds;
+  }
 
-  const month = new Array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12')
-  let getMonth = month[date.getMonth()]
-  let getDay = date.getDate()
+  var clockStr = hours + ' : ' + minutes + ' : ' + seconds;
+  var hexColorStr = '#' + hours + minutes + seconds;
 
-  let getDate = getDay+'/'+getMonth
-  dateContainer.innerHTML = getDate
+  clock.textContent = clockStr;
+  hexColor.textContent = hexColorStr;
+  document.body.style.backgroundColor = hexColorStr;
+
 
 }
 
-function startClock () {
-  startTime();
-  date();
 
-  window.setInterval(function () {
-    startTime();
-    date();
-  }, 1000)
-}
 
-startClock();
+hexClock();
+setInterval(hexClock, 1000);
 
-function changeBackgroundColor () {
-  const r = Math.round(Math.random() * 255)
-  const g = Math.round(Math.random() * 255)
-  const b = Math.round(Math.random() * 255)
+var changePosition = document.querySelector("clock");
+function getClickPosition(e){
+var xPosition = e.clientX;
+var yPosition = e.clientY;
 
-  changeBackgroundContainer.style.backgroundColor = 'rgb('+r+', '+g+', '+b+')';
-}
 
+}  
