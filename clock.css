@@ -1,0 +1,26 @@
+body {
+    overflow: hidden;
+    font-family: "Optima";
+    margin-top: 0px;
+    margin-left: 0px;
+    background-size: cover;
+}
+
+
+#clock {
+    font-size: 120px;
+	left: 40%;
+    top: 40%;
+    color: rgb(17, 19, 107);
+    position: absolute;
+}
+
+#date {
+    font-size: 35px;
+	left: 45%;
+    top: 57%;
+    color: rgb(15, 19, 68);
+    position: absolute;
+}
+
+
