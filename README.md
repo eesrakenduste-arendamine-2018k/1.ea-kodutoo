@@ -5,7 +5,7 @@ Autor: Sigrid Kimask
 ![lauakell](ekraanipilt.PNG)
 
 Funktsionaalsus:
-Lauakell näitab nädalapäeva, kuupäeva, aastat ja kellaaega. Kellaja fonti ja värvi saab muuta vastavalt soovile ning taustale saab mängima panna muusika. 
+Lauakell näitab nädalapäeva, kuupäeva, aastat ja kellaaega. Kella fonti ja värvi saab muuta vastavalt soovile ning taustale saab mängima panna muusika. 
 
 ## Tähtpäev 18.02.2018 23:59
 
