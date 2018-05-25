@@ -1,5 +1,12 @@
 # 1. kodutöö – Lauakell
 
+Autor: Sigrid Kimask
+
+![lauakell](ekraanipilt.PNG)
+
+Funktsionaalsus:
+Lauakell näitab nädalapäeva, kuupäeva, aastat ja kellaaega. Kella fonti ja värvi saab muuta vastavalt soovile ning taustale saab mängima panna muusika. 
+
 ## Tähtpäev 18.02.2018 23:59
 
 Kujunda kellanäide vastavalt maitsele või kindlale teemale, mahutades kella täisekraanile, et saaks kasutada lauakella või ekraanisäästja asemel. Selleks, et see sobiks paljudele ekraanidele, kasuta kujunduse loomisel protsendilisi väärtusi (nt width: 100%; ) või nt võimalda kella suurust kasutajal muuta.

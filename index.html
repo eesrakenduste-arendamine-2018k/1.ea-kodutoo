@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="general.css">
+  <script type="text/javascript" src="clock.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Black+Han+Sans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet'>
+  
+  <title>kell</title>
+</head>
+<body>
+  <main>
+    <section id="date"></section>
+    <div id="clock"></div>
+
+    <section id="buttons">
+      <select if ="input-font" class="input" onchange="changeFont (this);">
+        <option value="Times New Roman" selected="selected">Times New Roman</option>
+        <option value="Arial">Arial</option>
+        <option value="Black Han Sans">Black Han Sans</option>
+        <option value="Lobster">Lobster</option>
+        <option value="Pacifico">Pacifico</option>
+        <option value="Dancing Script">Dancing script</option>
+      </select>
+        <button id='change-color'>Muudan tekstivärvi</button>
+        <br>
+        <audio controls>
+          <source src="../graphics/music.mp3" type="audio/mpeg">
+        Your browser doesn't support the audio element.
+        </audio>  
+    </section>
+
+  </main>
+</body>
+
+<footer id = "footer">Sigrid Kimask
+  <a href="https://github.com/kimasigr/1.ea-kodutoo">Github</a></br></footer>
+  
+</html>
