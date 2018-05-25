@@ -1,5 +1,5 @@
 body {
-    background-image: url("../graphics/picture_2.jpg");
+    background-image: url("../graphics/picture_4.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     
@@ -12,11 +12,12 @@ main {
 }
 
 /*clock*/
- div {
+#clock {
     color: rgb(255, 255, 255);
     font-size: 9vW;
     padding-right: 15%;
     padding-bottom: 5%;
+    text-shadow: 3px 2px black;
 }
 /*dropdown menu*/
 .input {
@@ -49,4 +50,12 @@ section {
 audio {
     margin-left:15%;
     background-color: whitesmoke;
+}
+
+#date {
+    font-size: 2vW;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 3px 2px black;
 }

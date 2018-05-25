@@ -1,7 +1,8 @@
 // Avalikud muutujad
 let clockContainer // = null
 let changeColorButton
-let changeFontButton
+let dateContainer
+
 
 window.onload = function () {
   init()
@@ -9,14 +10,15 @@ window.onload = function () {
 
 function init () {
   clockContainer = document.querySelector('#clock')
+  dateContainer = document.querySelector('#date')
   console.log(clockContainer)
   changeColorButton = document.querySelector('#change-color')
   changeFontButton = document.querySelector('#change-font')
   
   startClock()
+  startTime()
   
   changeColorButton.addEventListener('click', changeColor)
-  changeFontButton.addEventListener('click', changeFont)
 }
 
 function changeFont(font) {
@@ -40,15 +42,40 @@ function addZero(i) {
   return i
 }
 
+function startTime () {
+  window.setInterval(function () {
+    const time = new Date()
+    const dateContainer = document.getElementById("date")
+    const weekday = new Array(7)
+    weekday[0] = "Sunday"
+    weekday[1] = "Monday"
+    weekday[2] = "Tuesday"
+    weekday[3] = "Wednesday"
+    weekday[4] = "Thursday"
+    weekday[5] = "Friday"
+    weekday[6] = "Saturday"
+    const n = weekday[time.getDay()]
+    document.getElementById("date").innerHTML = n
+
+    const day = time.getDate()
+    const month = addZero(time.getMonth())
+    const year = time.getFullYear()
+
+    dateContainer.innerHTML = n + ", " + day + "." + month + "." + year
+  },1000)
+}
+
+
 function startClock () {
 	updateClock
   window.setInterval(function () {
-    const date = new Date()
+    const time = new Date()
     const clockContainer = document.getElementById("clock")
-    const h = addZero(date.getHours())
-    const m = addZero(date.getMinutes())
-    const s = addZero(date.getSeconds())
+    const h = addZero(time.getHours())
+    const m = addZero(time.getMinutes())
+    const s = addZero(time.getSeconds())
     clockContainer.innerHTML = h + ":" + m + ":" + s
+
   }, 1000)
   
 }
