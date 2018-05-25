@@ -22,7 +22,6 @@ function init () {
 function changeFont(font) {
 	console.log('muudan fonti')
     document.getElementById("clock").style.fontFamily = font.value
-	
 }
 
 function changeColor () {

@@ -6,23 +6,47 @@ body {
 }
  
 main {
-     background-color: transparent;
-     margin-top: 20%;
-     margin-left: 32%;
+    margin: auto;
+    margin-top: 20%;
+    margin-left:30%;
 }
 
-div {
-     color: rgb(255, 255, 255);
-     font-size: 9vW;
+/*clock*/
+ div {
+    color: rgb(255, 255, 255);
+    font-size: 9vW;
+    padding-right: 15%;
+    padding-bottom: 5%;
 }
-
+/*dropdown menu*/
 .input {
-    margin-left: 28%;
+    margin-left: 10%;
     margin-bottom: 0%;
     font-size: 1vW;
 }
 
 button {
     font-size: 1vW;
+    background-color: whitesmoke;
+}
+
+footer {
+    background-color: whitesmoke;
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    height:30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*buttons*/
+section {
+    margin-top:0%;
+    margin-right:20%;
+}
+
+audio {
+    margin-left:15%;
     background-color: whitesmoke;
 }
