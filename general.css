@@ -1,0 +1,28 @@
+body {
+    background-image: url("../graphics/picture_2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+ 
+main {
+     background-color: transparent;
+     margin-top: 20%;
+     margin-left: 32%;
+}
+
+div {
+     color: rgb(255, 255, 255);
+     font-size: 9vW;
+}
+
+.input {
+    margin-left: 28%;
+    margin-bottom: 0%;
+    font-size: 1vW;
+}
+
+button {
+    font-size: 1vW;
+    background-color: whitesmoke;
+}
