@@ -2,7 +2,7 @@
 
 Autor: Sigrid Kimask
 
-![lauakella pilt](https://imgur.com/a/lIFfZKE "Ekraanipilt Lauakellast")
+![lauakell](ekraanipilt.PNG)
 
 ## Tähtpäev 18.02.2018 23:59
 
