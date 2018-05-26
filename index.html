@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Egert Klaamas</title>
+	<script src="clock.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+</head>
+<body>
+	<section>
+		<div id="myBackground">
+			<h1>Tere tulemast!</h1>
+			<p id="clock"></p>
+				
+			<div class="controls">
+				<label>Hägusus:</label>
+				<input type="range" id="blur" min="0" max="25" value="0">
+			</div>
+
+			<button onclick="hideClock()">Näita/peida kell</button>
+			<div id="clock"></div>
+			
+			<button onclick="bigger()">kell suuremaks</button>
+			<button onclick="smaller()">kell väiksemaks</button>
+		</div>
+	</section>
+</body>
+</html>
