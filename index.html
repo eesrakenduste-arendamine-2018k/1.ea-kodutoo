@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+  <!-- quotes pluss autor -->
+  <div class="mySlides">
+    <q>I love you the more in that I believe you had liked me for my own sake and for nothing else.</q>
+    <p class="author">- John Keats</p>
+  </div>
+
+  <div class="mySlides">
+    <q>We must become what we wish to teach.</q>
+    <p class="author">- Nathaniel Branden</p>
+  </div>
+
+  <div class="mySlides">
+    <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+    <p class="author">- Thomas A. Edison</p>
+  </div>
+<!-- täpid -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Robert Roos</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1 id="clock"></h1>
+  <p id="hex-color"></p>
+  <script src="js/app.js"></script>
+  <button onclick="colorClock()">Värvus</button>
+  <button onclick="resetClock()">Taasta</button>
+<p>&ensp;</p>
+<br>Tausta värvus muutub vastavalt kellaajale, kella värvi saab muuta ning resettida, lisaks on ka valik erinevaid tsitaate, mille vahel saab valida.</br>
+<p>&ensp;</p>
+</body>
+</html>

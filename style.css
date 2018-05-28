@@ -1,0 +1,48 @@
+body {
+  font-family: 'Lato';
+  margin-top: 200px;
+  text-align: center;
+  color: white;
+}
+
+#clock {
+  font-weight: 400;
+  font-size: 120px;
+  position: relative;
+}
+
+
+/*slides*/
+.mySlides {
+  display: none;
+  padding: 40px;
+  text-align: center;
+}
+
+/*kursoriga täpi peal olles muutub täpp tumedamaks */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+/* täpid/indikaatorid */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* taust aktiivsel täpil */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* tsitaadi font */
+q {font-style: italic;}
+
+/* autori värv */
+.author {color: cornflowerblue;}
