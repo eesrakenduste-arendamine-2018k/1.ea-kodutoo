@@ -1,0 +1,55 @@
+<!Doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Kell</title>
+		<link rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src="scripts.js"></script>
+		
+	</head>
+	
+	
+	<body id="backPicture" onLoad="renderTime();starting();"></body>
+	
+	<body id="taust" onLoad="renderTime();starting();">
+		<div id="clockDisplay"></div>
+		
+		<section id="big">
+			<div id="small">
+				<img src="tagasi.png" id="tagasi" onclick="changeBack()">
+				<img src="edasi.png" id="edasi" onclick="changeNew()">
+				<h1 id="zuum">Muuda teksti suurust:</h1>
+				<button id="plus" onclick="fontBigger()">zoom in</button>
+				<button id="minus" onclick="fontSmaller()">zoom out</button>
+				<button id="font1" onclick="changeFont()">Arial</button>
+				<button id="font2" onclick="changeFont2()">Impact</button>
+				<button id="font3" onclick="changeFont3()">Courier</button>
+				<h1 id="fontText">Muuda fonti:</h1>
+				
+			</div>
+		</section>
+
+		<script type="text/javascript">
+			var d = new Date();
+			var time = d.getHours();
+		
+			if (time >=3 && time < 12) 
+			  {
+			  document.write("<b>Good morning!</b>");
+			  }
+			if (time > 12 && time <19) 
+			  {
+			  document.write("<b>Good afternoon!</b>");
+			  }
+			if (time == 12) 
+			  {
+			  document.write("<b>Go eat lunch!</b>");
+				}
+				//console.log(time)
+			if (time < 3 && time >= 19){
+				document.write("<b> Go to sleep!!!! </b>")
+			}
+		</script>
+</body>
+</html>
