@@ -2,5 +2,10 @@ Lauakell
 
 Krislyn Luks
 
+Ilutulestiku funktsiooniks kasutatud n√§idet siit: https://codepen.io/mattsince87/pen/mOzEbX
 
-Lauakella taustapilt muudab ¸kskıik kuhu klikkides v‰rvi, taustaks k‰ib kella tiksumine.
+
+Lauakella taustapilt muudab nupul klikkides v√§rvi, samuti saab fonti muuta ja klikkides nuppudel k√§ib ilutulestiku animatsioon.
+
+![Algne kell](https://github.com/krislyn/1.ea-kodutoo/blob/master/kell1.jpg)
+![Funktsioonid](https://github.com/krislyn/1.ea-kodutoo/blob/master/kell2.jpg)
