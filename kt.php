@@ -8,7 +8,7 @@
 			$(document).ready(function(){
 				setInterval(function(){
 					$('#time').load('kt1.php')
-				}), 1000);
+				}, 1000);
 			});
 			// Code taken from https://www.youtube.com/watch?v=fxlRsyo-PZQ
 			</script>
