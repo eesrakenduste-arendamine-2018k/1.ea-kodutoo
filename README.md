@@ -1,7 +1,8 @@
-# Digital clock - from https://www.youtube.com/watch?v=fxlRsyo-PZQ
+# Digital clock and analogue clock
 
-## Katsetasin kella teha nii, et ainult font oleks vahetatud. Isegi see ebaõnnestus, kuna veebisait keeldub laadimast, kuigi konsool ütleb, et viga pole midagi.
+## Tekitasin võimaluse vahetada analoogkell digitaalseks kellaks ja vastupidi. Tahtsin katsetada unikaalset fonti, aga ei töötand, teksti ei kuvatud. 
 
 ### Autoriks Brendon Brandt.
 
-### Paneks tõmmise kyll, aga valge pilt pole vast huvitav.
+### (https://imgur.com/9s5CK6z.png)
+### (https://imgur.com/40ytzP7.png)
