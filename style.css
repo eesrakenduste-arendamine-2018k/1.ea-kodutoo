@@ -1,0 +1,32 @@
+/* This file should be in a folder called `css` */
+
+body {
+  font-family: 'Lato';
+  margin-top: 200px;
+  text-align: center;
+  color: black;
+}
+
+#clock {
+  font-weight: 300;
+  font-size: 100px;
+}
+
+#day {
+  font-weight: 300;
+  font-size: 100px;
+}
+
+#center{
+  text-align: center;
+  position: absolute;
+  top:45%;
+  left: 40%;
+ }
+ 
+#topleft{
+  text-align: center;
+  position: absolute;
+  top:14%;
+  left: 1%;
+  
