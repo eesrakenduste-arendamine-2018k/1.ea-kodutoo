@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>kell</title>
+  <script src="clock.js"></script>
+</head>
+<style type="text/css">
+	body{
+		font-family: 'Courier New';
+		text-align: center;
+	}
+	
+	#clock {
+		font-size: 60px;
+		font-weight: bold;
+		margin-top: 200px;
+	}
+	
+	#date{
+		font-size: 40px;
+	}
+	
+	p{
+		position: relative;
+		font-size: 20px;
+	}
+</style>
+<body>
+  <div id="clock"></div>
+  <div id="date"></div>
+  <br>
+  <button id="size-up">+</button>
+  <button id="size-down">-</button>
+  <button onclick="changeFont()">Vaheta fonti</button>
+  <br>
+  <br>
+  <p id="author">Autor: Marii Helena Keerig</p>
+</body>
+</html>
