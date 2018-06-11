@@ -1,5 +1,5 @@
-// Avalikud muutujad
-let clockContainer // = null
+
+let clockContainer 
 
 
 window.onload = function () {
