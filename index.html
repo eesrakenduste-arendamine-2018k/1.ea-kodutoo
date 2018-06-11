@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clock</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="MyClock.js"></script>
+</head>
+
+<body onload="startTime()" onload="changeBackground()" >
+
+    <!-- Date and Time -->
+    <div class="time" id="time">
+        <p id="clock"></p>
+        <p id="date"></p>
+    </div>
+
+    <div id="clock"></div>
+    <div id="date"></div>
+
+    <!-- Message -->
+    <div id="msg" class="message"></div> 
+
+    <!-- Bottom buttons -->
+        <div class="footer">
+            <tr>
+                <td><input id="button-a" type="button" class="button" value="Change Background" onclick="changeBackground()"></td>
+                <td>
+                        <input type="text" id="Message" value="Write a Message">
+                        <input id="button-c" type="button" class="button" value="Choose Message" onclick="writeMessage()">
+                </td>
+                <td><input id="button-d" type="button" class="button" value="+" onclick="increaseClockSize()"></td>
+                <td><input id="button-d" type="button" class="button" value="-" onclick="decreaseClockSize()"></td>
+            </tr> 
+        </div>
+
+        <div class="links">
+            <tr>
+                <td><p>Rando Mikksaar</p></td>
+                <td><p><a href="https://github.com/RandoMikksaar/1.ea-kodutoo">Github</a></p></td>
+            </tr>
+        </div>
+
+</body>
+</html>
