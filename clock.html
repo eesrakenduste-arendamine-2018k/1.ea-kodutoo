@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="clock.css">
+<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Indie+Flower|Lato|Sunflower:300" rel="stylesheet">
+<script type="text/javascript" src="clock.js" defer></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+
+<body>
+<audio id="music" autoplay="autoplay">
+  <source src="spring.mp3" type="audio/mpeg">
+</audio>
+<span style="cursor:default">
+<nav id="primary_nav_wrap">
+<div><p id="name">Heino Pärn</p></div>
+<ul>
+  <li><a>Vali font</a>
+    <ul>
+      <li><a onclick="SunFlower()">SunFlower</a></li>
+      <li><a onclick="Lato()">Lato</a></li>
+      <li><a onclick=" Bowlby()">Bowlby One SC</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Vali värv</a>
+    <ul>
+      <li><a onclick="black()">Must</a></li>
+      <li><a onclick="white()">Valge</a></li>
+	  <li><a onclick="green()">Roheline</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Vali suurus</a>
+    <ul>
+	  <li><a onclick="fontSize50()">50px</a></li>
+      <li><a onclick="fontSize75()">75px</a></li>
+	  <li><a onclick="fontSize100()">100px</a></li>
+    </ul>
+  </li>
+</ul>
+</nav>
+
+<button id="mute" class="btn"><i class="fas fa-volume-off"></i></button>
+<body onLoad="initClock()">
+  <div id="timedate">
+    <a id="mon">Kuu</a>
+    <a id="d">0</a>,
+    <a id="y">0</a><br/>
+    <a id="h">00</a> :
+    <a id="m">00</a> :
+    <a id="s">00</a><br/>
+    <a id="dayy">Nädalapäev</a>
+  </div>
+</span>
+
+</body>
+</html>
