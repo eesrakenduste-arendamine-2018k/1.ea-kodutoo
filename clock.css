@@ -1,0 +1,29 @@
+body {
+	background-image: url("manowar_fighting_the_world_foldout_2065x1024px_110221115758_2.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+}
+
+#timedate {
+	text-align: center;
+    height: 310px;
+    width: 1200px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    padding-top: 75px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: orange; 
+    font-size: 100px;
+
+}
+
+#timedate:hover {
+    padding-top: 75px;
+    height: 400px;
+    width: 1300px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: White; 
+}
