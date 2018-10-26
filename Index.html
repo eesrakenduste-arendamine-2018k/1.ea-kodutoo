@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="java.js"></script>
+  <style>
+	#clock{
+		position:absolute;
+		top:50%;
+		left:50%;
+		height: 100px;
+	}
+  </style>
+   
+  
+</head>
+<body>
+  <div id="clock"></div>
+  <button id="change-position">Vaheta asukoht</button>
+  
+  <button onclick="changeSizeBig()">Vaheta font suureks</button>
+  <button onclick="changeSizeSmall()">Vaheta font väikseks</button>
+  <button onclick="changeSizeNormal()">Vaheta font tavaliseks</button>
+  
+  <button onclick="changeFontItalic()">Vaheta stiil(italic)</button>
+  <button onclick="changeFontNormal()">Vaheta stiil(normal)</button>
+  
+  <button onclick="get_random_color()">Vaheta tausta</button>
+  <button onclick="changeClockColorRandom()">Vaheta kirja värvi(random)</button>
+  
+	<button type="button" 
+	onclick="document.getElementById('clock').style.color = 'red'">
+	Punane</button>
+	<button type="button" 
+	onclick="document.getElementById('clock').style.color = 'green'">
+	Roheline</button>
+	<button type="button" 
+	onclick="document.getElementById('clock').style.color = 'blue'">
+	Sinine</button>
+  
+  
+</body>
+</html>
